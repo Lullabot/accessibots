@@ -1,2 +1,5 @@
-// Settings files
-*.settings.php
+; Local settings
+settings.*.php
+
+; Files
+docroot/sites/*/files
