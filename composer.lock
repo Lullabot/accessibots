@@ -1,0 +1,182 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ca1485019f9be77d748101a8be781f17",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "4db8898759143c742a8661b626d23f1535a42c15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/4db8898759143c742a8661b626d23f1535a42c15",
+                "reference": "4db8898759143c742a8661b626d23f1535a42c15",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2015-03-18 21:44:04"
+        },
+        {
+            "name": "davereid/drush-patchfile",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/davereid/drush-patchfile.git",
+                "reference": "adbc5ecd1f179c39a4d06bd64d206aa85c41630c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/davereid/drush-patchfile/get/adbc5ecd1f179c39a4d06bd64d206aa85c41630c.zip",
+                "reference": "adbc5ecd1f179c39a4d06bd64d206aa85c41630c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "drush-extension",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "description": "Helps manage patches for your Drupal install using Drush.",
+            "homepage": "https://bitbucket.org/davereid/drush-patchfile",
+            "keywords": [
+                "Drush",
+                "patches"
+            ],
+            "time": "2014-11-29 21:19:59"
+        },
+        {
+            "name": "keyboardcowboy/drush-denver",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KeyboardCowboy/drush-denver.git",
+                "reference": "ccaa7f7350d3e4a6b017cef007d8eaf5a3edae47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KeyboardCowboy/drush-denver/zipball/ccaa7f7350d3e4a6b017cef007d8eaf5a3edae47",
+                "reference": "ccaa7f7350d3e4a6b017cef007d8eaf5a3edae47",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "drupal-drush",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "KeyboardCowboy",
+                    "email": "chris.albrecht@lullabot.com"
+                }
+            ],
+            "description": "Customize modules, variables and permissions for each environment.",
+            "homepage": "https://github.com/KeyboardCowboy/drush-denver",
+            "keywords": [
+                "Drush",
+                "environment"
+            ],
+            "time": "2015-03-25 03:52:03"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "davereid/drush-patchfile": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

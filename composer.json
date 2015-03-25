@@ -1,0 +1,12 @@
+{
+  "minimum-stability": "dev",
+  "require": {
+    "davereid/drush-patchfile": "dev-master",
+    "keyboardcowboy/drush-denver": "1.3.*"
+  },
+  "extra": {
+    "installer-paths": {
+      "docroot/sites/all/drush/plugins/{$name}": ["type:drupal-drush"]
+    }
+  }
+}
