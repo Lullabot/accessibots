@@ -6,4 +6,8 @@ ROOT="/var/www/htdocs/accessibots/stage"
 
 cd $ROOT
 
-php ./composer.phar update
+if [ -d "vendor" ]; then
+  php ./composer.phar update
+else
+  php ./composer.phar install
+fi
