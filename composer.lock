@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "4db8898759143c742a8661b626d23f1535a42c15"
+                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/4db8898759143c742a8661b626d23f1535a42c15",
-                "reference": "4db8898759143c742a8661b626d23f1535a42c15",
+                "url": "https://api.github.com/repos/composer/installers/zipball/f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
+                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
                 "shasum": ""
             },
             "replace": {
@@ -99,7 +99,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-03-18 21:44:04"
+            "time": "2015-03-26 16:11:30"
         },
         {
             "name": "davereid/drush-patchfile",
@@ -107,18 +107,19 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/davereid/drush-patchfile.git",
-                "reference": "adbc5ecd1f179c39a4d06bd64d206aa85c41630c"
+                "reference": "da175802a95fb2c4e7e815537614a912d333a2ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/davereid/drush-patchfile/get/adbc5ecd1f179c39a4d06bd64d206aa85c41630c.zip",
-                "reference": "adbc5ecd1f179c39a4d06bd64d206aa85c41630c",
+                "url": "https://bitbucket.org/davereid/drush-patchfile/get/da175802a95fb2c4e7e815537614a912d333a2ec.zip",
+                "reference": "da175802a95fb2c4e7e815537614a912d333a2ec",
                 "shasum": ""
             },
             "require": {
+                "composer/installers": "~1.0",
                 "php": ">=5.3.0"
             },
-            "type": "drush-extension",
+            "type": "drupal-drush",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPLv2"
@@ -129,7 +130,7 @@
                 "Drush",
                 "patches"
             ],
-            "time": "2014-11-29 21:19:59"
+            "time": "2015-03-25 04:47:17"
         },
         {
             "name": "keyboardcowboy/drush-denver",
