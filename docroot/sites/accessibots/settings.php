@@ -22,7 +22,7 @@ if (PHP_SAPI == 'cli') {
  * can be different per environment and because they should never exist in a
  * file that exists in a git/svn repository for extra security.
  */
-$local_settings = DRUPAL_ROOT . '/../settings.local.php';
+$local_settings = '../settings.local.php';
 if (file_exists($local_settings)) {
   require $local_settings;
 }
