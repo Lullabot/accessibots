@@ -8,7 +8,7 @@ WORKSPACE="/home/jenkins/jobs/Accessibots Prod Deploy/workspace/"
 cd $ROOT
 
 if [ -d "vendor" ]; then
-  php ../composer.phar update
+  php "$WORKSPACE/composer.phar" update
 else
-  php ../composer.phar install
+  php "$WORKSPACE/composer.phar" install
 fi
