@@ -2,7 +2,9 @@
   "minimum-stability": "dev",
   "require": {
     "davereid/drush-patchfile": "dev-master",
-    "keyboardcowboy/drush-denver": "1.3.*"
+    "keyboardcowboy/drush-denver": "1.3.*",
+    "keyboardcowboy/drush-sync_tools": "dev-master",
+    "keyboardcowboy/drush-compare_schemas": "dev-master"
   },
   "extra": {
     "installer-paths": {
