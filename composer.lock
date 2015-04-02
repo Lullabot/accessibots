@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "23746060adbe39142fe14ab8ef2fb0bc",
+    "hash": "20abc49b0424078126fb80bdceae668d",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,16 +145,16 @@
         },
         {
             "name": "keyboardcowboy/drush-compare_schemas",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KeyboardCowboy/drush-compare_schemas.git",
-                "reference": "f72ce41b020c7330e77cce33d68269ce42a270f6"
+                "reference": "645cf7a6787459c4a4959a4f42056bdc6a9ce9be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KeyboardCowboy/drush-compare_schemas/zipball/f72ce41b020c7330e77cce33d68269ce42a270f6",
-                "reference": "f72ce41b020c7330e77cce33d68269ce42a270f6",
+                "url": "https://api.github.com/repos/KeyboardCowboy/drush-compare_schemas/zipball/645cf7a6787459c4a4959a4f42056bdc6a9ce9be",
+                "reference": "645cf7a6787459c4a4959a4f42056bdc6a9ce9be",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
                 "database",
                 "schema"
             ],
-            "time": "2015-03-31 20:00:46"
+            "time": "2015-04-02 23:47:21"
         },
         {
             "name": "keyboardcowboy/drush-denver",
@@ -262,8 +262,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "davereid/drush-patchfile": 20,
-        "keyboardcowboy/drush-sync_tools": 20,
-        "keyboardcowboy/drush-compare_schemas": 20
+        "keyboardcowboy/drush-sync_tools": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

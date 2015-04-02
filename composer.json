@@ -6,7 +6,7 @@
     "davereid/drush-patchfile": "dev-master",
     "keyboardcowboy/drush-denver": "~1.0",
     "keyboardcowboy/drush-sync_tools": "dev-master",
-    "keyboardcowboy/drush-compare_schemas": ">=1.0@dev",
+    "keyboardcowboy/drush-compare_schemas": "~1.0",
     "drush/registry_rebuild": "master"
   },
   "extra": {
