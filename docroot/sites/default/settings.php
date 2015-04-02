@@ -1,19 +1,23 @@
 <?php
+$settings = array();
 
 /**
  * Include settings files common to all environments.
  */
-foreach (glob(__DIR__ . '/settings/common/*.inc') as $file) {
-  include_once $file;
-}
+$settings['common'] = __DIR__ . '/settings/common.inc';
 
 /**
  * Include settings files for command line PHP (drush).
  */
 if (PHP_SAPI == 'cli') {
-  foreach (glob(__DIR__ . "/settings/drush/*.inc") as $file) {
-    include_once $file;
-  }
+  $settings['drush'] = __DIR__ . "/settings/drush.inc";
+}
+
+/**
+ * Include settings files specific to this environment.
+ */
+if (!empty($_ENV['SITE_ENVIRONMENT'])) {
+  $settings[$_ENV['SITE_ENVIRONMENT']] = __DIR__ . "/settings/{$_ENV['SITE_ENVIRONMENT']}.inc";
 }
 
 /**
@@ -22,7 +26,10 @@ if (PHP_SAPI == 'cli') {
  * can be different per environment and because they should never exist in a
  * file that exists in a git/svn repository for extra security.
  */
-$local_settings = '../settings.local.php';
-if (file_exists($local_settings)) {
-  require $local_settings;
+$settings['local'] = "../settings.local.php";
+
+foreach ($settings as $file) {
+  if (file_exists($file)) {
+    require $file;
+  }
 }

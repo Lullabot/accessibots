@@ -13,4 +13,3 @@ if [ -d "vendor" ]; then
 else
   php "$WORKSPACE/composer.phar" install
 fi
-

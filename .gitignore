@@ -2,6 +2,9 @@
 settings.*.php
 
 ; Files
+private_files
 docroot/sites/*/files
+docroot/assets
 
+; Composer vendor dir
 /vendor/
