@@ -18,6 +18,7 @@ fi
 cd $WEBROOT
 
 # Run updates, reverts and flushes
+drush cc drush
 drush reset
 
 # Compile CSS
