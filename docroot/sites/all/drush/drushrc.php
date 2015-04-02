@@ -3,7 +3,7 @@
 $options['patch-file'] = '../patches.make';
 
 // Add our commands directory.
-$options['include'][] = __DIR__ . '/drush/plugins';
+$options['include'][] = __DIR__ . '/plugins';
 
 // Add our aliases.
-$options['alias-path'][] = __DIR__ . '/drush/aliases';
+$options['alias-path'][] = __DIR__ . '/aliases';
