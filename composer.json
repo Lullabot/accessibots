@@ -23,7 +23,7 @@
         "source": {
           "url": "http://git.drupal.org/project/registry_rebuild.git",
           "type": "git",
-          "reference": "master"
+          "reference": "tags/7.x-2.2"
         }
       }
     }
