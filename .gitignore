@@ -1,5 +1,6 @@
 ; Local settings
 settings.*.php
+docroot/sites/sites.*.php
 
 ; Files
 private_files
