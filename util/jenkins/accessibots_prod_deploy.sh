@@ -7,13 +7,6 @@ WORKSPACE="/home/jenkins/jobs/Accessibots Prod Deploy/workspace/"
 
 cd $ROOT
 
-# Update composer libraries
-if [ -d "vendor" ]; then
-  php "$WORKSPACE/composer.phar" update
-else
-  php "$WORKSPACE/composer.phar" install
-fi
-
 # Run updates, reverts and flushes
 drush reset
 
