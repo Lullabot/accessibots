@@ -1,14 +1,31 @@
 {
+  "name": "lullabot/accessibots7",
+  "description": "Accessibots website.",
   "minimum-stability": "dev",
   "require": {
     "davereid/drush-patchfile": "dev-master",
-    "keyboardcowboy/drush-denver": "1.3.*",
+    "keyboardcowboy/drush-denver": "~1.0",
     "keyboardcowboy/drush-sync_tools": "dev-master",
-    "keyboardcowboy/drush-compare_schemas": "dev-master"
+    "keyboardcowboy/drush-compare_schemas": "dev-master",
+    "drush/registry_rebuild": "dev-master"
   },
   "extra": {
     "installer-paths": {
       "docroot/sites/all/drush/plugins/{$name}": ["type:drupal-drush"]
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "drush/registry_rebuild",
+        "version": "master",
+        "source": {
+          "url": "http://git.drupal.org/project/registry_rebuild.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  ]
 }
