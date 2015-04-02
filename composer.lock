@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d97125c551ce9fc310bc098ac671fb24",
+    "hash": "555923a350a9d18979f1349c72f6c79d",
     "packages": [
         {
             "name": "composer/installers",
@@ -138,10 +138,10 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/registry_rebuild.git",
-                "reference": "master"
+                "reference": "tags/7.x-2.2"
             },
             "type": "library",
-            "time": "2011-06-21 00:14:20"
+            "time": "2014-03-17 15:55:28"
         },
         {
             "name": "keyboardcowboy/drush-compare_schemas",
@@ -263,8 +263,7 @@
     "stability-flags": {
         "davereid/drush-patchfile": 20,
         "keyboardcowboy/drush-sync_tools": 20,
-        "keyboardcowboy/drush-compare_schemas": 20,
-        "drush/registry_rebuild": 20
+        "keyboardcowboy/drush-compare_schemas": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

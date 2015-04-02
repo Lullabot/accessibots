@@ -7,7 +7,7 @@
     "keyboardcowboy/drush-denver": "~1.0",
     "keyboardcowboy/drush-sync_tools": "dev-master",
     "keyboardcowboy/drush-compare_schemas": "dev-master",
-    "drush/registry_rebuild": "dev-master"
+    "drush/registry_rebuild": "master"
   },
   "extra": {
     "installer-paths": {
@@ -23,7 +23,7 @@
         "source": {
           "url": "http://git.drupal.org/project/registry_rebuild.git",
           "type": "git",
-          "reference": "master"
+          "reference": "tags/7.x-2.2"
         }
       }
     }
