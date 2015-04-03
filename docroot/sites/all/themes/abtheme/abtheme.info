@@ -1,0 +1,14 @@
+name = Accessibots
+description = Accessibots Theme
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+php = 5.2
+version = 7.x-1.0-dev
+base theme = mothership
+
+regions[page_top] = Page Top
+regions[content] = Content
+regions[page_bottom] = Page Bottom
+
+plugins[panels][layouts] = layouts
