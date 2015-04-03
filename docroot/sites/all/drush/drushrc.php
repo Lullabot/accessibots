@@ -19,5 +19,5 @@ if ($_SERVER['HOSTNAME'] == 'vhost.162unlimted.com' || $_SERVER['USER'] == 'jenk
 }
 else {
   $options['shell-aliases']['sass-compile'] = '!cd ' . $root . '/themes/abtheme && bundle install && sass -fr sass-globbing --update --style=expanded --debug-info _scss:css';
-  $options['shell-aliases']['sass-watch'] = '!cd ' . $root . '/themes/abtheme && bundle install && sass -r sass-globbing --watch _scss:css';
+  $options['shell-aliases']['sass-watch'] = '!cd ' . $root . '/themes/abtheme && bundle install && sass -rsass-globbing --watch _scss:css';
 }
