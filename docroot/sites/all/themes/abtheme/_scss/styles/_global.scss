@@ -1,0 +1,22 @@
+body {
+  @extend %lined-paper;
+  font-family: $serif;
+  height: 100%;
+}
+
+@include headers {
+  font-family: $sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+
+  + p {
+    margin-top: 1em;
+  }
+}
+
+#main-content {
+  max-width: 80rem;
+  margin: 0 auto;
+}
