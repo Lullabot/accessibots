@@ -224,12 +224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KeyboardCowboy/drush-sync_tools.git",
-                "reference": "1bfaf76b420759ad4d50f8c5243d2812773e4093"
+                "reference": "373a31a824470fa6027d91f1c9faac2a00985ad5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KeyboardCowboy/drush-sync_tools/zipball/1bfaf76b420759ad4d50f8c5243d2812773e4093",
-                "reference": "1bfaf76b420759ad4d50f8c5243d2812773e4093",
+                "url": "https://api.github.com/repos/KeyboardCowboy/drush-sync_tools/zipball/373a31a824470fa6027d91f1c9faac2a00985ad5",
+                "reference": "373a31a824470fa6027d91f1c9faac2a00985ad5",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                 "database",
                 "sync"
             ],
-            "time": "2015-03-31 20:00:29"
+            "time": "2015-04-03 00:29:01"
         }
     ],
     "packages-dev": [],

@@ -19,6 +19,6 @@ cd $WEBROOT
 
 # Run updates, reverts and flushes
 drush cc drush
-drush reset
+drush reset --skip-git
 
 # Compile CSS
