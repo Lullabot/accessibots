@@ -3,6 +3,8 @@
  * Aliases for Accessibots
  */
 
+print_r($_SERVER);
+
 // Parent aliases
 if ($_SERVER['HOSTNAME'] != 'vhost.162unlimited.com') {
   $aliases['_remote'] = array(
