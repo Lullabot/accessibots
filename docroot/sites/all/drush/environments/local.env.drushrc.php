@@ -9,6 +9,7 @@ $env = array(
     'views_ui' => 1,
     'update' => 1,
     'fpa' => 1,
+    'admin_devel' => 1,
   ),
   'vars'    => array(
     'cache' => 0,
