@@ -6,8 +6,6 @@ ROOT="/var/www/htdocs/accessibots/prod"
 WEBROOT="/var/www/htdocs/accessibots/prod/docroot"
 WORKSPACE="/home/jenkins/jobs/Accessibots Prod Deploy/workspace/"
 
-# Put site in maintenance mode
-
 cd $ROOT
 
 # Update composer
@@ -19,6 +17,9 @@ fi
 
 cd $WEBROOT
 
+# Put site in maintenance mode
+drush vset --exact maintenance_mode 1
+
 # Run updates, reverts and flushes
 drush cc drush
 drush reset --skip-git
@@ -26,3 +27,4 @@ drush reset --skip-git
 # Compile CSS
 
 # Take site out of maintenance mode
+drush vset --exact maintenance_mode 0
