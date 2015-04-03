@@ -4,13 +4,15 @@
  */
 
 // Parent aliases
-$aliases['_remote'] = array(
-  'remote-host' => '204.62.14.91',
-  'remote-user' => 'accessibot',
-  'path-aliases' => array(
-    '%dump-dir' => '/var/www/db',
-  ),
-);
+if ($_SERVER['HOSTNAME'] != 'vhost.162unlimited.com') {
+  $aliases['_remote'] = array(
+    'remote-host' => '204.62.14.91',
+    'remote-user' => 'accessibot',
+    'path-aliases' => array(
+      '%dump-dir' => '/var/www/db',
+    ),
+  );
+}
 
 // Stage
 $aliases['stage'] = array(
