@@ -38,4 +38,8 @@ function drush_accessibots_build() {
   }
 
   // Build CSS
+  drush_shell_exec('drush sass-compile');
+  foreach (drush_shell_exec_output() as $msg) {
+    drush_print($msg);
+  }
 }

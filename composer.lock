@@ -258,16 +258,16 @@
         },
         {
             "name": "keyboardcowboy/orion",
-            "version": "3.0.2",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KeyboardCowboy/orion.git",
-                "reference": "38169bda6827926c5c1c91571438d25bdd62bd63"
+                "reference": "44981a6707eaa5e4f137118a007c3a2d0f1c9dfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KeyboardCowboy/orion/zipball/38169bda6827926c5c1c91571438d25bdd62bd63",
-                "reference": "38169bda6827926c5c1c91571438d25bdd62bd63",
+                "url": "https://api.github.com/repos/KeyboardCowboy/orion/zipball/44981a6707eaa5e4f137118a007c3a2d0f1c9dfd",
+                "reference": "44981a6707eaa5e4f137118a007c3a2d0f1c9dfd",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
                 "sass",
                 "scss"
             ],
-            "time": "2015-04-03 08:04:22"
+            "time": "2015-04-03 15:47:19"
         }
     ],
     "packages-dev": [],
