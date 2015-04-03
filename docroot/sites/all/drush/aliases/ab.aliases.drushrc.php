@@ -3,10 +3,8 @@
  * Aliases for Accessibots
  */
 
-print_r($_SERVER);
-
 // Parent aliases
-if ($_SERVER['HOSTNAME'] != 'vhost.162unlimited.com') {
+if ($_SERVER['HOSTNAME'] != 'vhost.162unlimited.com' && $_SERVER['USER'] != 'jenkins') {
   $aliases['_remote'] = array(
     'remote-host' => '204.62.14.91',
     'remote-user' => 'accessibot',
