@@ -1,5 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
-  @extend %lined-paper;
+  @include background-image(linear-gradient(#eee .1em, transparent .1em));
+  background-size: 2em;
   font-family: $serif;
   height: 100%;
 }
