@@ -5,10 +5,11 @@
   position: relative;
   border-bottom: 2px solid #ccc;
 
+  // Slight opaqueness over image to pop text
   &:after {
+    background-color: rgba(0,0,0,.1);
     content: '';
     display: block;
-    background-color: rgba(0,0,0,.3);
     height: 100%;
     width: 100%;
     position: absolute;
