@@ -60,13 +60,39 @@ function abots_global_default_page_manager_pages() {
     'style_settings' => array(
       'default' => NULL,
       'center' => NULL,
+      'middle' => NULL,
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'We Are the Accessibots';
   $display->uuid = '1fe248b0-0155-4d94-afd0-d248531840b2';
   $display->content = array();
   $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-bffddecc-995f-4bac-80ae-024a5d587376';
+    $pane->panel = 'middle';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Placeholder',
+      'title' => '',
+      'body' => 'Check back soon for updated content.  We\'re still moving in and there are boxes everywhere!',
+      'format' => 'plain_text',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'bffddecc-995f-4bac-80ae-024a5d587376';
+    $display->content['new-bffddecc-995f-4bac-80ae-024a5d587376'] = $pane;
+    $display->panels['middle'][0] = 'new-bffddecc-995f-4bac-80ae-024a5d587376';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
