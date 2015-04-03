@@ -11,4 +11,6 @@ regions[page_top] = Page Top
 regions[content] = Content
 regions[page_bottom] = Page Bottom
 
+stylesheets[all][] = css/abtheme.css
+
 plugins[panels][layouts] = layouts
