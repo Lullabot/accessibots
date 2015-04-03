@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "20abc49b0424078126fb80bdceae668d",
+    "hash": "dfea3c6c9fae0cd178f39dafcf7a03d0",
     "packages": [
         {
             "name": "composer/installers",
@@ -255,6 +255,46 @@
                 "sync"
             ],
             "time": "2015-04-03 00:29:01"
+        },
+        {
+            "name": "keyboardcowboy/orion",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KeyboardCowboy/orion.git",
+                "reference": "605d5f4435ceb93dbbc06618a8943891e3cb44d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KeyboardCowboy/orion/zipball/605d5f4435ceb93dbbc06618a8943891e3cb44d4",
+                "reference": "605d5f4435ceb93dbbc06618a8943891e3cb44d4",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Albrecht",
+                    "email": "chris@lullabot.com"
+                }
+            ],
+            "description": "Library of sass mixins and jade templates for rapid prototyping.",
+            "homepage": "https://github.com/KeyboardCowboy/orion",
+            "keywords": [
+                "css",
+                "jade",
+                "mixins",
+                "prototype",
+                "sass",
+                "scss"
+            ],
+            "time": "2015-04-03 04:36:13"
         }
     ],
     "packages-dev": [],

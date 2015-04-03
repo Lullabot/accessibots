@@ -7,11 +7,13 @@
     "keyboardcowboy/drush-denver": "~1.0",
     "keyboardcowboy/drush-sync_tools": "dev-master",
     "keyboardcowboy/drush-compare_schemas": "~1.0",
-    "drush/registry_rebuild": "master"
+    "drush/registry_rebuild": "master",
+    "keyboardcowboy/orion": "~3.0"
   },
   "extra": {
     "installer-paths": {
-      "vendor/drush/{$name}": ["type:drupal-drush"]
+      "vendor/drush/{$name}": ["type:drupal-drush"],
+      "vendor/theme/{$name}": ["keyboardcowboy/orion"]
     }
   },
   "repositories": [

@@ -9,3 +9,6 @@ docroot/assets
 
 ; Composer vendor dir
 /vendor/
+
+; CSS Files
+docroot/sites/*/themes/abtheme/css
