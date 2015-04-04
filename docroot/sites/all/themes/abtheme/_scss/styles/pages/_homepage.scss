@@ -25,6 +25,7 @@
     position: relative;
   }
 
+  // Logo
   figure {
     width: 38%;
     height: 100%;
@@ -41,12 +42,13 @@
     }
   }
 
+  // News Item
   article {
-    @include center(y);
+    //@include center(y);
     width: 62%;
     color: white;
     text-shadow: 1px 1px 2px #000;
-    padding: 0 10% 0 0;
+    padding: 2rem 10% 2rem 0;
 
     h2 {
       color: $pink1;

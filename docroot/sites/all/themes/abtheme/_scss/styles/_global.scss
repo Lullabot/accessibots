@@ -21,7 +21,15 @@ p {
   }
 }
 
-#main-content {
-  max-width: 80rem;
-  margin: 0 auto;
+// Two Col Layout
+@media($two-col) {
+  #main-content {
+    max-width: $two-col-max;
+    margin: 2rem 5% 0 5%;
+  }
+}
+
+// Collapsed to One Col
+@media($one-col) {
+
 }
