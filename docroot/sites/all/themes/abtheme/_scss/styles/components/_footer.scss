@@ -1,0 +1,41 @@
+#site-footer {
+  background-color: $blue1;
+  color: white;
+  margin: 2rem 0 0 0;
+  padding: 1rem $page-margin;
+  font-size: 0.85rem;
+
+  @media ($two-col) {
+    > * {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    * + * {
+      margin-left: -5px;
+      text-align: right;
+    }
+  }
+
+  @media ($one-col) {
+    > * {
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+}
+
+#footer--social {
+  a {
+    display: inline-block;
+
+    + a {
+      margin-left: 1em;
+    }
+  }
+
+  img {
+    max-width: 50px;
+  }
+}

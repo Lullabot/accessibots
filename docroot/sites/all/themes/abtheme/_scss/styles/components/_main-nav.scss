@@ -1,5 +1,6 @@
 #main-nav {
-  background-color: $gold;
+  //background-color: $gold;
+  @include linear-gradient($gold, darken($gold, 5%));
 
   ul {
     @include flexmenu;
@@ -21,18 +22,13 @@
 
         &:hover,&:active {
           text-decoration: underline;
-          color: $pink3;
+          color: $blue1;
         }
       }
 
-      + li {
-        border-left: 1px solid $pink1;
-      }
-
-
       &.active-trail {
-        border-bottom: 3px solid $pink3;
-        a {color: $pink3;}
+        border-bottom: 3px solid $blue1;
+        a {color: $blue1;}
       }
     }
   }

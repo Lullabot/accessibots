@@ -7,8 +7,16 @@
 <head>
 <title><?php print $head_title; ?></title>
 <?php print $head; ?>
-<?php print $appletouchicon; ?>
-<?php if(theme_get_setting('mothership_mobile')){  ?>
+  <meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="<?php print base_path() . $directory; ?>/images/icons/badge/ios/AppIcon.appiconset/Icon-60@2x.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="<?php print base_path() . $directory; ?>/images/icons/badge/ios/AppIcon.appiconset/Icon-60@3x.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="<?php print base_path() . $directory; ?>/images/icons/badge/ios/AppIcon.appiconset/Icon-76.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="<?php print base_path() . $directory; ?>/images/icons/badge/ios/AppIcon.appiconset/Icon-76@2x.png" />
+<link rel="apple-touch-icon" sizes="58x58" href="<?php print base_path() . $directory; ?>/images/icons/badge/ios/AppIcon.appiconset/Icon-Small@2x.png" />
+  <link rel="icon" sizes="192x192" type="image/png" href="<?php print base_path() . $directory; ?>/images/icons/lilly/lilly_192.png">
+  <link rel="icon" sizes="128x128" type="image/png" href="<?php print base_path() . $directory; ?>/images/icons/lilly/lilly_128.png">
+
+  <?php if(theme_get_setting('mothership_mobile')){  ?>
 <meta name="MobileOptimized" content="width">
 <meta name="HandheldFriendly" content="true"><?php } ?>
 <?php if(theme_get_setting('mothership_viewport')){  ?><meta name="viewport" content="width=device-width, initial-scale=1"><?php } ?>

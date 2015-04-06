@@ -41,7 +41,4 @@
   </div><!-- /main -->
 </div><!-- /page -->
 
-<footer role="contentinfo">
-
-</footer>
-
+<?php include_once "_footer.tpl.php"; ?>

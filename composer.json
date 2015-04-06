@@ -28,6 +28,18 @@
           "reference": "tags/7.x-2.2"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "jquery/sticky",
+        "version": "master",
+        "source": {
+          "url": "git@github.com:garand/sticky.git",
+          "type": "git",
+          "reference": "tags/1.0.1"
+        }
+      }
     }
   ]
 }
