@@ -13,4 +13,7 @@ regions[page_bottom] = Page Bottom
 
 stylesheets[all][] = css/abtheme.css
 
+scripts[] = js/jquery.sticky-min.js
+scripts[] = js/abtheme-min.js
+
 plugins[panels][layouts] = layouts

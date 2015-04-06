@@ -1,6 +1,6 @@
 #main-nav {
-  //background-color: $gold;
   @include linear-gradient($gold, darken($gold, 5%));
+  @include transition(box-shadow .2s);
 
   ul {
     @include flexmenu;
@@ -30,6 +30,15 @@
         border-bottom: 3px solid $blue1;
         a {color: $blue1;}
       }
+    }
+  }
+}
+
+#main-nav-sticky-wrapper {
+  &.is-sticky {
+    #main-nav {
+      box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .5);
+      z-index: 9;
     }
   }
 }
