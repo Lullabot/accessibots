@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  @include background-image(linear-gradient(#eee .1em, transparent .1em));
+  @include background-image(linear-gradient(#f9f9f9 .1em, transparent .1em));
   background-size: 40px;
   font-family: $serif;
   height: 100%;
@@ -12,6 +12,8 @@ body {
 // Headers
 @include headers {
   font-family: $sans-serif;
+  color: $pink3;
+  text-shadow: 1px 1px 1px rgba(black, .38);
 }
 
 @include header-scale($two-col-max, 30, 9, .5);
@@ -21,6 +23,13 @@ p {
 
   + p {
     margin-top: 1em;
+  }
+}
+
+// All pages except home page.
+body:not(.page-front) {
+  .page {
+    margin-top: 4rem;
   }
 }
 
