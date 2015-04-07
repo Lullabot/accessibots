@@ -1,1 +1,1 @@
-!function($){$(document).ready(function(){$("#main-nav").sticky()})}(jQuery);
+!function($){$(document).ready(function(){$("#main-nav").sticky(0)})}(jQuery);

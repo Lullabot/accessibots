@@ -4,7 +4,7 @@ html {
 
 body {
   @include background-image(linear-gradient(#eee .1em, transparent .1em));
-  background-size: 2em;
+  background-size: 40px;
   font-family: $serif;
   height: 100%;
 }
