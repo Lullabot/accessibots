@@ -5,6 +5,6 @@
     <a href="http://twitter.com/accessibotlilly" title="Follow Lilly the Accessibot on Twitter" target="_blank"><img src="<?php print base_path() . $directory; ?>/images/icons/lilly/lilly_128.png" alt="Logo for Lilly the Accessibot" /></a>
   </div>
   <div id="footer--legal">
-    Copyright <?php print date("Y"); ?> &copy; Lullabot, all rights reserved.
+    Copyright <?php print date("Y"); ?> &copy; <a href="http://www.lullabot.com" target="_blank">Lullabot</a>, all rights reserved.
   </div>
 </footer>

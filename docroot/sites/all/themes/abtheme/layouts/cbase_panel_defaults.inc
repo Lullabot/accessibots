@@ -2,7 +2,7 @@
 /**
  * Set default values for cbase panels layouts.
  */
-if ($renderer->admin) {
+if (isset($renderer) && $renderer->admin) {
   $messages = (isset($messages) ? $messages : '');
 
   switch ($layout['name']) {

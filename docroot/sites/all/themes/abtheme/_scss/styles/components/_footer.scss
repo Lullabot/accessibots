@@ -5,6 +5,10 @@
   padding: 1rem $page-margin;
   font-size: 0.85rem;
 
+  a {
+    color: $gold;
+  }
+
   @media ($two-col) {
     > * {
       width: 50%;
