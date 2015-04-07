@@ -1,6 +1,6 @@
 #main-nav {
-  @include linear-gradient($gold, darken($gold, 5%));
   @include transition(box-shadow .2s);
+  background-color: $gold;
 
   ul {
     @include flexmenu;
@@ -8,10 +8,33 @@
     padding: 0;
 
     li {
-      border-bottom: 3px solid #ccc;
+      //border-bottom: 3px solid #ccc;
+      position: relative;
+
+      &:after {
+        @include transition(all .1s ease-in);
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: $gold;
+        z-index: 10;
+        top: 0;
+        border-bottom: 2px solid #eee;
+      }
+
+      &:hover {
+        &:after, a {
+          @include transform(translateY(10px));
+        }
+      }
 
       a {
         @include transition(all .2s ease-in);
+        background-color: $gold;
+        position: relative;
+        z-index: 15;
         padding: .5em 1em;
         text-align: center;
         text-decoration: none;
@@ -21,14 +44,22 @@
         text-transform: uppercase;
 
         &:hover,&:active {
+          background-color: $gold;
           text-decoration: underline;
-          color: $blue1;
+          color: white;
         }
       }
 
       &.active-trail {
-        border-bottom: 3px solid $blue1;
-        a {color: $blue1;}
+        background-color: $blue1;
+
+        &:after, a {
+          @include transform(translateY(10px));
+          background-color: $blue1;
+        }
+
+        //border-bottom: 3px solid $blue1;
+        a {color: white;}
       }
     }
   }
