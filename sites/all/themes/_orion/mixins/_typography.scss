@@ -1,0 +1,100 @@
+// Custom typographical mixins
+// Dependencies: typeplate variables
+
+// -- Provide PX backup to REM sizing for IE8 support.
+//  - Replacing x-rem for consistent naming conventions.
+@mixin o-rem($property, $values) {
+  // Empty list for all values in px
+  $px-values: ();
+  $rem-values: ();
+
+  // Iterate over entries
+  @each $value in $values {
+    // If the value is zero, return 0
+    @if $value == 0 or type_of($value) != number {
+      $px-values: append($px-values, $value);
+      $rem-values: append($rem-values, $value);
+    }
+    // If the value is not zero, convert it from rem to px
+    @else {
+      $px-values: append($px-values, o-rem2px($value));
+      $rem-values: append($rem-values, #{$value}rem);
+    }
+  }
+
+  // Return the property and its list of converted values
+  #{$property}: #{$px-values};
+  #{$property}: #{$rem-values};
+}
+
+// -- Provide PX backup to REM sizing for IE8 support.
+//  - DEPRECATED - Use o-rem instead.
+@mixin x-rem($property, $values) {
+  @include o-rem($property, $values);
+}
+
+// Apply certain styles to all headers.
+@mixin headers {
+  h1,h2,h3,h4,h5,h6 {
+    @content;
+  }
+}
+
+// Scale Header Sizes
+@mixin header-font-scale($scalar: 1) {
+  h1 {@include type-scale($alpha   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h2 {@include type-scale($beta    * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h3 {@include type-scale($gamma   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h4 {@include type-scale($delta   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h5 {@include type-scale($epsilon * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h6 {@include type-scale($zeta    * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+}
+
+// Auto-scale Header Font Sizes
+// @param $start - The rem width to start scaling. (Outer breakpoint)
+// @param $stop  - The rem width to stop scaling.  (Inner breakpoint)
+@mixin header-scale($start, $stop: 30, $interval: 9, $min-scale: 0.60) {
+  $itt: 1;
+  $bp: 0;
+
+  @while $itt < $interval {
+    $last: $bp;
+    $bp: ((($start - $stop) / $interval) * ($interval - $itt)) + $stop;
+    $scale: 1 - ((1 - $min-scale) / ($interval - 1)) * $itt;
+
+    @if $last > 0 {
+      @media (max-width: $bp) {
+        @include header-font-scale($scale);
+      }
+    } @else {
+      @media (max-width: $bp) {
+        @include header-font-scale($scale);
+      }
+    }
+
+    $itt: $itt + 1;
+  }
+}
+
+// If the first line of an element is indented, indent the following lines.
+// @param $size - The width of the hanging indentation.
+@mixin hanging-indent($size) {
+  padding-left: $size;
+  text-indent: -$size;
+}
+
+// -- Font size scaling using media queries
+@mixin scale-font-size($start-width: 30rem, $start-size: 1em, $end-width: 80rem, $end-size: 2em, $int: 5) {
+  $itt: 0;
+
+  @while $itt <= $int {
+    $bp: $start-width + (($end-width - $start-width) * ($itt / $int));
+    $inc: ($end-size - $start-size) * ($itt / $int);
+    $size: $start-size + $inc;
+    $scale: strip-units($inc) + 1;
+
+    @media (min-width: $bp) {font-size: $size;}
+
+    $itt: $itt + 1;
+  }
+}

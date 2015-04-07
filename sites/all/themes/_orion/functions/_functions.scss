@@ -1,0 +1,14 @@
+// Strip the units off a value to return the integer.
+@function o-strip($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// Convert REM units to PX units
+@function o-rem2px($value) {
+  @return (($value * $font-base) * 1px);
+}
+
+// Convert PX units to REM units
+@function o-px2rem($value) {
+  @return (($value / $font-base) * 1rem);
+}

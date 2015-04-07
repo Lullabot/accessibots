@@ -1,0 +1,73 @@
+//- Create a kitten image
+//- Use 1 for color, 0 for B&W
+mixin kitten(width, height, color, classes)
+ - classes = classes || ''
+ if color
+   span.photo
+     img(src="http://placekitten.com/#{width}/#{height}", alt="Here's a cute kitten.", title="Here's a cute kitten.", class="#{classes}")
+ else
+   span.photo
+     img(src="http://placekitten.com/g/#{width}/#{height}", alt="Here's a cute kitten.", title="Here's a cute kitten.", class="#{classes}")
+
+//- Auto generate placeholder links
+mixin links(num, title, href)
+ - num   = num || 3
+ - title = title || 'Link'
+ - href  = href || '#'
+ - i = 1
+ ul
+   while i <= num
+     +link(title + ' ' + i, href)
+     - i++
+
+//- Create a list with a series of items
+mixin list(num, type)
+ - num = num || 3
+ - type = type || 'ul'
+ #{type}
+   - for (i = 1; i <= num; i++) {
+   li List Item #{i}
+   - }
+
+//- Insert a paragraph of text
+//- @param sen
+//-   The number of sentences per paragraph
+//- @param cnt
+//-   The number of paragraphs to print
+mixin p(sen,cnt)
+ - sen = sen || 3
+ - cnt = cnt || 1
+ - pool = ["Collaboratively build market-driven ROI after user friendly experiences. ","Authoritatively impact multidisciplinary resources via bleeding-edge synergy. ","Efficiently leverage other's standardized methods of empowerment through functionalized information. ","Intrinsicly aggregate adaptive networks rather than multimedia based models. ","Appropriately disintermediate client-centric expertise through impactful infomediaries. ","Conveniently optimize holistic \"outside the box\" thinking for visionary \"outside the box\" thinking. ","Uniquely syndicate long-term high-impact data before client-based metrics. ","Rapidiously architect optimal strategic theme areas with adaptive bandwidth. ","Synergistically evisculate efficient infrastructures for error-free mindshare. ","Compellingly negotiate global core competencies with enterprise-wide mindshare. ","Assertively coordinate ubiquitous growth strategies without. "]
+ - p = [];
+ - for (i = 1; i <= cnt; i++) {
+   - s = '';
+   - for (ii = 1; ii <= sen; ii++) {
+     - ind = Math.floor(Math.random() * 11)
+     - s += pool[ind]
+   - }
+   - p.push(s);
+ - }
+ - for (i in p) {
+   p #{p[i]}
+ - }
+
+//- Create a series of checkboxes
+mixin checks(num, grp, label)
+ - num = num || 3
+ - grp = grp || 'grp'
+ - label = label || 'Option'
+ - i = 1
+ - for (i = 1; i <= num; i++) {
+   - id = grp + '-' + i
+   div.form-item.checkbox
+   input(type='checkbox', name=id, id=id)
+   label(for=id) #{label} #{i}
+ - }
+
+//- Generate options for a select list
+mixin selops(num, title)
+ - num = num || 3
+ - title = title || 'Option'
+ - for (i = 1; i <= num; i++) {
+     option #{title + ' ' + i}
+ - }

@@ -1,0 +1,1520 @@
+@charset "UTF-8";
+@-webkit-keyframes _slide-left {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes _slide-left {
+  0% {
+    -moz-transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes _slide-left {
+  0% {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes _slide-right {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes _slide-right {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes _slide-right {
+  0% {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_base\.scss}line{font-family:\000034}}
+* {
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_base\.scss}line{font-family:\000036}}
+body {
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_base\.scss}line{font-family:\000038}}
+a {
+  outline: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_base\.scss}line{font-family:\0000311}}
+nav ul li {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_base\.scss}line{font-family:\0000314}}
+table {
+  table-layout: fixed;
+}
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\0000311}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\0000330}}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\0000341}}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\0000351}}
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\0000366}}
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\0000376}}
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\0000388}}
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\0000396}}
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003104}}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003118}}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003127}}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003135}}
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003144}}
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003152}}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003162}}
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003171}}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003183}}
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003191}}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003199}}
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003207}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003215}}
+sup {
+  top: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003219}}
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003231}}
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003239}}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003251}}
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003263}}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003274}}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003285}}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003299}}
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003311}}
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003324}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003336}}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003346}}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003358}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003370}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003379}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003390}}
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003403}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U+0026;
+}
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U+270C;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003243}}
+body {
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003247}}
+pre code {
+  word-wrap: normal;
+}
+
+/**
+ * Dropcap Sass @include
+ * Use the following Sass @include with any selector you feel necessary.
+ *
+	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
+ *
+ * Extend this object into your custom stylesheet. Let the variables do the work.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003372}}
+html {
+  font: normal 112.5%/1.65 serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003380}}
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  color: #444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003391}}
+small {
+  font-size: 65%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003414}}
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.tera {
+  font-size: 117px;
+  font-size: 6.5rem;
+  margin-bottom: 0.2538461538rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.giga {
+  font-size: 90px;
+  font-size: 5rem;
+  margin-bottom: 0.33rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.mega {
+  font-size: 72px;
+  font-size: 4rem;
+  margin-bottom: 0.4125rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.alpha, h1 {
+  font-size: 123.363469256px;
+  font-size: 6.8535260698rem;
+  margin-bottom: 0.2407519842rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.beta, h2 {
+  font-size: 76.244418576px;
+  font-size: 4.235801032rem;
+  margin-bottom: 0.3895367104rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.gamma, h3 {
+  font-size: 36px;
+  font-size: 2rem;
+  margin-bottom: 0.825rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.delta, h4 {
+  font-size: 29.124px;
+  font-size: 1.618rem;
+  margin-bottom: 1.0197775031rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.epsilon, h5 {
+  font-size: 18px;
+  font-size: 1rem;
+  margin-bottom: 1.65rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
+.zeta, h6 {
+  font-size: 11.1248454883px;
+  font-size: 0.6180469716rem;
+  margin-bottom: 2.6697rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003469}}
+p {
+  margin: auto auto 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003487}}
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003507}}
+pre code {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003512}}
+pre {
+  white-space: pre;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003516}}
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/**
+ * Abbreviations Markup
+ *
+	<abbr title="hyper text markup language">HMTL</abbr>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003532}}
+abbr {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003534}}
+abbr[title]:hover {
+  cursor: help;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003543}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003558}}
+p + .drop-cap {
+  text-indent: 0;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003274}}
+.drop-cap:first-letter {
+  float: left;
+  margin: inherit;
+  padding: inherit;
+  font-size: 4em;
+  font-family: inherit;
+  line-height: 1;
+  text-indent: 0;
+  background: transparent;
+  color: inherit;
+}
+
+/**
+ * Lining Definition Style Markup
+ *
+	<dl class="lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003312}}
+.lining dt,
+.lining dd {
+  display: inline;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003320}}
+.lining dt + dt:before,
+.lining dd + dt:before {
+  content: "\A";
+  white-space: pre;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003328}}
+.lining dd + dd:before {
+  content: ", ";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003332}}
+.lining dd:before {
+  content: ": ";
+  margin-left: -0.2rem;
+}
+
+/**
+ * Dictionary Definition Style Markup
+ *
+	<dl class="dictionary-style">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003340}}
+.dictionary-style dt {
+  display: inline;
+  counter-reset: definitions;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003344}}
+.dictionary-style dt + dt:before {
+  content: ", ";
+  margin-left: -0.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003350}}
+.dictionary-style dd {
+  display: block;
+  counter-increment: definitions;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003353}}
+.dictionary-style dd:before {
+  content: counter(definitions,decimal) ". ";
+}
+
+/**
+ * Blockquote Markup
+ *
+		<figure>
+			<blockquote cite="">
+				<p></p>
+			</blockquote>
+			<figcaption>
+				<cite>
+					<small><a href=""></a></small>
+				</cite>
+			</figcaption>
+		</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Pull Quotes Markup
+ *
+	<aside class="pull-quote">
+		<blockquote>
+			<p></p>
+		</blockquote>
+	</aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003642}}
+.pull-quote {
+  position: relative;
+  padding: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003214}}
+.pull-quote:before, .pull-quote:after {
+  height: 1em;
+  opacity: 0.5;
+  position: absolute;
+  font-size: 4em;
+  color: #dc976e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003222}}
+.pull-quote:before {
+  content: '“';
+  top: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003227}}
+.pull-quote:after {
+  content: '”';
+  bottom: 0;
+  right: 0;
+}
+
+/**
+ * Figures Markup
+ *
+	<figure>
+		<figcaption>
+			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+		</figcaption>
+	</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Footnote Markup : Replace 'X' with your unique number for each footnote
+ *
+	<article>
+		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+		<footer>
+			<ol class="foot-notes">
+				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+			</ol>
+		</footer>
+	</article>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\000031}}
+html {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\000035}}
+body {
+  background-image: -webkit-linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-image: linear-gradient(to   , transparent 0.1em);
+  background-size: 2em;
+  font-family: "Arvo", serif;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000338}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 71.7777777778rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
+  h1 {
+    font-size: 115.6532524275px;
+    font-size: 6.4251806904rem;
+    margin-bottom: 0.2568021165rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
+  h2 {
+    font-size: 71.479142415px;
+    font-size: 3.9710634675rem;
+    margin-bottom: 0.4155058244rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
+  h3 {
+    font-size: 33.75px;
+    font-size: 1.875rem;
+    margin-bottom: 0.88rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
+  h4 {
+    font-size: 27.30375px;
+    font-size: 1.516875rem;
+    margin-bottom: 1.08776267rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
+  h5 {
+    font-size: 16.875px;
+    font-size: 0.9375rem;
+    margin-bottom: 1.76rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
+  h6 {
+    font-size: 10.4295426452px;
+    font-size: 0.5794190358rem;
+    margin-bottom: 2.84768rem;
+  }
+}
+@media (max-width: 66.5555555556rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
+  h1 {
+    font-size: 107.943035599px;
+    font-size: 5.9968353111rem;
+    margin-bottom: 0.2751451248rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
+  h2 {
+    font-size: 66.713866254px;
+    font-size: 3.706325903rem;
+    margin-bottom: 0.4451848119rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
+  h3 {
+    font-size: 31.5px;
+    font-size: 1.75rem;
+    margin-bottom: 0.9428571429rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
+  h4 {
+    font-size: 25.4835px;
+    font-size: 1.41575rem;
+    margin-bottom: 1.1654600035rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
+  h5 {
+    font-size: 15.75px;
+    font-size: 0.875rem;
+    margin-bottom: 1.8857142857rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
+  h6 {
+    font-size: 9.7342398022px;
+    font-size: 0.5407911001rem;
+    margin-bottom: 3.0510857143rem;
+  }
+}
+@media (max-width: 61.3333333333rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
+  h1 {
+    font-size: 100.2328187705px;
+    font-size: 5.5684899317rem;
+    margin-bottom: 0.2963101344rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
+  h2 {
+    font-size: 61.948590093px;
+    font-size: 3.4415883385rem;
+    margin-bottom: 0.4794297974rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
+  h3 {
+    font-size: 29.25px;
+    font-size: 1.625rem;
+    margin-bottom: 1.0153846154rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
+  h4 {
+    font-size: 23.66325px;
+    font-size: 1.314625rem;
+    margin-bottom: 1.255110773rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
+  h5 {
+    font-size: 14.625px;
+    font-size: 0.8125rem;
+    margin-bottom: 2.0307692308rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
+  h6 {
+    font-size: 9.0389369592px;
+    font-size: 0.5021631644rem;
+    margin-bottom: 3.2857846154rem;
+  }
+}
+@media (max-width: 56.1111111111rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
+  h1 {
+    font-size: 92.522601942px;
+    font-size: 5.1401445523rem;
+    margin-bottom: 0.3210026456rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
+  h2 {
+    font-size: 57.183313932px;
+    font-size: 3.176850774rem;
+    margin-bottom: 0.5193822806rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
+  h3 {
+    font-size: 27px;
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
+  h4 {
+    font-size: 21.843px;
+    font-size: 1.2135rem;
+    margin-bottom: 1.3597033375rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
+  h5 {
+    font-size: 13.5px;
+    font-size: 0.75rem;
+    margin-bottom: 2.2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
+  h6 {
+    font-size: 8.3436341162px;
+    font-size: 0.4635352287rem;
+    margin-bottom: 3.5596rem;
+  }
+}
+@media (max-width: 50.8888888889rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
+  h1 {
+    font-size: 84.8123851135px;
+    font-size: 4.711799173rem;
+    margin-bottom: 0.3501847043rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
+  h2 {
+    font-size: 52.418037771px;
+    font-size: 2.9121132095rem;
+    margin-bottom: 0.5665988515rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
+  h3 {
+    font-size: 24.75px;
+    font-size: 1.375rem;
+    margin-bottom: 1.2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
+  h4 {
+    font-size: 20.02275px;
+    font-size: 1.112375rem;
+    margin-bottom: 1.4833127318rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
+  h5 {
+    font-size: 12.375px;
+    font-size: 0.6875rem;
+    margin-bottom: 2.4rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
+  h6 {
+    font-size: 7.6483312732px;
+    font-size: 0.424907293rem;
+    margin-bottom: 3.8832rem;
+  }
+}
+@media (max-width: 45.6666666667rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
+  h1 {
+    font-size: 77.102168285px;
+    font-size: 4.2834537936rem;
+    margin-bottom: 0.3852031747rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
+  h2 {
+    font-size: 47.65276161px;
+    font-size: 2.647375645rem;
+    margin-bottom: 0.6232587367rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
+  h3 {
+    font-size: 22.5px;
+    font-size: 1.25rem;
+    margin-bottom: 1.32rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
+  h4 {
+    font-size: 18.2025px;
+    font-size: 1.01125rem;
+    margin-bottom: 1.6316440049rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
+  h5 {
+    font-size: 11.25px;
+    font-size: 0.625rem;
+    margin-bottom: 2.64rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
+  h6 {
+    font-size: 6.9530284302px;
+    font-size: 0.3862793572rem;
+    margin-bottom: 4.27152rem;
+  }
+}
+@media (max-width: 40.4444444444rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
+  h1 {
+    font-size: 69.3919514565px;
+    font-size: 3.8551084142rem;
+    margin-bottom: 0.4280035274rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
+  h2 {
+    font-size: 42.887485449px;
+    font-size: 2.3826380805rem;
+    margin-bottom: 0.6925097074rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
+  h3 {
+    font-size: 20.25px;
+    font-size: 1.125rem;
+    margin-bottom: 1.4666666667rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
+  h4 {
+    font-size: 16.38225px;
+    font-size: 0.910125rem;
+    margin-bottom: 1.8129377833rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
+  h5 {
+    font-size: 10.125px;
+    font-size: 0.5625rem;
+    margin-bottom: 2.9333333333rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
+  h6 {
+    font-size: 6.2577255871px;
+    font-size: 0.3476514215rem;
+    margin-bottom: 4.7461333333rem;
+  }
+}
+@media (max-width: 35.2222222222rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
+  h1 {
+    font-size: 61.681734628px;
+    font-size: 3.4267630349rem;
+    margin-bottom: 0.4815039684rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
+  h2 {
+    font-size: 38.122209288px;
+    font-size: 2.117900516rem;
+    margin-bottom: 0.7790734208rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
+  h3 {
+    font-size: 18px;
+    font-size: 1rem;
+    margin-bottom: 1.65rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
+  h4 {
+    font-size: 14.562px;
+    font-size: 0.809rem;
+    margin-bottom: 2.0395550062rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
+  h5 {
+    font-size: 9px;
+    font-size: 0.5rem;
+    margin-bottom: 3.3rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
+  h6 {
+    font-size: 5.5624227441px;
+    font-size: 0.3090234858rem;
+    margin-bottom: 5.3394rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000319}}
+p {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000322}}
+p + p {
+  margin-top: 1em;
+}
+
+@media (min-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000329}}
+  #main-content {
+    max-width: 77rem;
+    margin: 2rem 5% 0 5%;
+  }
+}
+@media (max-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000337}}
+  #main-content {
+    margin: 1rem 5%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_footer\.scss}line{font-family:\000031}}
+#site-footer {
+  background-color: #00afd6;
+  color: white;
+  margin: 2rem 0 0 0;
+  padding: 1rem 5%;
+  font-size: 0.85rem;
+}
+@media (min-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_footer\.scss}line{font-family:\000039}}
+  #site-footer > * {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_footer\.scss}line{font-family:\0000315}}
+  #site-footer * + * {
+    margin-left: -5px;
+    text-align: right;
+  }
+}
+@media (max-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_footer\.scss}line{font-family:\0000322}}
+  #site-footer > * {
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_footer\.scss}line{font-family:\0000330}}
+#footer--social a {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_footer\.scss}line{font-family:\0000333}}
+#footer--social a + a {
+  margin-left: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_footer\.scss}line{font-family:\0000338}}
+#footer--social img {
+  max-width: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\000031}}
+#main-nav {
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  background-color: #FEC763;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\000035}}
+#main-nav ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_structure\.scss}line{font-family:\00003119}}
+#main-nav ul li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/_orion\/mixins\/_structure\.scss}line{font-family:\00003123}}
+#main-nav ul li a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000310}}
+#main-nav ul li {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000314}}
+#main-nav ul li:after {
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: #FEC763;
+  z-index: 10;
+  top: 0;
+  border-bottom: 2px solid #eee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000328}}
+#main-nav ul li:hover:after, #main-nav ul li:hover a {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000333}}
+#main-nav ul li a {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  background-color: #FEC763;
+  position: relative;
+  z-index: 15;
+  padding: .5em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000346}}
+#main-nav ul li a:hover, #main-nav ul li a:active {
+  background-color: #FEC763;
+  text-decoration: underline;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000353}}
+#main-nav ul li.active-trail {
+  background-color: #00afd6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000356}}
+#main-nav ul li.active-trail:after, #main-nav ul li.active-trail a {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  background-color: #00afd6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000362}}
+#main-nav ul li.active-trail a {
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000370}}
+#main-nav-sticky-wrapper.is-sticky #main-nav {
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\000031}}
+#siteinfo {
+  background: transparent url("../images/orlando.jpg") 0 0 no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 2px solid #ccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\000039}}
+#siteinfo:after {
+  background-color: rgba(0, 0, 0, 0.1);
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000321}}
+#siteinfo > * {
+  display: inline-block;
+  vertical-align: top;
+  z-index: 8;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000329}}
+#siteinfo figure {
+  width: 38%;
+  height: 100%;
+  margin-right: -5px;
+  padding: 2rem 0 2rem 5%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000336}}
+#siteinfo figure a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000341}}
+#siteinfo figure img {
+  width: 80%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000347}}
+#siteinfo article {
+  width: 62%;
+  color: white;
+  text-shadow: 1px 1px 2px #000;
+  padding: 2rem 5% 2rem 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000354}}
+#siteinfo article h2 {
+  color: #FAC4C4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000358}}
+#siteinfo article p {
+  line-height: 1.3em;
+}
+@media (min-width: 30rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000358}}
+  #siteinfo article p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 40rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000358}}
+  #siteinfo article p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000358}}
+  #siteinfo article p {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 60rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000358}}
+  #siteinfo article p {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 70rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000358}}
+  #siteinfo article p {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 80rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/docroot\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000358}}
+  #siteinfo article p {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=abtheme.css.map */

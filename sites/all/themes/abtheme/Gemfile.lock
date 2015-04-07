@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    breakpoint (2.4.6)
+      sass (~> 3.3.0)
+      sassy-maps (< 1.0.0)
+    sass (3.3.14)
+    sass-globbing (1.1.1)
+      sass (>= 3.1)
+    sassy-maps (0.4.0)
+      sass (~> 3.3)
+    toolkit (2.9.0)
+      sass (~> 3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  breakpoint (~> 2.4.2)
+  sass (~> 3.3.7)
+  sass-globbing (~> 1.1.1)
+  toolkit (~> 2.0)
