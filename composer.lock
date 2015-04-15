@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dfea3c6c9fae0cd178f39dafcf7a03d0",
+    "hash": "7e4907dda9c910590a7474ed3adaaeea",
     "packages": [
         {
             "name": "composer/installers",
@@ -220,16 +220,16 @@
         },
         {
             "name": "keyboardcowboy/drush-sync_tools",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KeyboardCowboy/drush-sync_tools.git",
-                "reference": "373a31a824470fa6027d91f1c9faac2a00985ad5"
+                "reference": "5142d57a04b16ee503704d0bed2b5f22346ee59d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KeyboardCowboy/drush-sync_tools/zipball/373a31a824470fa6027d91f1c9faac2a00985ad5",
-                "reference": "373a31a824470fa6027d91f1c9faac2a00985ad5",
+                "url": "https://api.github.com/repos/KeyboardCowboy/drush-sync_tools/zipball/5142d57a04b16ee503704d0bed2b5f22346ee59d",
+                "reference": "5142d57a04b16ee503704d0bed2b5f22346ee59d",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                 "database",
                 "sync"
             ],
-            "time": "2015-04-03 00:29:01"
+            "time": "2015-04-15 03:25:50"
         },
         {
             "name": "keyboardcowboy/orion",
@@ -301,8 +301,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "davereid/drush-patchfile": 20,
-        "keyboardcowboy/drush-sync_tools": 20
+        "davereid/drush-patchfile": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
