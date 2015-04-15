@@ -9,6 +9,18 @@
     color: $gold;
   }
 
+  svg {
+    path {
+      fill: lighten($blue1, 50%);
+    }
+
+    &.twitter {
+      @include size(50px);
+      padding: 10px;
+      margin-right: 1em;
+    }
+  }
+
   @media ($two-col) {
     > * {
       width: 50%;
