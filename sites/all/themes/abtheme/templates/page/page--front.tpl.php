@@ -12,9 +12,9 @@
       </a>
     </figure>
     <article id="lead-story">
-      <h2>Look Out, Orlando!</h2>
-      <p>The Accessibots are coming to Florida DrupalCamp to give you a lesson on accessibility!</p>
-      <p>April 10-12, 2015</p>
+      <h2>You're Next, LA!</h2>
+      <p>We don't have a session at DrupalCon LA, but we'll be BOFing it up! Come talk accessibility with us!</p>
+      <p>May 11 - 15, 2015</p>
     </article>
   </div>
 </header>

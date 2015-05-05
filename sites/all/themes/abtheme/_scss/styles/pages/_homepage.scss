@@ -1,9 +1,9 @@
 #siteinfo {
-  background: transparent url('../images/orlando.jpg') 0 0 no-repeat;
+  background: transparent url('../images/hero.jpg') 0 0 no-repeat;
   background-size: cover;
-  //height: 400px;
   position: relative;
   border-bottom: 2px solid #ccc;
+  padding-top: 3em;
 
   // Slight opaqueness over image to pop text
   &:after {
@@ -34,7 +34,6 @@
     text-align: center;
 
     a {
-      //@include center(xy);
       display: block;
     }
 
@@ -45,7 +44,6 @@
 
   // News Item
   article {
-    //@include center(y);
     width: 62%;
     color: white;
     text-shadow: 1px 1px 2px #000;

@@ -2,15 +2,17 @@
 $serif: 'Arvo', serif;
 $sans-serif: 'Raleway', sans-serif;
 
+$font-size: 130;
+
 $modular-scale-ratio: $golden;
 $modular-scale-base: 1.0em;
 
-$alpha:   strip_units(modular-scale(4) * 18);
-$beta:    strip_units(modular-scale(3) * 18);
-$gama:    strip_units(modular-scale(2) * 18);
-$delta:   strip_units(modular-scale(1) * 18);
-$epsilon: strip_units(modular-scale(0) * 18);
-$zeta:    strip_units(modular-scale(-1) * 18);
+$alpha:   strip_units(modular-scale(4) * $font-base);
+$beta:    strip_units(modular-scale(3) * $font-base);
+$gama:    strip_units(modular-scale(2) * $font-base);
+$delta:   strip_units(modular-scale(1) * $font-base);
+$epsilon: strip_units(modular-scale(0) * $font-base);
+$zeta:    strip_units(modular-scale(-1) * $font-base);
 
 // Colors
 $gold: #FEC763;
