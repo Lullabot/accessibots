@@ -1,8 +1,14 @@
+# System files
+.idea
+
 # Ignore paths that contain user-generated content.
 /sites/*/files
 /sites/*/private
 /files/*
 /cache
+
+# Local Settings
+/sites/*/settings/local.inc
 
 # ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
 /sites/default/**/files
@@ -30,7 +36,8 @@
 ######################
 .DS_Store*
 ehthumbs.db
-Icon
+Icon
+
 Thumbs.db
 ._*
 
