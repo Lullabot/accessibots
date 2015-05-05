@@ -11,8 +11,6 @@ GEM
       sass (~> 3.3)
     toolkit (2.9.0)
       sass (~> 3.3)
-    zen-grids (1.4)
-      sass (>= 3.1)
 
 PLATFORMS
   ruby
@@ -22,4 +20,3 @@ DEPENDENCIES
   sass (~> 3.3.7)
   sass-globbing (~> 1.1.1)
   toolkit (~> 2.0)
-  zen-grids (~> 1.4)
