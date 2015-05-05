@@ -1,0 +1,51 @@
+// PAGER W/GRADIENT BUTTONS
+// - Pager has individual buttons and uses a slight gradient background.
+%pager-buttons-gradient {
+  @include clearfix;
+  @include o-rem(margin, 1 0);
+  padding: 0;
+
+  li {
+    padding: 0;
+    margin: 0 .1em;
+    list-style: none;
+    display: inline-block;
+
+    &.current {
+      @extend %pager-buttons-gradient-struct;
+      @extend %pager-buttons-gradient-active;
+      box-shadow: inset 0px 1px 0px rgba(white, .8);
+    }
+
+    a {
+      @extend %pager-buttons-gradient-struct;
+      @include linear-gradient(#fff, #eee);
+      box-shadow: inset 0px 1px 0px rgba(white, .8), 0px 1px 3px rgba(black, .1);
+      display: block;
+
+      &:hover, &:active {
+        @extend %pager-buttons-gradient-active;
+        box-shadow: inset 0px 1px 0px rgba(white, .8);
+      }
+    }
+
+    li:last-child {
+      &.current, a {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+//- Helper
+%pager-buttons-gradient-struct {
+  padding: .25em .5em;
+  border: 1px solid #ccc;
+  border-radius: .25em;
+  line-height: normal;
+}
+
+//- Helper
+%pager-buttons-gradient-active {
+  @include linear-gradient(darken(#fff, 5%), darken(#eee, 5%));
+}

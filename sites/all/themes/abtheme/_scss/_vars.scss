@@ -1,0 +1,38 @@
+// Fonts
+$serif: 'Arvo', serif;
+$sans-serif: 'Raleway', sans-serif;
+
+$modular-scale-ratio: $golden;
+$modular-scale-base: 1.0em;
+
+$alpha:   strip_units(modular-scale(4) * 18);
+$beta:    strip_units(modular-scale(3) * 18);
+$gama:    strip_units(modular-scale(2) * 18);
+$delta:   strip_units(modular-scale(1) * 18);
+$epsilon: strip_units(modular-scale(0) * 18);
+$zeta:    strip_units(modular-scale(-1) * 18);
+
+// Colors
+$gold: #FEC763;
+$pink1: #FAC4C4;
+$pink2: #F8A9AE;
+$pink3: #F37384;
+$blue1: rgb(0, 175, 214);
+
+// Typeplate Overrides
+$paragraph-vertical-whitespace: true;
+
+// Structure
+$page-margin: 5%;
+
+$body-max-width: 52rem;
+$body-min-width: 25rem;
+$side-max-width: 25rem;
+$side-min-width: 25rem;
+
+$two-col-max: $body-max-width + $side-max-width;
+$two-col-min: $body-min-width + $side-min-width;
+
+// Breakpoints
+$two-col: "min-width: " + $two-col-min;
+$one-col: "max-width: " + $two-col-min;

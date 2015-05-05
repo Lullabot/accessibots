@@ -1,0 +1,49 @@
+// Transition text between two colors.
+// - $c1: Color 1
+// - $c2: Color 2
+// - $speed: Transition speed for one complete cycle.
+// - $ease: Easing type.
+@mixin color-fade($c1, $c2, $speed: 1s, $ease: linear) {
+  @include animation(colorFade $speed infinite $ease);
+  @include keyframes(colorFade) {
+    0%   {color: $c1;}
+    50%  {color: $c2;}
+    100% {color: $c1;}
+  }
+}
+
+// Rotate an element indefinitely.
+// - $speed: The time to complete one full rotation.
+// - $dir: The direction to rotate. [cw | ccw]
+@mixin spin($speed: 2s, $dir: cw) {
+  @include animation(_spin $speed infinite linear);
+  @include keyframes(_spin) {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+
+    }
+    100% {
+      -webkit-transform:rotate(if($dir == cw, 359deg, -359deg));
+      transform:rotate(if($dir == cw, 359deg, -359deg));
+    }
+  }
+}
+
+// Slide an element in from the left or right
+// - $dir: The direction to enter from.
+// - $speed: The duration of the animation.
+// - $ease: Easing to use.
+@mixin slide($dir: left, $speed: .5s, $ease: ease-out) {
+  @include animation(_slide-#{$dir} $speed $ease);
+}
+
+// Keyframes
+@include keyframes(_slide-left) {
+  0% {@include transform(translateX(-100%));}
+  100% {@include transform(translateX(0));}
+}
+@include keyframes(_slide-right) {
+  0% {@include transform(translateX(100%));}
+  100% {@include transform(translateX(0));}
+}

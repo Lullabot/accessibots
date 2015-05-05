@@ -1,0 +1,16 @@
+{
+  "name": "keyboardcowboy/drush-sync_tools",
+  "type": "drupal-drush",
+  "description": "Drush commands to aid in syncing and preparing a local environment.",
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "~1.0"
+  },
+  "license": "GPL-2.0+",
+  "authors": [{
+    "name": "Chris Albrecht",
+    "email": "chris@lullabot.com"
+  }],
+  "keywords": ["drush","database","sync"],
+  "homepage": "https://github.com/KeyboardCowboy/drush-sync_tools"
+}

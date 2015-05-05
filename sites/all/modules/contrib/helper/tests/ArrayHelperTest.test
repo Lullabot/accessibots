@@ -1,0 +1,101 @@
+<?php
+
+include __DIR__ . '/../lib/ArrayHelper.php';
+
+class ArrayHelperTest extends DrupalUnitTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => 'ArrayHelper',
+      'description' => 'Tests for the ArrayHelper class.',
+      'group' => 'Helper',
+    );
+  }
+
+  function testNestedValue() {
+    $input = array(
+      0 => array('test' => 'foo', 'keys' => array('first', 'a')),
+      1 => (object) array('test' => 'bar', 'keys' => array('second', 'b')),
+      2 => new ArrayHelperTestObject(array('test' => 'foo', 'keys' => array('third', 'c'))),
+    );
+
+    $this->assertIdentical(ArrayHelper::filterByNestedValue($input, array('test'), 'foo'),
+      array(0 => $input[0], 2 => $input[2])
+    );
+    $this->assertIdentical(ArrayHelper::filterByNestedValue($input, array('test'), 'bar'),
+      array(1 => $input[1])
+    );
+    $this->assertIdentical(ArrayHelper::filterByNestedValue($input, array('test'), 'ferzle'),
+      array()
+    );
+    $this->assertIdentical(ArrayHelper::extractNestedValuesToArray($input, array('test')),
+      array(0 => 'foo', 1 => 'bar', 2 => 'foo')
+    );
+    $this->assertIdentical(ArrayHelper::extractNestedValuesToArray($input, array('test'), array('keys', 0)),
+      array('first' => 'foo', 'second' => 'bar', 'third' => 'foo')
+    );
+    $this->assertIdentical(ArrayHelper::extractNestedValuesToArray($input, array('test'), array('keys', 1)),
+      array('a' => 'foo', 'b' => 'bar', 'c' => 'foo')
+    );
+    $this->assertIdentical(ArrayHelper::extractNestedValuesToArray($input, array('invalid')),
+      array()
+    );
+  }
+
+  function testMapKeys() {
+    $input = array(
+      'a' => 1,
+      'b' => '1',
+      'c' => 1,
+      0 => '2',
+      1 => 2,
+    );
+    $expected = array(
+      '#a' => 1,
+      '#b' => '1',
+      '#c' => 1,
+      '#0' => '2',
+      '#1' => 2,
+    );
+
+    $result = ArrayHelper::mapKeys(function($value) {
+      return '#' . $value;
+    }, $input);
+    $this->assertIdentical($result, $expected);
+  }
+
+  function testFilterKeys() {
+    $input = array_fill_keys(range(0, 10), 'test');
+    $expected1 = array_fill_keys(array(0, 3, 6, 9), 'test');
+    $expected2 = array_fill_keys(array(1, 2, 4, 5, 7, 8, 10), 'test');
+
+    $result = ArrayHelper::filterKeys($input, function($value) {
+      return $value % 3 === 0;
+    }, $input);
+    $this->assertIdentical($result, $expected1);
+
+    $result = ArrayHelper::filterKeys($input, function($value) {
+      return $value % 3;
+    }, $input);
+    $this->assertIdentical($result, $expected2);
+  }
+
+}
+
+class ArrayHelperTestObject {
+  private $data;
+
+  public function __construct(array $data = array()) {
+    $this->data = $data;
+  }
+
+  public function __get($key) {
+    if (array_key_exists($key, $this->data)) {
+      return $this->data[$key];
+    }
+  }
+
+  public function __set($key, $value) {
+    $this->data[$key] = $value;
+  }
+}

@@ -1,0 +1,69 @@
+// Wireframing tools
+
+// Apply a label to the element for identification on the screen
+@mixin wiretag ($label) {
+  @if $proto-tags {
+    position: relative;
+
+    &:before {
+      content: "#{$label}";
+      font-size: 10pt;
+      position: absolute;
+      top: 0;
+      right: 0;
+      float: right;
+      padding: .25em .5em;
+      border: {
+        left: 1px dotted;
+        bottom: 1px dotted;
+      }
+      border-bottom-left-radius: .5em;
+      background-color: rgba(black, .6);
+      color: white;
+    }
+
+    &:hover {
+      &:before {
+        z-index: 99;
+        background-color: rgba(black, 1);
+      }
+    }
+  }
+}
+
+// Fill in an element on the page.
+@mixin wirebox ($color: null, $border: false) {
+  // If no color was specified, grab the default.
+  @if $color == null {
+    $color: $proto-color;
+  }
+
+  @if $proto-borders or $border {
+    border: 1px dashed $color;
+  }
+  background-color: rgba($color, .2);
+}
+
+// Set a default size on an element
+@mixin wiresize ($w: null, $h: null) {
+  @if $w != null {min-width: $w;}
+  @if $h != null {min-height: $h;}
+}
+
+// Add a borders to separate vertically stacked elements
+@mixin d-vert {
+  border-bottom: 1px dashed;
+  &:last-child {border-bottom: none;}
+}
+
+// Add borders to separate horizontally stacked elements
+@mixin d-horz {
+  border-right: 1px dashed;
+  &:last-child {border-right: none;}
+}
+
+// Style a link to look like a button
+@mixin proto-button {
+  @include button('simple', $proto-color);
+  @include o-rem(font-size, 1);
+}

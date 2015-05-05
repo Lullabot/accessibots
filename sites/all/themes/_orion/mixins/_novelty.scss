@@ -1,0 +1,17 @@
+// Abstract novelty effects
+
+// Apply a background to simulate lined paper.
+// - height: The line height or rule of the lined paper.
+// - color: The line color;
+// - extra: Number of extra, blank lines to add after the text.
+// - thick: Scale up the line thickness.
+@mixin lined-paper($height, $color, $extra: 0, $thick: 1) {
+  $thickness: percentage(1 - ((.05 * $thick) / ($height / ($height * 0 + 1))));
+
+  @include linear-gradient(top, transparent 0, transparent $thickness, $color $thickness, $color 100%);
+  background-repeat: repeat-y;
+  background-size: 100% $height;
+  background-position: 0 (-.15 * $height);
+  line-height: $height;
+  padding-bottom: $height * $extra;
+}
