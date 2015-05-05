@@ -1,2 +1,0 @@
-!function($){Drupal.behaviors.abGlobal={attach:function(t){this.stickyNav(),this.convertSVG()},stickyNav:function(){$("#main-nav").sticky()},convertSVG:function(){$("img[src$='svg']").each(function(){var t=$(this),a=t.attr("id"),n=t.attr("class"),i=t.attr("src");$.get(i,function(i){var c=$(i).find("svg");"undefined"!=typeof a&&(c=c.attr("id",a)),"undefined"!=typeof n&&(c=c.attr("class",n+" replaced-svg")),c=c.removeAttr("xmlns:a"),t.replaceWith(c)},"xml")})}}}(jQuery);
-//# sourceMappingURL=./abtheme-min.js.map
