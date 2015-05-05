@@ -26,7 +26,7 @@ if (!empty($_ENV['SITE_ENVIRONMENT'])) {
  * can be different per environment and because they should never exist in a
  * file that exists in a git/svn repository for extra security.
  */
-$settings['local'] = "../settings.local.php";
+$settings['local'] = __DIR__ . "/settings.local";
 
 foreach ($settings as $file) {
   if (file_exists($file)) {
