@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Accessibots Home feature.
+ */
+
+include_once 'accessibots_home.features.inc';
