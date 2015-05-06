@@ -1,0 +1,15 @@
+name = Accessibots Simple Page
+description = Basic content pages.
+core = 7.x
+package = Accessibots
+version = 7.x-1.0
+project = accessibots_simple_page
+dependencies[] = abots_global
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = page_manager
+dependencies[] = text
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[field_instance][] = node-simple_page-body
+features[page_manager_handlers][] = node_view__simple_page

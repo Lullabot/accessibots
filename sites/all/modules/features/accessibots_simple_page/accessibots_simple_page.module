@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Accessibots Simple Page feature.
+ */
+
+include_once 'accessibots_simple_page.features.inc';
