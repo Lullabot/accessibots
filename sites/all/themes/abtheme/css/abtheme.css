@@ -7,27 +7,15 @@
     -webkit-transform: translateX(0);
   }
 }
-@-moz-keyframes _slide-left {
-  0% {
-    -moz-transform: translateX(-100%);
-  }
-  100% {
-    -moz-transform: translateX(0);
-  }
-}
 @keyframes _slide-left {
   0% {
     -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -39,27 +27,15 @@
     -webkit-transform: translateX(0);
   }
 }
-@-moz-keyframes _slide-right {
-  0% {
-    -moz-transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(0);
-  }
-}
 @keyframes _slide-right {
   0% {
     -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
     transform: translateX(100%);
   }
   100% {
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -238,7 +214,6 @@ dfn {
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/styles\/_normalize\.scss}line{font-family:\00003152}}
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -454,8 +429,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -564,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
 .tera {
   font-size: 117px;
   font-size: 6.5rem;
-  margin-bottom: 0.25385rem;
+  margin-bottom: 0.2538461538rem;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
@@ -583,16 +556,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
 .alpha, h1 {
-  font-size: 123.36347px;
-  font-size: 6.85353rem;
-  margin-bottom: 0.24075rem;
+  font-size: 123.363469256px;
+  font-size: 6.8535260698rem;
+  margin-bottom: 0.2407519842rem;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
 .beta, h2 {
-  font-size: 76.24442px;
-  font-size: 4.2358rem;
-  margin-bottom: 0.38954rem;
+  font-size: 76.244418576px;
+  font-size: 4.235801032rem;
+  margin-bottom: 0.3895367104rem;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
@@ -606,7 +579,7 @@ h1, h2, h3, h4, h5, h6 {
 .delta, h4 {
   font-size: 29.124px;
   font-size: 1.618rem;
-  margin-bottom: 1.01978rem;
+  margin-bottom: 1.0197775031rem;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
@@ -618,8 +591,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/styles\/_typeplate\.scss}line{font-family:\00003429}}
 .zeta, h6 {
-  font-size: 11.12485px;
-  font-size: 0.61805rem;
+  font-size: 11.1248454883px;
+  font-size: 0.6180469716rem;
   margin-bottom: 2.6697rem;
 }
 
@@ -868,9 +841,6 @@ html {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\000035}}
 body {
-  background-image: -webkit-linear-gradient(#f9f9f9 0.1em, transparent 0.1em);
-  background-image: linear-gradient(to   , transparent 0.1em);
-  background-size: 40px;
   font-family: "Arvo", serif;
   height: 100%;
 }
@@ -882,19 +852,19 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38);
 }
 
-@media (max-width: 71.77778rem) {
+@media (max-width: 71.7777777778rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
   h1 {
-    font-size: 115.65325px;
-    font-size: 6.42518rem;
-    margin-bottom: 0.2568rem;
+    font-size: 115.6532524275px;
+    font-size: 6.4251806904rem;
+    margin-bottom: 0.2568021165rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
   h2 {
-    font-size: 71.47914px;
-    font-size: 3.97106rem;
-    margin-bottom: 0.41551rem;
+    font-size: 71.479142415px;
+    font-size: 3.9710634675rem;
+    margin-bottom: 0.4155058244rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
@@ -907,8 +877,8 @@ h1, h2, h3, h4, h5, h6 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
   h4 {
     font-size: 27.30375px;
-    font-size: 1.51688rem;
-    margin-bottom: 1.08776rem;
+    font-size: 1.516875rem;
+    margin-bottom: 1.08776267rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
@@ -920,110 +890,110 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
   h6 {
-    font-size: 10.42954px;
-    font-size: 0.57942rem;
+    font-size: 10.4295426452px;
+    font-size: 0.5794190358rem;
     margin-bottom: 2.84768rem;
   }
 }
-@media (max-width: 66.55556rem) {
+@media (max-width: 66.5555555556rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
   h1 {
-    font-size: 107.94304px;
-    font-size: 5.99684rem;
-    margin-bottom: 0.27515rem;
+    font-size: 107.943035599px;
+    font-size: 5.9968353111rem;
+    margin-bottom: 0.2751451248rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
   h2 {
-    font-size: 66.71387px;
-    font-size: 3.70633rem;
-    margin-bottom: 0.44518rem;
+    font-size: 66.713866254px;
+    font-size: 3.706325903rem;
+    margin-bottom: 0.4451848119rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
   h3 {
     font-size: 31.5px;
     font-size: 1.75rem;
-    margin-bottom: 0.94286rem;
+    margin-bottom: 0.9428571429rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
   h4 {
     font-size: 25.4835px;
     font-size: 1.41575rem;
-    margin-bottom: 1.16546rem;
+    margin-bottom: 1.1654600035rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
   h5 {
     font-size: 15.75px;
     font-size: 0.875rem;
-    margin-bottom: 1.88571rem;
+    margin-bottom: 1.8857142857rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
   h6 {
-    font-size: 9.73424px;
-    font-size: 0.54079rem;
-    margin-bottom: 3.05109rem;
+    font-size: 9.7342398022px;
+    font-size: 0.5407911001rem;
+    margin-bottom: 3.0510857143rem;
   }
 }
-@media (max-width: 61.33333rem) {
+@media (max-width: 61.3333333333rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
   h1 {
-    font-size: 100.23282px;
-    font-size: 5.56849rem;
-    margin-bottom: 0.29631rem;
+    font-size: 100.2328187705px;
+    font-size: 5.5684899317rem;
+    margin-bottom: 0.2963101344rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
   h2 {
-    font-size: 61.94859px;
-    font-size: 3.44159rem;
-    margin-bottom: 0.47943rem;
+    font-size: 61.948590093px;
+    font-size: 3.4415883385rem;
+    margin-bottom: 0.4794297974rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
   h3 {
     font-size: 29.25px;
     font-size: 1.625rem;
-    margin-bottom: 1.01538rem;
+    margin-bottom: 1.0153846154rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
   h4 {
     font-size: 23.66325px;
-    font-size: 1.31463rem;
-    margin-bottom: 1.25511rem;
+    font-size: 1.314625rem;
+    margin-bottom: 1.255110773rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
   h5 {
     font-size: 14.625px;
     font-size: 0.8125rem;
-    margin-bottom: 2.03077rem;
+    margin-bottom: 2.0307692308rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
   h6 {
-    font-size: 9.03894px;
-    font-size: 0.50216rem;
-    margin-bottom: 3.28578rem;
+    font-size: 9.0389369592px;
+    font-size: 0.5021631644rem;
+    margin-bottom: 3.2857846154rem;
   }
 }
-@media (max-width: 56.11111rem) {
+@media (max-width: 56.1111111111rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
   h1 {
-    font-size: 92.5226px;
-    font-size: 5.14014rem;
-    margin-bottom: 0.321rem;
+    font-size: 92.522601942px;
+    font-size: 5.1401445523rem;
+    margin-bottom: 0.3210026456rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
   h2 {
-    font-size: 57.18331px;
-    font-size: 3.17685rem;
-    margin-bottom: 0.51938rem;
+    font-size: 57.183313932px;
+    font-size: 3.176850774rem;
+    margin-bottom: 0.5193822806rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
@@ -1037,7 +1007,7 @@ h1, h2, h3, h4, h5, h6 {
   h4 {
     font-size: 21.843px;
     font-size: 1.2135rem;
-    margin-bottom: 1.3597rem;
+    margin-bottom: 1.3597033375rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
@@ -1049,24 +1019,24 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
   h6 {
-    font-size: 8.34363px;
-    font-size: 0.46354rem;
+    font-size: 8.3436341162px;
+    font-size: 0.4635352287rem;
     margin-bottom: 3.5596rem;
   }
 }
-@media (max-width: 50.88889rem) {
+@media (max-width: 50.8888888889rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
   h1 {
-    font-size: 84.81239px;
-    font-size: 4.7118rem;
-    margin-bottom: 0.35018rem;
+    font-size: 84.8123851135px;
+    font-size: 4.711799173rem;
+    margin-bottom: 0.3501847043rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
   h2 {
-    font-size: 52.41804px;
-    font-size: 2.91211rem;
-    margin-bottom: 0.5666rem;
+    font-size: 52.418037771px;
+    font-size: 2.9121132095rem;
+    margin-bottom: 0.5665988515rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
@@ -1079,8 +1049,8 @@ h1, h2, h3, h4, h5, h6 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
   h4 {
     font-size: 20.02275px;
-    font-size: 1.11238rem;
-    margin-bottom: 1.48331rem;
+    font-size: 1.112375rem;
+    margin-bottom: 1.4833127318rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
@@ -1092,24 +1062,24 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
   h6 {
-    font-size: 7.64833px;
-    font-size: 0.42491rem;
+    font-size: 7.6483312732px;
+    font-size: 0.424907293rem;
     margin-bottom: 3.8832rem;
   }
 }
-@media (max-width: 45.66667rem) {
+@media (max-width: 45.6666666667rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
   h1 {
-    font-size: 77.10217px;
-    font-size: 4.28345rem;
-    margin-bottom: 0.3852rem;
+    font-size: 77.102168285px;
+    font-size: 4.2834537936rem;
+    margin-bottom: 0.3852031747rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
   h2 {
-    font-size: 47.65276px;
-    font-size: 2.64738rem;
-    margin-bottom: 0.62326rem;
+    font-size: 47.65276161px;
+    font-size: 2.647375645rem;
+    margin-bottom: 0.6232587367rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
@@ -1123,7 +1093,7 @@ h1, h2, h3, h4, h5, h6 {
   h4 {
     font-size: 18.2025px;
     font-size: 1.01125rem;
-    margin-bottom: 1.63164rem;
+    margin-bottom: 1.6316440049rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
@@ -1135,67 +1105,67 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
   h6 {
-    font-size: 6.95303px;
-    font-size: 0.38628rem;
+    font-size: 6.9530284302px;
+    font-size: 0.3862793572rem;
     margin-bottom: 4.27152rem;
   }
 }
-@media (max-width: 40.44444rem) {
+@media (max-width: 40.4444444444rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
   h1 {
-    font-size: 69.39195px;
-    font-size: 3.85511rem;
-    margin-bottom: 0.428rem;
+    font-size: 69.3919514565px;
+    font-size: 3.8551084142rem;
+    margin-bottom: 0.4280035274rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
   h2 {
-    font-size: 42.88749px;
-    font-size: 2.38264rem;
-    margin-bottom: 0.69251rem;
+    font-size: 42.887485449px;
+    font-size: 2.3826380805rem;
+    margin-bottom: 0.6925097074rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
   h3 {
     font-size: 20.25px;
     font-size: 1.125rem;
-    margin-bottom: 1.46667rem;
+    margin-bottom: 1.4666666667rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000348}}
   h4 {
     font-size: 16.38225px;
-    font-size: 0.91013rem;
-    margin-bottom: 1.81294rem;
+    font-size: 0.910125rem;
+    margin-bottom: 1.8129377833rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
   h5 {
     font-size: 10.125px;
     font-size: 0.5625rem;
-    margin-bottom: 2.93333rem;
+    margin-bottom: 2.9333333333rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
   h6 {
-    font-size: 6.25773px;
-    font-size: 0.34765rem;
-    margin-bottom: 4.74613rem;
+    font-size: 6.2577255871px;
+    font-size: 0.3476514215rem;
+    margin-bottom: 4.7461333333rem;
   }
 }
-@media (max-width: 35.22222rem) {
+@media (max-width: 35.2222222222rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000345}}
   h1 {
-    font-size: 61.68173px;
-    font-size: 3.42676rem;
-    margin-bottom: 0.4815rem;
+    font-size: 61.681734628px;
+    font-size: 3.4267630349rem;
+    margin-bottom: 0.4815039684rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000346}}
   h2 {
-    font-size: 38.12221px;
-    font-size: 2.1179rem;
-    margin-bottom: 0.77907rem;
+    font-size: 38.122209288px;
+    font-size: 2.117900516rem;
+    margin-bottom: 0.7790734208rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000347}}
@@ -1209,7 +1179,7 @@ h1, h2, h3, h4, h5, h6 {
   h4 {
     font-size: 14.562px;
     font-size: 0.809rem;
-    margin-bottom: 2.03956rem;
+    margin-bottom: 2.0395550062rem;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000349}}
@@ -1221,38 +1191,33 @@ h1, h2, h3, h4, h5, h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_typography\.scss}line{font-family:\0000350}}
   h6 {
-    font-size: 5.56242px;
-    font-size: 0.30902rem;
+    font-size: 5.5624227441px;
+    font-size: 0.3090234858rem;
     margin-bottom: 5.3394rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000319}}
 p {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000323}}
 p + p {
   margin-top: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000330}}
 body:not(.page-front) .page {
   margin-top: 4rem;
 }
 
-@media (min-width: 50rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000339}}
-  #main-content {
-    max-width: 77rem;
-    margin: 2rem 5% 0 5%;
-  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000337}}
+#page--content .panel--pane .inner {
+  max-width: 52em;
+  padding: 5em 1em;
+  text-align: center;
+  margin: 0 auto;
 }
-@media (max-width: 50rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000347}}
-  #main-content {
-    margin: 1rem 5%;
-  }
-}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_footer\.scss}line{font-family:\000031}}
 #site-footer {
   background-color: #00afd6;
@@ -1324,7 +1289,6 @@ body:not(.page-front) .page {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-  -moz-box-align: stretch;
   box-align: stretch;
   -webkit-align-items: stretch;
   -moz-align-items: stretch;
@@ -1333,17 +1297,14 @@ body:not(.page-front) .page {
   align-items: stretch;
   -ms-flex-align: stretch;
   -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
   box-orient: horizontal;
   -webkit-box-direction: normal;
-  -moz-box-direction: normal;
   box-direction: normal;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-pack: start;
-  -moz-box-pack: start;
   box-pack: start;
   -webkit-justify-content: flex-start;
   -moz-justify-content: flex-start;
@@ -1357,7 +1318,6 @@ body:not(.page-front) .page {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/_structure\.scss}line{font-family:\00003119}}
 #main-nav ul li {
   -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
@@ -1376,7 +1336,6 @@ body:not(.page-front) .page {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000312}}
 #main-nav ul li a {
   -webkit-transition: all 0.1s ease-in;
-  -moz-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
   background-color: #FEC763;
   position: absolute;
@@ -1397,9 +1356,7 @@ body:not(.page-front) .page {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000330}}
 #main-nav ul li a:hover, #main-nav ul li a:active {
   -webkit-transform: translateY(0.5em);
-  -moz-transform: translateY(0.5em);
   -ms-transform: translateY(0.5em);
-  -o-transform: translateY(0.5em);
   transform: translateY(0.5em);
   background-color: #FEC763;
   text-decoration: underline;
@@ -1407,9 +1364,7 @@ body:not(.page-front) .page {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000338}}
 #main-nav ul li.active-trail a {
   -webkit-transform: translateY(0.5em);
-  -moz-transform: translateY(0.5em);
   -ms-transform: translateY(0.5em);
-  -o-transform: translateY(0.5em);
   transform: translateY(0.5em);
   background-color: #00afd6;
 }
@@ -1435,13 +1390,14 @@ body.page-home #main-nav-sticky-wrapper #main-nav a:hover {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\000031}}
 #siteinfo {
-  background: transparent url("../images/hero.jpg") 0 0 no-repeat;
+  background-repeat: no-repeat;
+  background-position: top left;
   background-size: cover;
   position: relative;
   border-bottom: 2px solid #ccc;
   padding-top: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000310}}
 #siteinfo:after {
   background-color: rgba(0, 0, 0, 0.1);
   content: '';
@@ -1453,14 +1409,14 @@ body.page-home #main-nav-sticky-wrapper #main-nav a:hover {
   left: 0;
   z-index: 5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000322}}
 #siteinfo > * {
   display: inline-block;
   vertical-align: top;
   z-index: 8;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000330}}
 #siteinfo figure {
   width: 38%;
   height: 100%;
@@ -1468,61 +1424,57 @@ body.page-home #main-nav-sticky-wrapper #main-nav a:hover {
   padding: 2rem 0 2rem 5%;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000337}}
 #siteinfo figure a {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000340}}
-#siteinfo figure img {
-  width: 80%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000343}}
 #siteinfo article {
   width: 62%;
   color: white;
   text-shadow: 1px 1px 2px #000;
   padding: 2rem 5% 2rem 1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000349}}
 #siteinfo article h2 {
   color: #FAC4C4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000353}}
 #siteinfo article p {
   line-height: 1.3em;
 }
 @media (min-width: 30rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000353}}
   #siteinfo article p {
     font-size: 1em;
   }
 }
 @media (min-width: 40rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000353}}
   #siteinfo article p {
     font-size: 1.2em;
   }
 }
 @media (min-width: 50rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000353}}
   #siteinfo article p {
     font-size: 1.4em;
   }
 }
 @media (min-width: 60rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000353}}
   #siteinfo article p {
     font-size: 1.6em;
   }
 }
 @media (min-width: 70rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000353}}
   #siteinfo article p {
     font-size: 1.8em;
   }
 }
 @media (min-width: 80rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000353}}
   #siteinfo article p {
     font-size: 2em;
   }

@@ -5,6 +5,7 @@
  * @param $vars
  */
 function abtheme_preprocess(&$vars, $hook) {
+  //dpm($hook);
   switch ($hook) {
     case 'cbase_panel_golden':
       // Load the messages.
@@ -51,4 +52,15 @@ function abtheme_preprocess(&$vars, $hook) {
  */
 function abtheme_preprocess_page(&$vars) {
   $vars['main_menu'] = menu_tree('main-menu');
+}
+
+/**
+ * Implements template_preprocess_node().
+ * @param $vars
+ */
+function abtheme_preprocess_node(&$vars) {
+  $vars['background_image_path'] =
+    !empty($vars['field_background_image']['und'][0]['uri'])
+    ? file_create_url($vars['field_background_image']['und'][0]['uri'])
+    : '';
 }

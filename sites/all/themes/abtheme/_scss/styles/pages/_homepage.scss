@@ -1,5 +1,6 @@
 #siteinfo {
-  background: transparent url('../images/hero.jpg') 0 0 no-repeat;
+  background-repeat: no-repeat;
+  background-position: top left;
   background-size: cover;
   position: relative;
   border-bottom: 2px solid #ccc;
@@ -35,10 +36,6 @@
 
     a {
       display: block;
-    }
-
-    img {
-      width: 80%;
     }
   }
 

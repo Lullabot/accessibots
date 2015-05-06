@@ -3,8 +3,6 @@ html {
 }
 
 body {
-  @include background-image(linear-gradient(#f9f9f9 .1em, transparent .1em));
-  background-size: 40px;
   font-family: $serif;
   height: 100%;
 }
@@ -34,17 +32,13 @@ body:not(.page-front) {
   }
 }
 
-// Two Col Layout
-@media($two-col) {
-  #main-content {
-    max-width: $two-col-max;
-    margin: 2rem 5% 0 $page-margin;
-  }
-}
-
-// Collapsed to One Col
-@media($one-col) {
-  #main-content {
-    margin: 1rem $page-margin;
+#page--content {
+  .panel--pane {
+    .inner {
+      max-width: 52em;
+      padding: 5em 1em;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 }

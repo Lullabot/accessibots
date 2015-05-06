@@ -54,7 +54,7 @@ function accessibots_home_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'cbase_golden';
+  $display->layout = 'ab_onecol';
   $display->layout_settings = array(
     'golden_main_position' => 'left',
   );
@@ -67,6 +67,8 @@ function accessibots_home_default_page_manager_pages() {
       'first' => NULL,
       'second' => NULL,
       'bottom' => NULL,
+      'header' => NULL,
+      'main' => NULL,
     ),
   );
   $display->cache = array();
@@ -75,8 +77,56 @@ function accessibots_home_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-5c70c852-8c25-4f71-b839-1ce13a82b717';
+    $pane->panel = 'header';
+    $pane->type = 'node';
+    $pane->subtype = 'node';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'nid' => '2',
+      'links' => 0,
+      'leave_node_title' => 1,
+      'identifier' => '',
+      'build_mode' => 'home_page_announcement',
+      'link_node_title' => 0,
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '5c70c852-8c25-4f71-b839-1ce13a82b717';
+    $display->content['new-5c70c852-8c25-4f71-b839-1ce13a82b717'] = $pane;
+    $display->panels['header'][0] = 'new-5c70c852-8c25-4f71-b839-1ce13a82b717';
+    $pane = new stdClass();
+    $pane->pid = 'new-5bb6221b-fc6b-4a37-93ae-da1973ac09d3';
+    $pane->panel = 'main';
+    $pane->type = 'page_messages';
+    $pane->subtype = 'page_messages';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '5bb6221b-fc6b-4a37-93ae-da1973ac09d3';
+    $display->content['new-5bb6221b-fc6b-4a37-93ae-da1973ac09d3'] = $pane;
+    $display->panels['main'][0] = 'new-5bb6221b-fc6b-4a37-93ae-da1973ac09d3';
+    $pane = new stdClass();
     $pane->pid = 'new-8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa';
-    $pane->panel = 'first';
+    $pane->panel = 'main';
     $pane->type = 'node';
     $pane->subtype = 'node';
     $pane->shown = TRUE;
@@ -98,34 +148,11 @@ function accessibots_home_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa';
     $display->content['new-8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa'] = $pane;
-    $display->panels['first'][0] = 'new-8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa';
-    $pane = new stdClass();
-    $pane->pid = 'new-017df947-2ffa-40f3-9630-15adecb49d73';
-    $pane->panel = 'second';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-accessibots-twitter-feed';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '017df947-2ffa-40f3-9630-15adecb49d73';
-    $display->content['new-017df947-2ffa-40f3-9630-15adecb49d73'] = $pane;
-    $display->panels['second'][0] = 'new-017df947-2ffa-40f3-9630-15adecb49d73';
+    $display->panels['main'][1] = 'new-8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa';
   $handler->conf['display'] = $display;
