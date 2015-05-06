@@ -1206,15 +1206,9 @@ p + p {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000330}}
-body:not(.page-front) .page {
-  margin-top: 4rem;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000337}}
 #page--content .panel--pane .inner {
   max-width: 52em;
   padding: 5em 1em;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -1478,6 +1472,22 @@ body.page-home #main-nav-sticky-wrapper #main-nav a:hover {
   #siteinfo article p {
     font-size: 2em;
   }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000366}}
+body.page-home #page--content .panel--pane .inner {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_non-homepage\.scss}line{font-family:\000033}}
+body:not(.page-home) #site-header {
+  background-color: lightblue;
+  text-align: center;
+  padding-bottom: 3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_non-homepage\.scss}line{font-family:\000039}}
+body:not(.page-home) h1 {
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=abtheme.css.map */

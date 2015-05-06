@@ -25,19 +25,11 @@ p {
   }
 }
 
-// All pages except home page.
-body:not(.page-front) {
-  .page {
-    margin-top: 4rem;
-  }
-}
-
 #page--content {
   .panel--pane {
     .inner {
       max-width: 52em;
       padding: 5em 1em;
-      text-align: center;
       margin: 0 auto;
     }
   }
