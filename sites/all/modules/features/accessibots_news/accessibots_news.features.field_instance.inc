@@ -24,6 +24,15 @@ function accessibots_news_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'home_page_announcement' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -66,6 +75,12 @@ function accessibots_news_field_default_field_instances() {
         'settings' => array(),
         'type' => 'file_default',
         'weight' => 3,
+      ),
+      'home_page_announcement' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -111,6 +126,12 @@ function accessibots_news_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 1,
+      ),
+      'home_page_announcement' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -161,6 +182,16 @@ function accessibots_news_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 2,
+      ),
+      'home_page_announcement' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',

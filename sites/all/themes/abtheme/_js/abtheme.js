@@ -5,10 +5,18 @@
      */
     attach: function(context) {
       // Make the header sticky
-      this.stickyNav();
+      //this.stickyNav();
+
+      this.toggleNav();
 
       // Convert SVG Images
       this.convertSVG();
+    },
+
+    toggleNav: function() {
+      $(".js-nav-toggle").click(function() {
+        $('#main-nav').toggleClass('active');
+      });
     },
 
     /**

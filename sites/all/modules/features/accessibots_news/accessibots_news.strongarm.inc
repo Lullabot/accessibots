@@ -15,7 +15,11 @@ function accessibots_news_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__news';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'home_page_announcement' => array(
+        'custom_settings' => TRUE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(

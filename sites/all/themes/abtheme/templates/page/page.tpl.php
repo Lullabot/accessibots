@@ -1,31 +1,29 @@
 <?php
+  //dpm($variables);
 ?>
-<header role="banner">
+<header id="site-header" role="banner">
   <nav id="main-nav" role="navigation">
+    <div class="js-nav-toggle-wrapper">
+      <button class="js-nav-toggle">
+        <span>toggle menu</span>
+      </button>
+    </div>
     <?php print render($main_menu); ?>
   </nav>
+
+  <div id="site-name"><?php print $site_name; ?></div>
+
+  <?php print render($title_prefix); ?>
+  <?php if ($title): ?>
+    <h1><?php print $title; ?></h1>
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
+  <a href="<?php print $base_path; ?>" title="Home" class="header-badge">
+    <img src="<?php print $base_path . $directory; ?>/images/badge.png" alt="The Accessibots" />
+  </a>
 </header>
 
-<div class="page">
-  <div role="main" id="main-content">
-    <?php print render($title_prefix); ?>
-    <?php if ($title): ?>
-      <h1><?php print $title; ?></h1>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>
-
-    <?php if ($messages){ ?>
-      <div class="drupal-messages">
-        <?php print $messages; ?>
-      </div>
-    <?php } ?>
-
-    <?php if ($action_links): ?>
-      <ul class="action-links"><?php print render($action_links); ?></ul>
-    <?php endif; ?>
-
-    <?php print render($page['content']); ?>
-  </div><!-- /main -->
-</div><!-- /page -->
+<?php print render($page['content']); ?>
 
 <?php include_once "_footer.tpl.php"; ?>
