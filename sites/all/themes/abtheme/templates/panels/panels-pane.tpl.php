@@ -20,7 +20,7 @@
 <?php if ($pane_prefix): ?>
   <?php print $pane_prefix; ?>
 <?php endif; ?>
-<div class="panel--pane" <?php print $id; ?> <?php print $attributes; ?>>
+<div class="panel--pane <?php print (!empty($pane->css['css_class']) ? $pane->css['css_class'] :''); ?>" <?php print $id; ?> <?php print $attributes; ?>>
   <div class="inner">
     <?php if ($admin_links): ?>
       <?php print $admin_links; ?>

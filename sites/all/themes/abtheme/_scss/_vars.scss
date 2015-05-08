@@ -14,6 +14,11 @@ $delta:   strip_units(modular-scale(1) * $font-base);
 $epsilon: strip_units(modular-scale(0) * $font-base);
 $zeta:    strip_units(modular-scale(-1) * $font-base);
 
+// Font Scaling
+$font-scale-start: 20rem;
+$font-scale-stop: 80rem;
+$int: 5;
+
 // Colors
 $gold: #FEC763;
 $pink1: #FAC4C4;

@@ -6,6 +6,7 @@
 /sites/*/private
 /files/*
 /cache
+/private
 
 # Local Settings
 /sites/*/settings/local.inc

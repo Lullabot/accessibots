@@ -19,6 +19,18 @@ function accessibots_news_strongarm() {
       'home_page_announcement' => array(
         'custom_settings' => TRUE,
       ),
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -26,7 +38,14 @@ function accessibots_news_strongarm() {
           'weight' => '0',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'submitted_by' => array(
+          'teaser' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__news'] = $strongarm;
@@ -51,7 +70,6 @@ function accessibots_news_strongarm() {
   $strongarm->name = 'node_options_news';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_news'] = $strongarm;
 
@@ -68,6 +86,26 @@ function accessibots_news_strongarm() {
   $strongarm->name = 'node_submitted_news';
   $strongarm->value = 1;
   $export['node_submitted_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_news_pattern';
+  $strongarm->value = 'news/[node:field-publication-date:url]/[node:title]';
+  $export['pathauto_node_news_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'view_modes_news';
+  $strongarm->value = array(
+    0 => 'full',
+    1 => 'teaser',
+    2 => 'rss',
+    3 => 'home_page_announcement',
+    4 => 'token',
+  );
+  $export['view_modes_news'] = $strongarm;
 
   return $export;
 }

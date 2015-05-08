@@ -5,6 +5,7 @@ $corner-size: 20px;
 #main-nav {
   transform: translateX(-100%);
   width: 62%;
+  max-width: 600px;
   transition: all .2s ease-out;
   background-color: $opacity-off;
   position: fixed;
