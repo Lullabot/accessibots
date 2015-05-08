@@ -9,6 +9,7 @@ dependencies[] = features
 dependencies[] = fences
 dependencies[] = file
 dependencies[] = image
+dependencies[] = jquery_update
 dependencies[] = page_manager
 dependencies[] = strongarm
 dependencies[] = text
