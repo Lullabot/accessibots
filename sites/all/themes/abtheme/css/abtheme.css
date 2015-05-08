@@ -1715,6 +1715,63 @@ body:not(.page-home) #page {
   color: #FAC4C4;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\000032}}
+article.node-news footer {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\000035}}
+article.node-news footer .author, article.node-news footer time {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\000039}}
+article.node-news footer time {
+  font-size: 1.4em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\0000314}}
+article.node-news > .content {
+  margin-top: 3rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\0000317}}
+article.node-news > .content .field-primary-image {
+  float: right;
+  max-width: 38%;
+  margin-left: 1em;
+  line-height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\0000323}}
+article.node-news > .content .field-primary-image img {
+  width: 100%;
+  height: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000320}}
+article.node-news .field-body::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\0000334}}
+article.node-news .field-attached-files {
+  clear: both;
+  margin: 3rem 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\0000338}}
+article.node-news .field-attached-files a {
+  background-color: #FEC763;
+  color: #00afd6;
+  display: inline-block;
+  padding: .5em 1em;
+  margin: .5em 0;
+  border-radius: .25em;
+  text-decoration: none;
+  -webkit-transition: .2s background-color;
+          transition: .2s background-color;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_news\.scss}line{font-family:\0000348}}
+article.node-news .field-attached-files a:hover, article.node-news .field-attached-files a:focus, article.node-news .field-attached-files a:active {
+  text-decoration: underline;
+  background-color: #febe4a;
+}
+
 @media (min-width: 20rem) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/nodes\/_teaser\.scss}line{font-family:\000034}}
   article.teaser h2 {
