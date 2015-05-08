@@ -4,11 +4,10 @@
   background-size: cover;
   position: relative;
   border-bottom: 2px solid #ccc;
-  padding: 2em;
 
   // Slight opaqueness over image to pop text
   &:after {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .3);
     content: '';
     display: block;
     height: 100%;
@@ -18,13 +17,22 @@
     left: 0;
     z-index: 5;
   }
+
+  @media ($two-col) {
+    padding: 2em;
+  }
+  @media ($one-col) {
+    padding: 2em 1em;
+  }
 }
 
 #lead-story {
   @include clearfix;
   color: white;
   text-shadow: 1px 1px 2px #000;
-  padding: 2rem $page-margin 2rem 1rem;
+  padding: 0;
+  z-index: 10;
+  position: relative;
 
   h2 {
     color: $pink2;
@@ -36,15 +44,50 @@
     line-height: 1.3em;
   }
 
-  // Logo
-  figure {
-    width: 38%;
-    float: left;
-    margin-right: 2vw;
+  // Large screen
+  @media ($two-col) {
+    figure {
+      width: 38%;
+      float: left;
+      margin-right: 2vw;
 
-    img {
-      width: 100%;
-      height: auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .field-body {
+      margin-bottom: 3em;
+    }
+  }
+
+  // Small Screen
+  @media ($one-col) {
+    figure, h2 {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    figure {
+      width: 25%;
+      margin-right: -5px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    h2 {
+      width: 75%;
+      padding-left: 5vw;
+    }
+
+    .field-body {
+      clear: left;
+      margin: 1em 0 3em 0;
+      text-align: center;
     }
   }
 }

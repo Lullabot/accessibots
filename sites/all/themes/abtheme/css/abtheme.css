@@ -1205,42 +1205,46 @@ p + p {
   margin-top: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000329}}
+#page--content .panel--pane {
+  margin: 2rem auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000332}}
 #page--content .panel--pane .inner {
   max-width: 52em;
   padding: 0 1em;
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000340}}
 .header-badge {
   display: block;
   min-width: 100px;
   width: 15vw;
   line-height: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000346}}
 .header-badge img {
   width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000353}}
 body.page-home .header-badge {
   margin: 0 auto;
   position: relative;
   z-index: 8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000359}}
 body.page-home .header-badge img {
   margin-top: -50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000366}}
 body:not(.page-home) .header-badge {
   margin: 0 auto -4rem auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000369}}
 body:not(.page-home) .header-badge img {
   margin-bottom: -50%;
 }
@@ -1315,7 +1319,7 @@ body:not(.page-home) .header-badge img {
   left: 0;
   top: 0;
   height: 100%;
-  z-index: 10;
+  z-index: 50;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/components\/_main-nav\.scss}line{font-family:\0000316}}
 #main-nav .js-nav-toggle-wrapper {
@@ -1505,11 +1509,10 @@ body:not(.page-home) .header-badge img {
   background-size: cover;
   position: relative;
   border-bottom: 2px solid #ccc;
-  padding: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\000039}}
 #siteinfo:after {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   content: '';
   display: block;
   height: 100%;
@@ -1519,12 +1522,26 @@ body:not(.page-home) .header-badge img {
   left: 0;
   z-index: 5;
 }
+@media (min-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\000031}}
+  #siteinfo {
+    padding: 2em;
+  }
+}
+@media (max-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\000031}}
+  #siteinfo {
+    padding: 2em 1em;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000329}}
 #lead-story {
   color: white;
   text-shadow: 1px 1px 2px #000;
-  padding: 2rem 5% 2rem 1rem;
+  padding: 0;
+  z-index: 10;
+  position: relative;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/_orion\/mixins\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000320}}
 #lead-story::after {
@@ -1532,63 +1549,97 @@ body:not(.page-home) .header-badge img {
   content: "";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000337}}
 #lead-story h2 {
   color: #F8A9AE;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000341}}
 #lead-story p {
   line-height: 1.3em;
 }
 @media (min-width: 30rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000341}}
   #lead-story p {
     font-size: 1em;
   }
 }
 @media (min-width: 40rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000341}}
   #lead-story p {
     font-size: 1.2em;
   }
 }
 @media (min-width: 50rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000341}}
   #lead-story p {
     font-size: 1.4em;
   }
 }
 @media (min-width: 60rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000341}}
   #lead-story p {
     font-size: 1.6em;
   }
 }
 @media (min-width: 70rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000341}}
   #lead-story p {
     font-size: 1.8em;
   }
 }
 @media (min-width: 80rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000341}}
   #lead-story p {
     font-size: 2em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000340}}
-#lead-story figure {
-  width: 38%;
-  float: left;
-  margin-right: 2vw;
+@media (min-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000349}}
+  #lead-story figure {
+    width: 38%;
+    float: left;
+    margin-right: 2vw;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000354}}
+  #lead-story figure img {
+    width: 100%;
+    height: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000360}}
+  #lead-story .field-body {
+    margin-bottom: 3em;
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000345}}
-#lead-story figure img {
-  width: 100%;
-  height: auto;
+@media (max-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000367}}
+  #lead-story figure, #lead-story h2 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000372}}
+  #lead-story figure {
+    width: 25%;
+    margin-right: -5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000376}}
+  #lead-story figure img {
+    width: 100%;
+    height: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000382}}
+  #lead-story h2 {
+    width: 75%;
+    padding-left: 5vw;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000387}}
+  #lead-story .field-body {
+    clear: left;
+    margin: 1em 0 3em 0;
+    text-align: center;
+  }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\00003100}}
 body.page-home #page--content .panel--pane .inner {
   text-align: center;
 }

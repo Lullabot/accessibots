@@ -119,7 +119,7 @@ function accessibots_global_strongarm() {
     'mothership_classes_field_field' => 1,
     'mothership_classes_field_name' => 1,
     'mothership_classes_field_type' => 1,
-    'mothership_classes_field_label' => 0,
+    'mothership_classes_field_label' => 1,
     'mothership_classes_field_freeform' => '',
     'mothership_classes_form_container_wrapper' => 0,
     'mothership_classes_form_container_type' => 0,
