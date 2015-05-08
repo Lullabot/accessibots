@@ -26,7 +26,14 @@ function accessibots_news_strongarm() {
           'weight' => '0',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'submitted_by' => array(
+          'teaser' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__news'] = $strongarm;
@@ -51,7 +58,6 @@ function accessibots_news_strongarm() {
   $strongarm->name = 'node_options_news';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_news'] = $strongarm;
 
