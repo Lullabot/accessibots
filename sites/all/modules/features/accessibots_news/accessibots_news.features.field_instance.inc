@@ -27,9 +27,11 @@ function accessibots_news_field_default_field_instances() {
       'home_page_announcement' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -75,9 +77,8 @@ function accessibots_news_field_default_field_instances() {
       ),
       'home_page_announcement' => array(
         'label' => 'hidden',
-        'module' => 'file',
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -122,9 +123,13 @@ function accessibots_news_field_default_field_instances() {
         'weight' => 4,
       ),
       'home_page_announcement' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'hero',
+        ),
+        'type' => 'image',
         'weight' => 4,
       ),
       'teaser' => array(
@@ -191,8 +196,8 @@ function accessibots_news_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'image_link' => 'content',
+          'image_style' => 'news_primary_list_logo',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -246,16 +251,9 @@ function accessibots_news_field_default_field_instances() {
       ),
       'home_page_announcement' => array(
         'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'full_date',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 1,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',

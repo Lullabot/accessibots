@@ -48,13 +48,22 @@
   @media ($two-col) {
     figure {
       width: 38%;
-      float: left;
-      margin-right: 2vw;
+      display: inline-block;
+      margin-right: -5px;
+      vertical-align: middle;
+      padding-right: 1em;
 
       img {
         width: 100%;
         height: auto;
       }
+    }
+
+    div.col2 {
+      display: inline-block;
+      width: 62%;
+      vertical-align: middle;
+      padding-left: 1em;
     }
 
     .field-body {
@@ -64,14 +73,17 @@
 
   // Small Screen
   @media ($one-col) {
+    text-align: center;
+
     figure, h2 {
-      display: inline-block;
-      vertical-align: middle;
+      display: block;
+      margin: 0 auto;
     }
 
     figure {
-      width: 25%;
-      margin-right: -5px;
+      max-width: 68vw;
+      max-height: 200px;
+      height: auto;
 
       img {
         width: 100%;
@@ -85,9 +97,7 @@
     }
 
     .field-body {
-      clear: left;
       margin: 1em 0 3em 0;
-      text-align: center;
     }
   }
 }

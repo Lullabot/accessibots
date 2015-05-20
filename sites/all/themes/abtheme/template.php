@@ -59,8 +59,20 @@ function abtheme_preprocess_page(&$vars) {
  * @param $vars
  */
 function abtheme_preprocess_node(&$vars) {
-  $vars['background_image_path'] =
-    !empty($vars['field_background_image']['und'][0]['uri'])
-    ? file_create_url($vars['field_background_image']['und'][0]['uri'])
-    : '';
+  $vars['background_image_path'] = '';
+
+  // Check for a background image, though we should always have one.
+  if (isset($vars['content']['field_background_image'][0]['#item'])) {
+    // If the derivative has been generated, use that path.
+    if (!empty($vars['content']['field_background_image'][0]['#path'])) {
+      $vars['background_image_path'] = $vars['content']['field_background_image'][0]['#path'];
+    }
+    // Else, manually derive the image
+    else {
+      $style = $vars['content']['field_background_image'][0]['#image_style'];
+      $uri = $vars['content']['field_background_image'][0]['#item']['uri'];
+
+      $vars['background_image_path'] = image_style_url($style, $uri);
+    }
+  }
 }
