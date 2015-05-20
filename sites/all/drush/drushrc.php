@@ -4,6 +4,9 @@ $root = str_replace('/drush', '', dirname(__FILE__));
 // Patchfile Settings.
 $options['patch-file'] = 'sites/all/patches.make';
 
+// DO NOT UPDATE CORE WITH DRUSH!  USE PANTHEON!
+$options['no-core'] = TRUE;
+
 // Add our plugins directory.
 $options['include'][] = __DIR__ . '/plugins';
 
