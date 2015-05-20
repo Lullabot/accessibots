@@ -16,10 +16,7 @@ function accessibots_home_default_page_manager_pages() {
   $page->admin_title = 'Homepage';
   $page->admin_description = '';
   $page->path = 'home';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->access = array();
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Home',
@@ -80,19 +77,19 @@ function accessibots_home_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-5c70c852-8c25-4f71-b839-1ce13a82b717';
+    $pane->pid = 'new-8d881fcf-6376-4a55-afa4-cb7b8e95ab9b';
     $pane->panel = 'header';
     $pane->type = 'node';
     $pane->subtype = 'node';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'nid' => '2',
+      'nid' => '5',
       'links' => 0,
       'leave_node_title' => 1,
       'identifier' => '',
       'build_mode' => 'home_page_announcement',
-      'link_node_title' => 0,
+      'link_node_title' => 1,
       'override_title' => 1,
       'override_title_text' => '<none>',
       'override_title_heading' => 'h2',
@@ -105,9 +102,9 @@ function accessibots_home_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '5c70c852-8c25-4f71-b839-1ce13a82b717';
-    $display->content['new-5c70c852-8c25-4f71-b839-1ce13a82b717'] = $pane;
-    $display->panels['header'][0] = 'new-5c70c852-8c25-4f71-b839-1ce13a82b717';
+    $pane->uuid = '8d881fcf-6376-4a55-afa4-cb7b8e95ab9b';
+    $display->content['new-8d881fcf-6376-4a55-afa4-cb7b8e95ab9b'] = $pane;
+    $display->panels['header'][0] = 'new-8d881fcf-6376-4a55-afa4-cb7b8e95ab9b';
     $pane = new stdClass();
     $pane->pid = 'new-5bb6221b-fc6b-4a37-93ae-da1973ac09d3';
     $pane->panel = 'main';

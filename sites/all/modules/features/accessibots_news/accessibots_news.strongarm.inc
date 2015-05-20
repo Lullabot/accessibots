@@ -16,6 +16,9 @@ function accessibots_news_strongarm() {
   $strongarm->name = 'field_bundle_settings_node__news';
   $strongarm->value = array(
     'view_modes' => array(
+      'home_page_announcement' => array(
+        'custom_settings' => TRUE,
+      ),
       'teaser' => array(
         'custom_settings' => TRUE,
       ),
@@ -27,9 +30,6 @@ function accessibots_news_strongarm() {
       ),
       'token' => array(
         'custom_settings' => FALSE,
-      ),
-      'home_page_announcement' => array(
-        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -44,7 +44,6 @@ function accessibots_news_strongarm() {
             'weight' => '0',
             'visible' => TRUE,
           ),
-          'home_page_announcement' => NULL,
         ),
       ),
     ),
