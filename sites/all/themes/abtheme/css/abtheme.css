@@ -1506,7 +1506,7 @@ body:not(.page-home) .header-badge img {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/pages\/_homepage\.scss}line{font-family:\000031}}
 #siteinfo {
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top center;
   background-size: cover;
   position: relative;
   border-bottom: 2px solid #ccc;
