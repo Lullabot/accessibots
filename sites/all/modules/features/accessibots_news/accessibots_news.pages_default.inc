@@ -150,7 +150,10 @@ function accessibots_news_default_page_manager_pages() {
   $page->admin_title = 'News & Events';
   $page->admin_description = '';
   $page->path = 'news';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'News & Events',
