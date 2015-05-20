@@ -34,7 +34,7 @@ function accessibots_news_fe_nodequeue_export_fields() {
     'name' => 'home_page_news',
     'title' => 'Home Page News',
     'subqueue_title' => '',
-    'size' => 2,
+    'size' => 5,
     'link' => '',
     'link_remove' => '',
     'owner' => 'nodequeue',
