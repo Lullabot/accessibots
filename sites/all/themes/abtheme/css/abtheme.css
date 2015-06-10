@@ -835,11 +835,19 @@ p + .drop-cap {
  *
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\000031}}
+* {
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\000033}}
 html {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\000037}}
 body {
   font-family: "Arvo", serif;
   height: 100%;
@@ -1196,55 +1204,55 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 5.3394rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000321}}
 p {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000325}}
 p + p {
   margin-top: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000331}}
 #page--content .panel--pane {
   margin: 2rem auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000334}}
 #page--content .panel--pane .inner {
   max-width: 52em;
   padding: 0 1em;
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000342}}
 .header-badge {
   display: block;
   min-width: 100px;
   width: 15vw;
   line-height: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000348}}
 .header-badge img {
   width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000355}}
 body.page-home .header-badge {
   margin: 0 auto;
   position: relative;
   z-index: 8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000361}}
 body.page-home .header-badge img {
   margin-top: -50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000368}}
 body:not(.page-home) .header-badge {
   margin: 0 auto -4rem auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/accessibots\/sites\/all\/themes\/abtheme\/_scss\/styles\/_global\.scss}line{font-family:\0000371}}
 body:not(.page-home) .header-badge img {
   margin-bottom: -50%;
 }
