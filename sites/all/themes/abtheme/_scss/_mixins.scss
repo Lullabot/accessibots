@@ -47,9 +47,17 @@
     &:after {bottom: -$bun-offset;}
   }
 
-  &:focus {
-    // Accessibility?
+  &:focus,
+  &:hover {
     outline: none;
+
+    span {
+      background: $blue1;
+
+      &:before, &:after {
+        background-color: $blue1;
+      }
+    }
   }
 }
 
