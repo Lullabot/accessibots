@@ -35,10 +35,12 @@
       <?php print render($content['field_category']); ?>
     </div>
 
-    <div class="tool__author">
-      <span class="tool__author-intro"> Made by </span>
-      <?php print render($content['field_author']); ?>
-    </div>
+    <a href="<?php print($content['field_author']['#items'][0]['url']); ?>" title="Visit <?php print($content['field_author']['#items'][0]['title']); ?>">
+      <div class="tool__author">
+        <span class="tool__author-intro"> Made by </span>
+        <?php print render($content['field_author']); ?>
+      </div>
+    </a>
 
   </div>
 </article>
