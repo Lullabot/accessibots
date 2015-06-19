@@ -84,7 +84,7 @@
 }
 
 // -- Font size scaling using media queries
-@mixin scale-font-size($start-width: 30rem, $start-size: 1em, $end-width: 80rem, $end-size: 2em, $int: 5) {
+@mixin scale-font-size($start-width: 30rem, $start-size: 1em, $end-width: 80rem, $end-size: 1.2em, $int: 5) {
   $itt: 0;
 
   @while $itt <= $int {
