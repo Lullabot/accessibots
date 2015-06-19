@@ -1,7 +1,7 @@
 name = Accessibots Tools
 core = 7.x
-package = Features
-version = 7.x-1.0
+package = Accessibots
+version = 7.x-1.1
 project = accessibots_tools
 dependencies[] = accessibots_global
 dependencies[] = entityreference
