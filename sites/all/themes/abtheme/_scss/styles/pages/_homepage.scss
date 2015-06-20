@@ -4,6 +4,19 @@
   background-size: cover;
   position: relative;
   border-bottom: 2px solid #ccc;
+  z-index: 7;
+
+  .col2 {
+    background: rgba(28, 41, 79, 0.97);
+    color: #eeeeee;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p {
+    &:last-child {
+      padding-bottom: 10px;
+    }
+  }
 
   // Slight opaqueness over image to pop text
   &:after {
@@ -20,6 +33,13 @@
 
   @media ($two-col) {
     padding: 2em;
+
+    p {
+      &:last-child {
+        text-align: right;
+        margin-right: 35px;
+      }
+    }
   }
   @media ($one-col) {
     padding: 2em 1em;
@@ -29,7 +49,6 @@
 #lead-story {
   @include clearfix;
   color: white;
-  text-shadow: 1px 1px 2px #000;
   padding: 0;
   z-index: 10;
   position: relative;
@@ -40,7 +59,6 @@
 
   p {
     @include scale-font-size();
-
     line-height: 1.3em;
   }
 
