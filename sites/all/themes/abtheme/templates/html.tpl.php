@@ -41,7 +41,6 @@
 ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-<a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
 <?php print $page_top; //stuff from modules always render first ?>
 <?php print $page; // uses the page.tpl ?>
 <?php

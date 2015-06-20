@@ -5,7 +5,7 @@
   <nav id="main-nav" role="navigation">
     <div class="js-nav-toggle-wrapper">
       <button class="js-nav-toggle">
-        <span>toggle menu</span>
+        <span>Open menu</span>
       </button>
     </div>
     <?php print render($main_menu); ?>

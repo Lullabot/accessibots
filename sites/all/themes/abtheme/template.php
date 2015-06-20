@@ -77,3 +77,20 @@ function abtheme_preprocess_node(&$vars) {
   }
 }
 
+/**
+ * Overrides hook_theme_menu_link().
+ * Add an aria-label attribute for the menu items so that Voice Over won't read
+ * three letter words as acronymns.  Otherwise VO would read "W-H-O We Are"
+ * instead of "Who We Are".
+ */
+function abtheme_menu_link__main_menu(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  $element['#localized_options'] = array_merge($element['#localized_options'], array('attributes' => array('aria-label' => $element['#title'])));
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
