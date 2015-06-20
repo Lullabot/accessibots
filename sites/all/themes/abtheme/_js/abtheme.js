@@ -7,15 +7,27 @@
       // Make the header sticky
       //this.stickyNav();
 
-      this.toggleNav();
+      this.menuSetup();
 
       // Convert SVG Images
       this.convertSVG();
     },
 
-    toggleNav: function() {
-      $(".js-nav-toggle").click(function() {
+    menuSetup: function() {
+      var $nav = $('.js-nav-toggle');
+
+      $nav.once().click(function() {
         $('#main-nav').toggleClass('active');
+        if ($('.js-nav-toggle span').text().trim() === 'Open menu') {
+          $('.js-nav-toggle span').text('Close menu');
+        }
+        else {
+          $('.js-nav-toggle span').text('Open menu');
+        }
+      });
+
+      $('#main-nav').find('ul > li:last-child a').blur(function() {
+        $nav.focus();
       });
     },
 

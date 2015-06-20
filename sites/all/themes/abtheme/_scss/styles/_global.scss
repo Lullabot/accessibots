@@ -9,6 +9,14 @@ body {
   height: 100%;
 }
 
+.hidden-link {
+  display: block;
+  position: absolute;
+  height: 1px;
+  font-size: 1px;
+  opacity: 0.00000001;
+}
+
 // Headers
 @include headers {
   font-family: $sans-serif;

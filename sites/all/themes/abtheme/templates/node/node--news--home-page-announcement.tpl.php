@@ -17,5 +17,5 @@
   </article>
 </div>
 <div class="header-badge">
-  <img src="<?php print base_path() . $directory; ?>/images/badge.png" alt="The Accessibots" />
+  <img src="<?php print base_path() . $directory; ?>/images/badge.png" alt="Accessibots Logo: Only You Can Prevent Inaccessible Websites" />
 </div>
