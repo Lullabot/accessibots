@@ -19,6 +19,9 @@ function accessibots_simple_page_strongarm() {
       'home_page_announcement' => array(
         'custom_settings' => FALSE,
       ),
+      'tool' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
