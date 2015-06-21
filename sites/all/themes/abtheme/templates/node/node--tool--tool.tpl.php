@@ -17,7 +17,7 @@
     </div>
   </div>
 
-  <div class="tool__details">
+  <div class="tool__details tool__details--first">
     <div class="tool__title">
       <?php print render($content['field_resource_url']); ?>
     </div>
@@ -25,6 +25,10 @@
     <div class="tool__platforms">
       <?php print render($content['field_platform']); ?>
     </div>
+
+  </div>
+
+  <div class="tool__details">
 
     <div class="tool__description">
       <?php print render($content['body']); ?>

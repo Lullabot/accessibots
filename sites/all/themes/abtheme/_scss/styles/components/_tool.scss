@@ -5,8 +5,27 @@
 .tool__image {
   display: inline-block;
   position: relative;
+  float: left;
   vertical-align: top;
   border: 2px solid rgba(0, 0, 0, 0.73);
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  @media($tablet) {
+    height: 195px;
+    width: 195px;
+
+    img {
+      max-width: 190px;
+      max-height: 190px;
+    }
+  }
 }
 
 .tool__cost {
@@ -20,9 +39,28 @@
 
 .tool__details {
   display: inline-block;
-  margin-left: 15px;
   vertical-align: top;
   font-size: 14px;
+  margin: 10px 0 0 0;
+  
+  @media($tablet) {
+    float: left;
+    margin-left: 15px;
+    width: 70%;
+  }
+}
+
+.tool__details--first {
+  display: inline-block;
+  margin: 0 0 15px 10px;
+  float: left;
+  width: 65%;
+
+  @media($tablet) {
+    width: 70%;
+    margin: 0 0 0 15px;
+    float: none;
+  }
 }
 
 .tool__title {
@@ -50,8 +88,17 @@
   display: inline-block;
 }
 
+.tool__category {
+  overflow: hidden;
+  display: block;
+  margin-bottom: 15px;
+
+  @media($tablet) {
+    margin-bottom: 5px;
+  }
+}
+
 .tool__author {
-  position: absolute;
   bottom: 0;
   margin-bottom: 7px;
   padding: 5px;
