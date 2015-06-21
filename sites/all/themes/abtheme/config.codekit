@@ -72,21 +72,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_scss\/_vars.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
+	"\/_scss\/abtheme.css": {
+		"fileType": 16,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_scss\/_vars.scss",
-		"outputAbbreviatedPath": "\/css\/_vars.css",
+		"inputAbbreviatedPath": "\/_scss\/abtheme.css",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
+		"outputPathIsSetByUser": 0
 		},
 	"\/_scss\/abtheme.scss": {
 		"createSourceMap": 1,
@@ -145,22 +138,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_scss\/styles\/components\/_main-nav.scss",
 		"outputAbbreviatedPath": "\/_scss\/styles\/css\/_main-nav.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/_scss\/styles\/components\/_tool.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_scss\/styles\/components\/_tool.scss",
-		"outputAbbreviatedPath": "\/_scss\/styles\/css\/_tool.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -247,15 +224,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
-		},
-	"\/css\/abtheme.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/abtheme.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/css\/wysiwyg.css": {
 		"fileType": 16,
@@ -1311,6 +1279,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/layouts\/cbase_golden\/scss\/cbase_golden.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/layouts\/cbase_golden\/scss\/cbase_golden.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/layouts\/cbase_golden\/scss\/cbase_golden.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1326,6 +1303,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/layouts\/cbase_golden\/scss\/cbase_golden_admin.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/layouts\/cbase_golden\/scss\/cbase_golden_admin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/layouts\/cbase_golden\/scss\/cbase_golden_admin.scss": {
 		"createSourceMap": 0,
@@ -1821,15 +1807,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/node\/node--news.tpl.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/templates\/node\/node--tool--tool.tpl.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/templates\/node\/node--tool--tool.tpl.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

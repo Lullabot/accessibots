@@ -31,6 +31,9 @@ function accessibots_news_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'tool' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
