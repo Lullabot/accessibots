@@ -3,7 +3,6 @@
 # Wrapper around the HUB utility to simplify creating PRs.
 # Symlink this into a directory in your $PATH for easier access.
 
-PROJ=""
 HUB_LOC=`which hub`
 
 # Ensure HUB is installed
@@ -28,10 +27,10 @@ TICKET=$(echo $NAME | grep -o '\-[0-9]*\-')
 TICKET="${TICKET:1:${#TICKET}-2}"
 
 # Construct the message with the ticket name at the beginning.
-MSG="[$PROJ-$TICKET] $1"
+MSG="[#$TICKET] $1"
 
 # Create the PR
-URL=$(hub pull-request -b master -m "$MSG")
+URL=$(hub pull-request -b master -m "$MSG" -i "$TICKET")
 echo "Pull Request $MSG created at $URL"
 
 # Open it in the browser
