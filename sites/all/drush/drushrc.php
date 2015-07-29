@@ -1,5 +1,5 @@
 <?php
-$root = str_replace('/drush', '', dirname(__FILE__));
+$root = str_replace('/sites/all/drush', '', dirname(__FILE__));
 
 // Patchfile Settings.
 $options['patch-file'] = 'sites/all/patches.make';
@@ -17,8 +17,8 @@ $options['include'][] = __DIR__ . '/commands';
 $options['alias-path'][] = __DIR__ . '/aliases';
 
 // Custom shell aliases for sass compiling
-$options['shell-aliases']['sass-compile'] = '!cd ' . $root . '/themes/abtheme && bundle install && sass -fr sass-globbing --update --style=expanded --debug-info _scss:css';
-$options['shell-aliases']['sass-watch'] = '!cd ' . $root . '/themes/abtheme && bundle install && sass -rsass-globbing --watch _scss:css';
+//$options['shell-aliases']['sass-compile'] = '!cd ' . $root . '/themes/abtheme && bundle install && sass -fr sass-globbing --update --style=expanded --debug-info _scss:css';
+//$options['shell-aliases']['sass-watch'] = '!cd ' . $root . '/themes/abtheme && bundle install && sass -rsass-globbing --watch _scss:css';
 
 /*
  * Customize this associative array with your own tables. This is the list of
@@ -43,3 +43,9 @@ $options['structure-tables'] = array(
     'webform_submitted_data',
   ),
 );
+
+// Theme builders
+$options['shell-aliases']['compile-css'] =
+  "!cd {$root}/sites/all/themes/abtheme &&
+  npm install &&
+  grunt";
