@@ -16,6 +16,9 @@ $env = array(
     'block_cache' => 0,
     'preprocess_js' => 0,
     'preprocess_css' => 0,
+    'stage_file_proxy_origin' => 'http://live-accessibots.pantheon.io',
+    'stage_file_proxy_origin_dir' => 'sites/default/files',
+    'stage_file_proxy_use_imagecache_root' => 1,
   ),
   'perms'   => array(
     'anonymous user' => array(
