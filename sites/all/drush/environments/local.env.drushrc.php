@@ -10,6 +10,7 @@ $env = array(
     'update' => 1,
     'fpa' => 1,
     'admin_devel' => 1,
+    'stage_file_proxy' => 1,
   ),
   'vars'    => array(
     'cache' => 0,
