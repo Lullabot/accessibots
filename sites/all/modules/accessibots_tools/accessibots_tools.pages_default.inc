@@ -17,7 +17,18 @@ function accessibots_tools_default_page_manager_pages() {
   $page->admin_description = '';
   $page->path = 'tools';
   $page->access = array();
-  $page->menu = array();
+  $page->menu = array(
+    'type' => 'normal',
+    'title' => 'Tools',
+    'name' => 'main-menu',
+    'weight' => '5',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
   $page->arguments = array();
   $page->conf = array(
     'admin_paths' => FALSE,
@@ -53,7 +64,7 @@ function accessibots_tools_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Tools';
   $display->uuid = '31f26d42-1709-4652-aeba-09e50be1d472';
   $display->content = array();
   $display->panels = array();
