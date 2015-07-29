@@ -48,6 +48,16 @@ function accessibots_global_strongarm() {
         'label' => 'Home Page Announcement',
         'custom settings' => 1,
       ),
+      'tool' => array(
+        'label' => 'Tool',
+        'custom settings' => 1,
+      ),
+    ),
+    'taxonomy_term' => array(
+      'platform' => array(
+        'label' => 'Platform',
+        'custom settings' => 1,
+      ),
     ),
   );
   $export['entity_view_modes'] = $strongarm;
