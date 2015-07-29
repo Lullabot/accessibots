@@ -30,8 +30,5 @@ TICKET="${TICKET:1:${#TICKET}-2}"
 MSG="[#$TICKET] $1"
 
 # Create the PR
-URL=$(hub pull-request -b master -m "$MSG" -i "$TICKET")
+URL=$(hub pull-request -b master -m "$MSG" -o)
 echo "Pull Request $MSG created at $URL"
-
-# Open it in the browser
-open $URL
