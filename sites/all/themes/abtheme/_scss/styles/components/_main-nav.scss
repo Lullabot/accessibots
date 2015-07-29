@@ -1,0 +1,118 @@
+$opacity-off: rgba(black, .2);
+$opacity-on: rgba(black, .8);
+$corner-size: 20px;
+
+#main-nav {
+  transform: translateX(-100%);
+  width: 62%;
+  max-width: 600px;
+  transition: all .2s ease-out;
+  background-color: $opacity-off;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 50;
+
+  .js-nav-toggle-wrapper {
+    background-color: $opacity-off;
+    margin-right: -80px;
+    float: right;
+    border-bottom-right-radius: 1em;
+
+    &:before, &:after {
+      content: '';
+      width: $corner-size;
+      height: $corner-size;
+      display: block;
+      @include beveled-corner(br, $corner-size, $opacity-off);
+    }
+
+    &:before {
+      margin-right: -$corner-size;
+      float: right;
+    }
+
+    &:after {
+      margin-bottom: -$corner-size;
+    }
+  }
+
+  .js-nav-toggle {
+    @include hamburger-button(80px, $gold);
+    @include hamburger-button-x();
+    background-color: transparent;
+
+    span {
+      box-shadow: 1px 1px 0 0 rgba(black, .1);
+
+      &:before, &:after {
+        box-shadow: 1px 1px 0 0 rgba(black, .1);
+      }
+    }
+  }
+
+  // Menu Open
+  &.active {
+    transform: translateX(0);
+    background-color: $opacity-on;
+
+    .js-nav-toggle-wrapper {
+      background-color: $opacity-on;
+
+      &:before, &:after {
+        @include beveled-corner(br, $corner-size, $opacity-on);
+      }
+    }
+
+    .js-nav-toggle {
+      @include hamburger-button-x(active);
+
+      span {
+        box-shadow: none;
+
+        &:before, &:after {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+
+    li {
+      a {
+        display: block;
+        padding: 1em 1em .5em 1em;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        font-family: $sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+
+        &:hover,
+        &:focus {
+          background: linear-gradient(to right, $gold, transparent);
+          text-decoration: underline;
+        }
+      }
+
+      &.active-trail {
+        a {
+          background: linear-gradient(to right, $blue1, transparent);
+        }
+      }
+    }
+  }
+
+  &.active {
+    ul {
+      display: block;
+    }
+  }
+}

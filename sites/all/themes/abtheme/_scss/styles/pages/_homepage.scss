@@ -1,0 +1,133 @@
+#siteinfo {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  z-index: 7;
+
+  .col2 {
+    background: rgba(28, 41, 79, 0.97);
+    color: #eeeeee;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p {
+    &:last-child {
+      padding-bottom: 10px;
+    }
+  }
+
+  // Slight opaqueness over image to pop text
+  &:after {
+    background-color: rgba(0, 0, 0, .3);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+  @media ($two-col) {
+    padding: 2em;
+
+    p {
+      &:last-child {
+        text-align: right;
+        margin-right: 35px;
+      }
+    }
+  }
+  @media ($one-col) {
+    padding: 2em 1em;
+  }
+}
+
+#lead-story {
+  @include clearfix;
+  color: white;
+  padding: 0;
+  z-index: 10;
+  position: relative;
+
+  h2 {
+    color: $pink2;
+  }
+
+  p {
+    @include scale-font-size();
+    line-height: 1.3em;
+  }
+
+  // Large screen
+  @media ($two-col) {
+    figure {
+      width: 38%;
+      display: inline-block;
+      margin-right: -5px;
+      vertical-align: middle;
+      padding-right: 1em;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    div.col2 {
+      display: inline-block;
+      width: 62%;
+      vertical-align: middle;
+      padding-left: 1em;
+    }
+
+    .field-body {
+      margin-bottom: 3em;
+    }
+  }
+
+  // Small Screen
+  @media ($one-col) {
+    text-align: center;
+
+    figure, h2 {
+      display: block;
+      margin: 0 auto;
+    }
+
+    figure {
+      max-width: 68vw;
+      max-height: 200px;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    h2 {
+      width: 75%;
+      padding-left: 5vw;
+    }
+
+    .field-body {
+      margin: 1em 0 3em 0;
+    }
+  }
+}
+
+
+// Homepage only
+body.page-home {
+  #page--content {
+    .panel--pane {
+      .inner {
+        text-align: center;
+      }
+    }
+  }
+}
