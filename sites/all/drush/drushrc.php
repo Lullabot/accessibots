@@ -49,3 +49,5 @@ $options['shell-aliases']['compile-css'] =
   "!cd {$root}/sites/all/themes/abtheme &&
   npm install &&
   grunt";
+
+$options['shell-aliases']['pr'] = "!{$root}/sites/all/util/pullRequest.sh";
