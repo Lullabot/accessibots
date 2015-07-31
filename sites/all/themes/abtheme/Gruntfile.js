@@ -4,9 +4,12 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     sass: {
       options: {
-        //sourceMap: true
+        style: 'compressed'
       },
       dist: {
+        options: {
+          style: 'compressed'
+        },
         files: {
           'css/abtheme.css': '_scss/abtheme.scss',
           'css/wysiwyg.css': '_scss/wysiwyg.scss'
@@ -34,12 +37,6 @@ module.exports = function(grunt) {
           spawn: false
         }
       }
-    },
-    clean: {
-      css: [
-        'css/abtheme.css',
-        'css/abtheme.min.css'
-      ]
     },
     autoprefixer: {
       options: {
@@ -76,7 +73,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-sass-globbing');
-  grunt.loadNpmTasks('grunt-contrib-clean');
+
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-autoprefixer');
@@ -87,7 +84,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('default', [
-    'clean:css',
     'sass_globbing',
     'sass',
     'autoprefixer',

@@ -24,7 +24,7 @@ article.teaser {
 }
 
 // Small screens
-@media ($one-col) {
+@include layout(one-col) {
   .panel--pane.staggered {
     article.teaser {
       padding: 1em 0;
@@ -33,7 +33,7 @@ article.teaser {
 }
 
 // Large screens
-@media ($two-col) {
+@include layout(two-col) {
   .panel--pane.staggered {
     .pane-content {
       @include clearfix;

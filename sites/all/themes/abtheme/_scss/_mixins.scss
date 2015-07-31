@@ -119,3 +119,16 @@
 
   background: radial-gradient(circle at $top $left, rgba(255,0,0,0) $size, $color $size);
 }
+
+@mixin layout($format) {
+  @if $format == 'one-col' {
+    @media (max-width: $two-col-min) {
+      @content;
+    }
+  }
+  @else if $format == 'two-col' {
+    @media (min-width: $two-col-min) {
+      @content;
+    }
+  }
+}

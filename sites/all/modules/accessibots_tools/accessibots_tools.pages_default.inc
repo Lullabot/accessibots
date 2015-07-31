@@ -64,7 +64,7 @@ function accessibots_tools_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Tools';
+  $display->title = '';
   $display->uuid = '31f26d42-1709-4652-aeba-09e50be1d472';
   $display->content = array();
   $display->panels = array();

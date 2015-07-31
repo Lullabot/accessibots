@@ -34,4 +34,3 @@ features[variable][] = node_admin_theme
 features[variable][] = node_submitted_simple_page
 features[variable][] = theme_abtheme_settings
 features[variable][] = theme_default
-features[wysiwyg][] = html

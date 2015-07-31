@@ -20,26 +20,6 @@
       margin-right: 1em;
     }
   }
-
-  @media ($two-col) {
-    > * {
-      width: 50%;
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    * + * {
-      margin-left: -5px;
-      text-align: right;
-    }
-  }
-
-  @media ($one-col) {
-    > * {
-      text-align: center;
-      margin: 1rem;
-    }
-  }
 }
 
 #footer--social {
@@ -53,5 +33,30 @@
 
   img {
     max-width: 50px;
+  }
+}
+
+
+@include layout(two-col) {
+  #site-footer {
+    > * {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    * + * {
+      margin-left: -5px;
+      text-align: right;
+    }
+  }
+}
+
+@include layout(one-col) {
+  #site-footer {
+    > * {
+      text-align: center;
+      margin: 1rem;
+    }
   }
 }

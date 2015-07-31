@@ -31,7 +31,7 @@
     z-index: 5;
   }
 
-  @media ($two-col) {
+  @include layout(two-col) {
     padding: 2em;
 
     p {
@@ -41,7 +41,8 @@
       }
     }
   }
-  @media ($one-col) {
+
+  @include layout(one-col) {
     padding: 2em 1em;
   }
 }
@@ -63,7 +64,7 @@
   }
 
   // Large screen
-  @media ($two-col) {
+  @include layout(two-col) {
     figure {
       width: 38%;
       display: inline-block;
@@ -90,7 +91,7 @@
   }
 
   // Small Screen
-  @media ($one-col) {
+  @include layout(one-col) {
     text-align: center;
 
     figure, h2 {

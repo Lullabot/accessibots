@@ -39,11 +39,3 @@ $side-min-width: 25rem;
 
 $two-col-max: $body-max-width + $side-max-width;
 $two-col-min: $body-min-width + $side-min-width;
-
-// Breakpoints
-$two-col: "min-width: " + $two-col-min;
-$one-col: "max-width: " + $two-col-min;
-$mobile: "min-width: " + 320px;
-$tablet: "min-width: " + 768px;
-$full: "min-width: " + 1280px;
-
