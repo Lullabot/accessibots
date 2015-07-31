@@ -1,38 +1,6 @@
 // Custom typographical mixins
 // Dependencies: typeplate variables
 
-// -- Provide PX backup to REM sizing for IE8 support.
-//  - Replacing x-rem for consistent naming conventions.
-@mixin o-rem($property, $values) {
-  // Empty list for all values in px
-  $px-values: ();
-  $rem-values: ();
-
-  // Iterate over entries
-  @each $value in $values {
-    // If the value is zero, return 0
-    @if $value == 0 or type_of($value) != number {
-      $px-values: append($px-values, $value);
-      $rem-values: append($rem-values, $value);
-    }
-    // If the value is not zero, convert it from rem to px
-    @else {
-      $px-values: append($px-values, o-rem2px($value));
-      $rem-values: append($rem-values, #{$value}rem);
-    }
-  }
-
-  // Return the property and its list of converted values
-  #{$property}: #{$px-values};
-  #{$property}: #{$rem-values};
-}
-
-// -- Provide PX backup to REM sizing for IE8 support.
-//  - DEPRECATED - Use o-rem instead.
-@mixin x-rem($property, $values) {
-  @include o-rem($property, $values);
-}
-
 // Apply certain styles to all headers.
 @mixin headers {
   h1,h2,h3,h4,h5,h6 {
@@ -42,12 +10,12 @@
 
 // Scale Header Sizes
 @mixin header-font-scale($scalar: 1) {
-  h1 {@include typl8-typescale($alpha   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
-  h2 {@include typl8-typescale($beta    * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
-  h3 {@include typl8-typescale($gamma   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
-  h4 {@include typl8-typescale($delta   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
-  h5 {@include typl8-typescale($epsilon * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
-  h6 {@include typl8-typescale($zeta    * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h1 {@include typl8-typescale($alpha   * $scalar, $typl8-font-base, $typl8-typescale-unit, $typl8-measure);}
+  h2 {@include typl8-typescale($beta    * $scalar, $typl8-font-base, $typl8-typescale-unit, $typl8-measure);}
+  h3 {@include typl8-typescale($gamma   * $scalar, $typl8-font-base, $typl8-typescale-unit, $typl8-measure);}
+  h4 {@include typl8-typescale($delta   * $scalar, $typl8-font-base, $typl8-typescale-unit, $typl8-measure);}
+  h5 {@include typl8-typescale($epsilon * $scalar, $typl8-font-base, $typl8-typescale-unit, $typl8-measure);}
+  h6 {@include typl8-typescale($zeta    * $scalar, $typl8-font-base, $typl8-typescale-unit, $typl8-measure);}
 }
 
 // Auto-scale Header Font Sizes
@@ -93,7 +61,10 @@
     $size: $start-size + $inc;
     $scale: strip-units($inc) + 1;
 
-    @media (min-width: $bp) {font-size: $size;}
+    @media (min-width: $bp) {
+      font-size: $size;
+      margin-bottom: .5em;
+    }
 
     $itt: $itt + 1;
   }

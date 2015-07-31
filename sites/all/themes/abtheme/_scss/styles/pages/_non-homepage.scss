@@ -20,7 +20,6 @@ body:not(.page-home) {
 }
 
 #site-name {
-  //@extend .beta;
   @include scale-font-size(30rem, 1.5em, 80rem, 3em);
   color: $gold;
   font-family: $sans-serif;

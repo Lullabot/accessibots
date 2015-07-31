@@ -3,7 +3,7 @@
 
 @mixin typl8-typescale($scale, $base, $value, $measure:"") {
   @if $value == rem {
-    font-size: $scale * 1px;
+    //font-size: $scale * 1px;
     font-size: typl8-context-calc($scale, $base, $value);
   } @else if $value == em {
     font-size: typl8-context-calc($scale, $base, $value);
@@ -13,7 +13,7 @@
 
   @if $measure != "" {
     @if $value == rem {
-      margin-bottom: typl8-measure-margin($scale, $measure, $value: px);
+      //margin-bottom: typl8-measure-margin($scale, $measure, $value: px);
       margin-bottom: typl8-measure-margin($scale, $measure, $value);
     } @else if $value == em {
       margin-bottom: typl8-measure-margin($scale, $measure, $value: em);

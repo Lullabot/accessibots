@@ -24,7 +24,6 @@ body {
   text-shadow: 1px 1px 1px rgba(black, .38);
 }
 
-@include header-font-scale(1.2);
 @include header-scale($two-col-max, 30, 9, .5);
 
 p {

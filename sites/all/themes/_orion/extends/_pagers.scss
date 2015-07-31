@@ -2,7 +2,7 @@
 // - Pager has individual buttons and uses a slight gradient background.
 %pager-buttons-gradient {
   @include clearfix;
-  @include o-rem(margin, 1 0);
+  margin: 1em 0;
   padding: 0;
 
   li {

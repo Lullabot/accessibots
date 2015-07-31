@@ -65,5 +65,5 @@
 // Style a link to look like a button
 @mixin proto-button {
   @include button('simple', $proto-color);
-  @include o-rem(font-size, 1);
+  font-size: 1rem;
 }

@@ -2,17 +2,17 @@
 $serif: 'Arvo', serif;
 $sans-serif: 'Raleway', sans-serif;
 
-$font-size: 130;
+$typl8-font-size: 130;
 
 $modular-scale-ratio: $golden;
 $modular-scale-base: 1.0em;
 
-$alpha:   strip_units(modular-scale(4) * $font-base);
-$beta:    strip_units(modular-scale(3) * $font-base);
-$gama:    strip_units(modular-scale(2) * $font-base);
-$delta:   strip_units(modular-scale(1) * $font-base);
-$epsilon: strip_units(modular-scale(0) * $font-base);
-$zeta:    strip_units(modular-scale(-1) * $font-base);
+$alpha:   strip_units(modular-scale(4) * $typl8-font-base);
+$beta:    strip_units(modular-scale(3) * $typl8-font-base);
+$gamma:   strip_units(modular-scale(2) * $typl8-font-base);
+$delta:   strip_units(modular-scale(1) * $typl8-font-base);
+$epsilon: strip_units(modular-scale(0) * $typl8-font-base);
+$zeta:    strip_units(modular-scale(-1) * $typl8-font-base);
 
 // Font Scaling
 $font-scale-start: 20rem;
@@ -28,6 +28,8 @@ $blue1: rgb(0, 175, 214);
 
 // Typeplate Overrides
 $paragraph-vertical-whitespace: true;
+$typl8-paragraph-spacing: false;
+$typl8-indent-val: 0;
 
 // Structure
 $page-margin: 5%;
