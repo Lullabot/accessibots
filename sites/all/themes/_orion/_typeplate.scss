@@ -1,1 +1,17 @@
-@import 'styles/typeplate';
+/*!
+Typeplate : Starter Kit
+URL ........... http://typeplate.com
+Version ....... 2.1.0
+Github ........ https://github.com/typeplate/starter-kit
+Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+License ....... Creative Commmons Attribution 3.0
+License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+*/
+
+@import "typeplate/typeplate-vars";
+@import "typeplate/typeplate-fonts";
+@import "typeplate/typeplate-functions";
+@import "typeplate/typeplate-mixins";
+@import "typeplate/typeplate-extends";
+@import "typeplate/typeplate-styles";
+@import "typeplate/typeplate-helpers";

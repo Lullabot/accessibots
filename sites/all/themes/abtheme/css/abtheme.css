@@ -355,6 +355,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*!
+Typeplate : Starter Kit
+URL ........... http://typeplate.com
+Version ....... 2.1.0
+Github ........ https://github.com/typeplate/starter-kit
+Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+License ....... Creative Commmons Attribution 3.0
+License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+*/
 @font-face {
   font-family: 'Ampersand';
   src: local('Georgia'), local('Garamond'), local('Palatino'), local('Book Antiqua');
@@ -365,115 +374,116 @@ table {
   src: local('Georgia');
   unicode-range: U270C; }
 
+.typl8-tera, .typl8-giga, .typl8-mega, h1, .typl8-alpha, h2, .typl8-beta, h3, .typl8-gamma, h4, .typl8-delta, h5, .typl8-epsilon, .typl8-zeta, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  color: #222; }
+
+blockquote + figcaption cite {
+  display: block;
+  font-size: inherit;
+  text-align: right; }
+
 body {
   word-wrap: break-word; }
 
 pre code {
   word-wrap: normal; }
 
-/**
- * Dropcap Sass @include
- * Use the following Sass @include with any selector you feel necessary.
- *
-	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
- *
- * Extend this object into your custom stylesheet. Let the variables do the work.
- *
- */
 html {
-  font: normal 130%/1.65 serif; }
+  font: normal 112.5%/1.65 serif; }
 
 body {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
-  -o-hyphens: auto;
   hyphens: auto;
   color: #444; }
+
+.typl8-tera {
+  font-size: 117px;
+  font-size: 6.5rem;
+  margin-bottom: 70.9090909091px;
+  margin-bottom: 3.93939rem; }
+
+.typl8-giga {
+  font-size: 90px;
+  font-size: 5rem;
+  margin-bottom: 54.5454545455px;
+  margin-bottom: 3.0303rem; }
+
+.typl8-mega, h1 {
+  font-size: 72px;
+  font-size: 4rem;
+  margin-bottom: 43.6363636364px;
+  margin-bottom: 2.42424rem; }
+
+.typl8-alpha, h2 {
+  font-size: 60px;
+  font-size: 3.33333rem;
+  margin-bottom: 36.3636363636px;
+  margin-bottom: 2.0202rem; }
+
+.typl8-beta, h3 {
+  font-size: 48px;
+  font-size: 2.66667rem;
+  margin-bottom: 29.0909090909px;
+  margin-bottom: 1.61616rem; }
+
+.typl8-gamma, h4 {
+  font-size: 36px;
+  font-size: 2rem;
+  margin-bottom: 21.8181818182px;
+  margin-bottom: 1.21212rem; }
+
+.typl8-delta, h5 {
+  font-size: 24px;
+  font-size: 1.33333rem;
+  margin-bottom: 14.5454545455px;
+  margin-bottom: 0.80808rem; }
+
+.typl8-epsilon {
+  font-size: 21px;
+  font-size: 1.16667rem;
+  margin-bottom: 12.7272727273px;
+  margin-bottom: 0.70707rem; }
+
+.typl8-zeta, h6 {
+  font-size: 18px;
+  font-size: 1rem;
+  margin-bottom: 10.9090909091px;
+  margin-bottom: 0.60606rem; }
+
+p {
+  margin: auto auto 1.5em; }
+  p + p {
+    text-indent: 1.5em;
+    margin-top: -1.5em; }
 
 small {
   font-size: 65%; }
 
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  margin-top: 0; }
-
-.tera {
-  font-size: 117 px;
-  font-size: 6.5 rem;
-  margin-bottom: 0.2538461538 rem; }
-
-.giga {
-  font-size: 90 px;
-  font-size: 5 rem;
-  margin-bottom: 0.33 rem; }
-
-.mega {
-  font-size: 72 px;
-  font-size: 4 rem;
-  margin-bottom: 0.4125 rem; }
-
-.alpha, h1 {
-  font-size: 123.363469256 px;
-  font-size: 6.8535260698 rem;
-  margin-bottom: 0.2407519842 rem; }
-
-.beta, h2 {
-  font-size: 76.244418576 px;
-  font-size: 4.235801032 rem;
-  margin-bottom: 0.3895367104 rem; }
-
-.gamma, h3 {
-  font-size: 36 px;
-  font-size: 2 rem;
-  margin-bottom: 0.825 rem; }
-
-.delta, h4 {
-  font-size: 29.124 px;
-  font-size: 1.618 rem;
-  margin-bottom: 1.0197775031 rem; }
-
-.epsilon, h5 {
-  font-size: 18 px;
-  font-size: 1 rem;
-  margin-bottom: 1.65 rem; }
-
-.zeta, h6 {
-  font-size: 11.1248454883 px;
-  font-size: 0.6180469716 rem;
-  margin-bottom: 2.6697 rem; }
-
-p {
-  margin: auto auto 1.5em; }
-
-abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
+input, abbr, acronym, blockquote, code, kbd, q, samp, var {
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
-  -o-hyphens: none;
   hyphens: none; }
-
-pre code {
-  white-space: -moz- pre-wrap;
-  white-space: pre-wrap; }
 
 pre {
   white-space: pre; }
+  pre code {
+    white-space: -moz- pre-wrap;
+    white-space: pre-wrap; }
 
 code {
   white-space: pre;
   font-family: monospace; }
 
-/**
- * Abbreviations Markup
- *
-	<abbr title="hyper text markup language">HMTL</abbr>
- *
- * Extend this object into your markup.
- *
- */
 abbr {
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  -ms-font-variant: small-caps;
   font-variant: small-caps;
   font-weight: 600;
   text-transform: lowercase;
@@ -481,17 +491,10 @@ abbr {
   abbr[title]:hover {
     cursor: help; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #222; }
-
-p + .drop-cap {
-  text-indent: 0;
-  margin-top: 0; }
-
-.drop-cap:first-letter {
+.typl8-drop-cap:first-letter {
   float: left;
-  margin: inherit;
-  padding: inherit;
+  margin: 10px 10px 0 0;
+  padding: 0 20px;
   font-size: 4em;
   font-family: inherit;
   line-height: 1;
@@ -499,65 +502,69 @@ p + .drop-cap {
   background: transparent;
   color: inherit; }
 
+p + .typl8-drop-cap {
+  text-indent: 0;
+  margin-top: 0; }
+
 /**
  * Lining Definition Style Markup
  *
-	<dl class="lining">
-		<dt><b></b></dt>
-		<dd></dd>
-	</dl>
+  <dl class="typl8-lining">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
  *
  * Extend this object into your markup.
  *
  */
-.lining dt, .lining dd {
+.typl8-lining dt, .typl8-lining dd {
   display: inline;
   margin: 0; }
-.lining dt + dt:before, .lining dd + dt:before {
+.typl8-lining dt + dt:before, .typl8-lining dd + dt:before {
   content: "\A";
   white-space: pre; }
-.lining dd + dd:before {
+.typl8-lining dd + dd:before {
   content: ", "; }
-.lining dd:before {
+.typl8-lining dd:before {
   content: ": ";
   margin-left: -0.2rem; }
 
 /**
  * Dictionary Definition Style Markup
  *
-	<dl class="dictionary-style">
-		<dt><b></b></dt>
-			<dd></dd>
-	</dl>
+  <dl class="typl8-dictionary-style">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
  *
  * Extend this object into your markup.
  *
  */
-.dictionary-style dt {
+.typl8-dictionary-style dt {
   display: inline;
   counter-reset: definitions; }
-  .dictionary-style dt + dt:before {
+  .typl8-dictionary-style dt + dt:before {
     content: ", ";
     margin-left: -0.2rem; }
-.dictionary-style dd {
+.typl8-dictionary-style dd {
   display: block;
   counter-increment: definitions; }
-  .dictionary-style dd:before {
+  .typl8-dictionary-style dd:before {
     content: counter(definitions, decimal) ". "; }
 
 /**
  * Blockquote Markup
  *
-		<figure>
-			<blockquote cite="">
-				<p></p>
-			</blockquote>
-			<figcaption>
-				<cite>
-					<small><a href=""></a></small>
-				</cite>
-			</figcaption>
-		</figure>
+    <figure>
+      <blockquote cite="">
+        <p></p>
+      </blockquote>
+      <figcaption>
+        <cite>
+          <small><a href=""></a></small>
+        </cite>
+      </figcaption>
+    </figure>
  *
  * Extend this object into your markup.
  *
@@ -565,29 +572,29 @@ p + .drop-cap {
 /**
  * Pull Quotes Markup
  *
-	<aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	</aside>
+  <aside class="typl8-pull-quote">
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </aside>
  *
  * Extend this object into your custom stylesheet.
  *
  */
-.pull-quote {
+.typl8-pull-quote {
   position: relative;
-  padding: 1 em; }
-  .pull-quote:before, .pull-quote:after {
-    height: 1 em;
+  padding: 1em; }
+  .typl8-pull-quote:before, .typl8-pull-quote:after {
+    height: 1em;
     opacity: 0.5;
     position: absolute;
     font-size: 4em;
     color: #dc976e; }
-  .pull-quote:before {
+  .typl8-pull-quote:before {
     content: '“';
     top: 0;
     left: 0; }
-  .pull-quote:after {
+  .typl8-pull-quote:after {
     content: '”';
     bottom: 0;
     right: 0; }
@@ -595,11 +602,11 @@ p + .drop-cap {
 /**
  * Figures Markup
  *
-	<figure>
-		<figcaption>
-			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
-		</figcaption>
-	</figure>
+  <figure>
+    <figcaption>
+      <strong>Fig. X.X | </strong><cite title=""></cite>
+    </figcaption>
+  </figure>
  *
  * Extend this object into your markup.
  *
@@ -607,14 +614,14 @@ p + .drop-cap {
 /**
  * Footnote Markup : Replace 'X' with your unique number for each footnote
  *
-	<article>
-		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
-		<footer>
-			<ol class="foot-notes">
-				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
-			</ol>
-		</footer>
-	</article>
+  <article>
+    <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+    <footer>
+      <ol class="foot-notes">
+        <li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+      </ol>
+    </footer>
+  </article>
  *
  * Extend this object into your markup.
  *
@@ -644,213 +651,297 @@ h1, h2, h3, h4, h5, h6 {
   color: #F37384;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38); }
 
+h1 {
+  font-size: 148.0361631072px;
+  font-size: '8.22423rem';
+  margin-bottom: 89.7188867316px;
+  margin-bottom: '4.98438rem'; }
+
+h2 {
+  font-size: 91.4933022912px;
+  font-size: '5.08296rem';
+  margin-bottom: 55.4504862371px;
+  margin-bottom: '3.08058rem'; }
+
+h3 {
+  font-size: 43.2px;
+  font-size: '2.4rem';
+  margin-bottom: 26.1818181818px;
+  margin-bottom: '1.45455rem'; }
+
+h4 {
+  font-size: 34.9488px;
+  font-size: '1.9416rem';
+  margin-bottom: 21.1810909091px;
+  margin-bottom: '1.17673rem'; }
+
+h5 {
+  font-size: 21.6px;
+  font-size: '1.2rem';
+  margin-bottom: 13.0909090909px;
+  margin-bottom: '0.72727rem'; }
+
+h6 {
+  font-size: 13.3498145859px;
+  font-size: '0.74166rem';
+  margin-bottom: 8.0907967187px;
+  margin-bottom: '0.44949rem'; }
+
 @media (max-width: 71.7777777778rem) {
   h1 {
-    font-size: 115.6532524275 px;
-    font-size: 6.4251806904 rem;
-    margin-bottom: 0.2568021165 rem; }
+    font-size: 115.6532524275px;
+    font-size: '6.42518rem';
+    margin-bottom: 70.0928802591px;
+    margin-bottom: '3.89405rem'; }
   h2 {
-    font-size: 71.479142415 px;
-    font-size: 3.9710634675 rem;
-    margin-bottom: 0.4155058244 rem; }
+    font-size: 71.479142415px;
+    font-size: '3.97106rem';
+    margin-bottom: 43.3206923727px;
+    margin-bottom: '2.40671rem'; }
   h3 {
-    font-size: 33.75 px;
-    font-size: 1.875 rem;
-    margin-bottom: 0.88 rem; }
+    font-size: 33.75px;
+    font-size: '1.875rem';
+    margin-bottom: 20.4545454545px;
+    margin-bottom: '1.13636rem'; }
   h4 {
-    font-size: 27.30375 px;
-    font-size: 1.516875 rem;
-    margin-bottom: 1.08776267 rem; }
+    font-size: 27.30375px;
+    font-size: '1.51687rem';
+    margin-bottom: 16.5477272727px;
+    margin-bottom: '0.91932rem'; }
   h5 {
-    font-size: 16.875 px;
-    font-size: 0.9375 rem;
-    margin-bottom: 1.76 rem; }
+    font-size: 16.875px;
+    font-size: '0.9375rem';
+    margin-bottom: 10.2272727273px;
+    margin-bottom: '0.56818rem'; }
   h6 {
-    font-size: 10.4295426452 px;
-    font-size: 0.5794190358 rem;
-    margin-bottom: 2.84768 rem; } }
+    font-size: 10.4295426452px;
+    font-size: '0.57942rem';
+    margin-bottom: 6.3209349365px;
+    margin-bottom: '0.35116rem'; } }
 
 @media (max-width: 66.5555555556rem) {
   h1 {
-    font-size: 107.943035599 px;
-    font-size: 5.9968353111 rem;
-    margin-bottom: 0.2751451248 rem; }
+    font-size: 107.943035599px;
+    font-size: '5.99684rem';
+    margin-bottom: 65.4200215751px;
+    margin-bottom: '3.63445rem'; }
   h2 {
-    font-size: 66.713866254 px;
-    font-size: 3.706325903 rem;
-    margin-bottom: 0.4451848119 rem; }
+    font-size: 66.713866254px;
+    font-size: '3.70633rem';
+    margin-bottom: 40.4326462145px;
+    margin-bottom: '2.24626rem'; }
   h3 {
-    font-size: 31.5 px;
-    font-size: 1.75 rem;
-    margin-bottom: 0.9428571429 rem; }
+    font-size: 31.5px;
+    font-size: '1.75rem';
+    margin-bottom: 19.0909090909px;
+    margin-bottom: '1.06061rem'; }
   h4 {
-    font-size: 25.4835 px;
-    font-size: 1.41575 rem;
-    margin-bottom: 1.1654600035 rem; }
+    font-size: 25.4835px;
+    font-size: '1.41575rem';
+    margin-bottom: 15.4445454545px;
+    margin-bottom: '0.85803rem'; }
   h5 {
-    font-size: 15.75 px;
-    font-size: 0.875 rem;
-    margin-bottom: 1.8857142857 rem; }
+    font-size: 15.75px;
+    font-size: '0.875rem';
+    margin-bottom: 9.5454545455px;
+    margin-bottom: '0.5303rem'; }
   h6 {
-    font-size: 9.7342398022 px;
-    font-size: 0.5407911001 rem;
-    margin-bottom: 3.0510857143 rem; } }
+    font-size: 9.7342398022px;
+    font-size: '0.54079rem';
+    margin-bottom: 5.8995392741px;
+    margin-bottom: '0.32775rem'; } }
 
 @media (max-width: 61.3333333333rem) {
   h1 {
-    font-size: 100.2328187705 px;
-    font-size: 5.5684899317 rem;
-    margin-bottom: 0.2963101344 rem; }
+    font-size: 100.2328187705px;
+    font-size: '5.56849rem';
+    margin-bottom: 60.7471628912px;
+    margin-bottom: '3.37484rem'; }
   h2 {
-    font-size: 61.948590093 px;
-    font-size: 3.4415883385 rem;
-    margin-bottom: 0.4794297974 rem; }
+    font-size: 61.948590093px;
+    font-size: '3.44159rem';
+    margin-bottom: 37.5446000564px;
+    margin-bottom: '2.08581rem'; }
   h3 {
-    font-size: 29.25 px;
-    font-size: 1.625 rem;
-    margin-bottom: 1.0153846154 rem; }
+    font-size: 29.25px;
+    font-size: '1.625rem';
+    margin-bottom: 17.7272727273px;
+    margin-bottom: '0.98485rem'; }
   h4 {
-    font-size: 23.66325 px;
-    font-size: 1.314625 rem;
-    margin-bottom: 1.255110773 rem; }
+    font-size: 23.66325px;
+    font-size: '1.31463rem';
+    margin-bottom: 14.3413636364px;
+    margin-bottom: '0.79674rem'; }
   h5 {
-    font-size: 14.625 px;
-    font-size: 0.8125 rem;
-    margin-bottom: 2.0307692308 rem; }
+    font-size: 14.625px;
+    font-size: '0.8125rem';
+    margin-bottom: 8.8636363636px;
+    margin-bottom: '0.49242rem'; }
   h6 {
-    font-size: 9.0389369592 px;
-    font-size: 0.5021631644 rem;
-    margin-bottom: 3.2857846154 rem; } }
+    font-size: 9.0389369592px;
+    font-size: '0.50216rem';
+    margin-bottom: 5.4781436116px;
+    margin-bottom: '0.30434rem'; } }
 
 @media (max-width: 56.1111111111rem) {
   h1 {
-    font-size: 92.522601942 px;
-    font-size: 5.1401445523 rem;
-    margin-bottom: 0.3210026456 rem; }
+    font-size: 92.522601942px;
+    font-size: '5.14014rem';
+    margin-bottom: 56.0743042073px;
+    margin-bottom: '3.11524rem'; }
   h2 {
-    font-size: 57.183313932 px;
-    font-size: 3.176850774 rem;
-    margin-bottom: 0.5193822806 rem; }
+    font-size: 57.183313932px;
+    font-size: '3.17685rem';
+    margin-bottom: 34.6565538982px;
+    margin-bottom: '1.92536rem'; }
   h3 {
-    font-size: 27 px;
-    font-size: 1.5 rem;
-    margin-bottom: 1.1 rem; }
+    font-size: 27px;
+    font-size: '1.5rem';
+    margin-bottom: 16.3636363636px;
+    margin-bottom: '0.90909rem'; }
   h4 {
-    font-size: 21.843 px;
-    font-size: 1.2135 rem;
-    margin-bottom: 1.3597033375 rem; }
+    font-size: 21.843px;
+    font-size: '1.2135rem';
+    margin-bottom: 13.2381818182px;
+    margin-bottom: '0.73545rem'; }
   h5 {
-    font-size: 13.5 px;
-    font-size: 0.75 rem;
-    margin-bottom: 2.2 rem; }
+    font-size: 13.5px;
+    font-size: '0.75rem';
+    margin-bottom: 8.1818181818px;
+    margin-bottom: '0.45455rem'; }
   h6 {
-    font-size: 8.3436341162 px;
-    font-size: 0.4635352287 rem;
-    margin-bottom: 3.5596 rem; } }
+    font-size: 8.3436341162px;
+    font-size: '0.46354rem';
+    margin-bottom: 5.0567479492px;
+    margin-bottom: '0.28093rem'; } }
 
 @media (max-width: 50.8888888889rem) {
   h1 {
-    font-size: 84.8123851135 px;
-    font-size: 4.711799173 rem;
-    margin-bottom: 0.3501847043 rem; }
+    font-size: 84.8123851135px;
+    font-size: '4.7118rem';
+    margin-bottom: 51.4014455233px;
+    margin-bottom: '2.85564rem'; }
   h2 {
-    font-size: 52.418037771 px;
-    font-size: 2.9121132095 rem;
-    margin-bottom: 0.5665988515 rem; }
+    font-size: 52.418037771px;
+    font-size: '2.91211rem';
+    margin-bottom: 31.76850774px;
+    margin-bottom: '1.76492rem'; }
   h3 {
-    font-size: 24.75 px;
-    font-size: 1.375 rem;
-    margin-bottom: 1.2 rem; }
+    font-size: 24.75px;
+    font-size: '1.375rem';
+    margin-bottom: 15px;
+    margin-bottom: '0.83333rem'; }
   h4 {
-    font-size: 20.02275 px;
-    font-size: 1.112375 rem;
-    margin-bottom: 1.4833127318 rem; }
+    font-size: 20.02275px;
+    font-size: '1.11238rem';
+    margin-bottom: 12.135px;
+    margin-bottom: '0.67417rem'; }
   h5 {
-    font-size: 12.375 px;
-    font-size: 0.6875 rem;
-    margin-bottom: 2.4 rem; }
+    font-size: 12.375px;
+    font-size: '0.6875rem';
+    margin-bottom: 7.5px;
+    margin-bottom: '0.41667rem'; }
   h6 {
-    font-size: 7.6483312732 px;
-    font-size: 0.424907293 rem;
-    margin-bottom: 3.8832 rem; } }
+    font-size: 7.6483312732px;
+    font-size: '0.42491rem';
+    margin-bottom: 4.6353522868px;
+    margin-bottom: '0.25752rem'; } }
 
 @media (max-width: 45.6666666667rem) {
   h1 {
-    font-size: 77.102168285 px;
-    font-size: 4.2834537936 rem;
-    margin-bottom: 0.3852031747 rem; }
+    font-size: 77.102168285px;
+    font-size: '4.28345rem';
+    margin-bottom: 46.7285868394px;
+    margin-bottom: '2.59603rem'; }
   h2 {
-    font-size: 47.65276161 px;
-    font-size: 2.647375645 rem;
-    margin-bottom: 0.6232587367 rem; }
+    font-size: 47.65276161px;
+    font-size: '2.64738rem';
+    margin-bottom: 28.8804615818px;
+    margin-bottom: '1.60447rem'; }
   h3 {
-    font-size: 22.5 px;
-    font-size: 1.25 rem;
-    margin-bottom: 1.32 rem; }
+    font-size: 22.5px;
+    font-size: '1.25rem';
+    margin-bottom: 13.6363636364px;
+    margin-bottom: '0.75758rem'; }
   h4 {
-    font-size: 18.2025 px;
-    font-size: 1.01125 rem;
-    margin-bottom: 1.6316440049 rem; }
+    font-size: 18.2025px;
+    font-size: '1.01125rem';
+    margin-bottom: 11.0318181818px;
+    margin-bottom: '0.61288rem'; }
   h5 {
-    font-size: 11.25 px;
-    font-size: 0.625 rem;
-    margin-bottom: 2.64 rem; }
+    font-size: 11.25px;
+    font-size: '0.625rem';
+    margin-bottom: 6.8181818182px;
+    margin-bottom: '0.37879rem'; }
   h6 {
-    font-size: 6.9530284302 px;
-    font-size: 0.3862793572 rem;
-    margin-bottom: 4.27152 rem; } }
+    font-size: 6.9530284302px;
+    font-size: '0.38628rem';
+    margin-bottom: 4.2139566243px;
+    margin-bottom: '0.23411rem'; } }
 
 @media (max-width: 40.4444444444rem) {
   h1 {
-    font-size: 69.3919514565 px;
-    font-size: 3.8551084142 rem;
-    margin-bottom: 0.4280035274 rem; }
+    font-size: 69.3919514565px;
+    font-size: '3.85511rem';
+    margin-bottom: 42.0557281554px;
+    margin-bottom: '2.33643rem'; }
   h2 {
-    font-size: 42.887485449 px;
-    font-size: 2.3826380805 rem;
-    margin-bottom: 0.6925097074 rem; }
+    font-size: 42.887485449px;
+    font-size: '2.38264rem';
+    margin-bottom: 25.9924154236px;
+    margin-bottom: '1.44402rem'; }
   h3 {
-    font-size: 20.25 px;
-    font-size: 1.125 rem;
-    margin-bottom: 1.4666666667 rem; }
+    font-size: 20.25px;
+    font-size: '1.125rem';
+    margin-bottom: 12.2727272727px;
+    margin-bottom: '0.68182rem'; }
   h4 {
-    font-size: 16.38225 px;
-    font-size: 0.910125 rem;
-    margin-bottom: 1.8129377833 rem; }
+    font-size: 16.38225px;
+    font-size: '0.91013rem';
+    margin-bottom: 9.9286363636px;
+    margin-bottom: '0.55159rem'; }
   h5 {
-    font-size: 10.125 px;
-    font-size: 0.5625 rem;
-    margin-bottom: 2.9333333333 rem; }
+    font-size: 10.125px;
+    font-size: '0.5625rem';
+    margin-bottom: 6.1363636364px;
+    margin-bottom: '0.34091rem'; }
   h6 {
-    font-size: 6.2577255871 px;
-    font-size: 0.3476514215 rem;
-    margin-bottom: 4.7461333333 rem; } }
+    font-size: 6.2577255871px;
+    font-size: '0.34765rem';
+    margin-bottom: 3.7925609619px;
+    margin-bottom: '0.2107rem'; } }
 
 @media (max-width: 35.2222222222rem) {
   h1 {
-    font-size: 61.681734628 px;
-    font-size: 3.4267630349 rem;
-    margin-bottom: 0.4815039684 rem; }
+    font-size: 61.681734628px;
+    font-size: '3.42676rem';
+    margin-bottom: 37.3828694715px;
+    margin-bottom: '2.07683rem'; }
   h2 {
-    font-size: 38.122209288 px;
-    font-size: 2.117900516 rem;
-    margin-bottom: 0.7790734208 rem; }
+    font-size: 38.122209288px;
+    font-size: '2.1179rem';
+    margin-bottom: 23.1043692655px;
+    margin-bottom: '1.28358rem'; }
   h3 {
-    font-size: 18 px;
-    font-size: 1 rem;
-    margin-bottom: 1.65 rem; }
+    font-size: 18px;
+    font-size: '1rem';
+    margin-bottom: 10.9090909091px;
+    margin-bottom: '0.60606rem'; }
   h4 {
-    font-size: 14.562 px;
-    font-size: 0.809 rem;
-    margin-bottom: 2.0395550062 rem; }
+    font-size: 14.562px;
+    font-size: '0.809rem';
+    margin-bottom: 8.8254545455px;
+    margin-bottom: '0.4903rem'; }
   h5 {
-    font-size: 9 px;
-    font-size: 0.5 rem;
-    margin-bottom: 3.3 rem; }
+    font-size: 9px;
+    font-size: '0.5rem';
+    margin-bottom: 5.4545454545px;
+    margin-bottom: '0.30303rem'; }
   h6 {
-    font-size: 5.5624227441 px;
-    font-size: 0.3090234858 rem;
-    margin-bottom: 5.3394 rem; } }
+    font-size: 5.5624227441px;
+    font-size: '0.30902rem';
+    margin-bottom: 3.3711652995px;
+    margin-bottom: '0.18729rem'; } }
 
 p {
   margin-bottom: 0; }

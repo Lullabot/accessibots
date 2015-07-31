@@ -47,11 +47,6 @@ module.exports = function(grunt) {
         dest: 'css/abtheme.css'
       }
     },
-    px_to_rem: {
-      files: {
-        'css/style.css': ['css/abtheme.css']
-      }
-    },
     csslint: {
       options: {
         csslintrc: '.csslintrc',
@@ -73,11 +68,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-sass-globbing');
-
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-px-to-rem');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -87,7 +80,6 @@ module.exports = function(grunt) {
     'sass_globbing',
     'sass',
     'autoprefixer',
-    'px_to_rem',
     'csslint',
     'cssmin'
   ]);
