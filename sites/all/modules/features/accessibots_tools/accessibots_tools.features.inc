@@ -72,7 +72,7 @@ function accessibots_tools_node_info() {
     'tool' => array(
       'name' => t('Tool'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Create a new accessibility testing tool.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
