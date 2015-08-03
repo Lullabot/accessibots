@@ -23,13 +23,14 @@ body:not(.page-home) {
   @include scale-font-size(30rem, 1.5em, 80rem, 3em);
   color: $gold;
   font-family: $sans-serif;
+  margin-bottom: .2em;
 
   &:after {
     content: '• • • • • • • • • •';
     display: block;
     margin: 0 auto;
     line-height: 1em;
-    font-size: 15px;
-    color: $pink1;
+    font-size: 24px;
+    color: $pink2;
   }
 }
