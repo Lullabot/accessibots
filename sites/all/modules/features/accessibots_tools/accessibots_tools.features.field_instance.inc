@@ -65,78 +65,7 @@ function accessibots_tools_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
-  // Exported field_instance: 'node-tool-field_author'
-  $field_instances['node-tool-field_author'] = array(
-    'bundle' => 'tool',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 7,
-      ),
-      'home_page_announcement' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'tool' => array(
-        'label' => 'hidden',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_author',
-    'label' => 'Author',
-    'required' => 0,
-    'settings' => array(
-      'absolute_url' => 1,
-      'attributes' => array(
-        'class' => '',
-        'configurable_class' => 0,
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => 'default',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'rel_remove' => 'default',
-      'title' => 'optional',
-      'title_label_use_field_label' => 0,
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 38,
+      'weight' => 2,
     ),
   );
 
@@ -196,7 +125,7 @@ function accessibots_tools_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 36,
+      'weight' => 7,
     ),
   );
 
@@ -205,7 +134,7 @@ function accessibots_tools_field_default_field_instances() {
     'bundle' => 'tool',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Leave blank for FREE.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -245,14 +174,14 @@ function accessibots_tools_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
+    'fences_wrapper' => 'no_wrapper',
     'field_name' => 'field_cost',
     'label' => 'Cost',
     'required' => 0,
     'settings' => array(
       'max' => '',
       'min' => '',
-      'prefix' => '',
+      'prefix' => '$',
       'suffix' => '',
       'user_register_form' => FALSE,
     ),
@@ -261,74 +190,7 @@ function accessibots_tools_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 35,
-    ),
-  );
-
-  // Exported field_instance: 'node-tool-field_image'
-  $field_instances['node-tool-field_image'] = array(
-    'bundle' => 'tool',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 1,
-      ),
-      'home_page_announcement' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'tool' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'small_square__190x190_',
-        ),
-        'type' => 'image',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_image',
-    'label' => 'Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 1,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 32,
+      'weight' => 6,
     ),
   );
 
@@ -389,7 +251,128 @@ function accessibots_tools_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 37,
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-tool-field_primary_image'
+  $field_instances['node-tool-field_primary_image'] = array(
+    'bundle' => 'tool',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 8,
+      ),
+      'home_page_announcement' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'no_wrapper',
+    'field_name' => 'field_primary_image',
+    'label' => 'Logo / Symbol',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => 'tools',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-tool-field_reference_link'
+  $field_instances['node-tool-field_reference_link'] = array(
+    'bundle' => 'tool',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 9,
+      ),
+      'home_page_announcement' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'no_wrapper',
+    'field_name' => 'field_reference_link',
+    'label' => 'Reference_link',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => 'nofollow',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'required',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 10,
     ),
   );
 
@@ -398,7 +381,7 @@ function accessibots_tools_field_default_field_instances() {
     'bundle' => 'tool',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Link the title to this URL.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -428,7 +411,7 @@ function accessibots_tools_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
+    'fences_wrapper' => 'no_wrapper',
     'field_name' => 'field_resource_url',
     'label' => 'Resource URL',
     'required' => 0,
@@ -438,16 +421,16 @@ function accessibots_tools_field_default_field_instances() {
         'class' => '',
         'configurable_class' => 0,
         'configurable_title' => 0,
-        'rel' => '',
-        'target' => 'default',
+        'rel' => 'nofollow',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
         'url_cutoff' => 80,
       ),
-      'enable_tokens' => 1,
+      'enable_tokens' => 0,
       'rel_remove' => 'default',
-      'title' => 'optional',
+      'title' => 'none',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
@@ -460,7 +443,7 @@ function accessibots_tools_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 34,
+      'weight' => 5,
     ),
   );
 
@@ -531,13 +514,15 @@ function accessibots_tools_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Author');
   t('Category');
   t('Cost');
   t('Description');
-  t('Image');
+  t('Leave blank for FREE.');
+  t('Link the title to this URL.');
+  t('Logo / Symbol');
   t('Platform');
   t('Platform Image');
+  t('Reference_link');
   t('Resource URL');
 
   return $field_instances;
