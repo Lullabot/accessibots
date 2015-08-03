@@ -59,7 +59,38 @@ function abtheme_preprocess_page(&$vars) {
  * @param $vars
  */
 function abtheme_preprocess_node(&$vars) {
+  $bundle = $vars['type'];
+  $view_mode = $vars['view_mode'];
   $vars['background_image_path'] = '';
+
+  // Build the classes array.
+  foreach ($vars['classes_array'] as $key => &$class) {
+    // Remove node-* classes.
+    if (strpos($class, 'node-') === 0) {
+      unset($vars['classes_array'][$key]);
+    }
+
+    switch ($class) {
+      case 'sticky':
+        $class = "{$bundle}--{$view_mode}--sticky";
+        break;
+
+      case 'promote':
+        $class = "{$bundle}--{$view_mode}--promoted";
+        break;
+
+      case 'clearfix':
+        unset($vars['classes_array'][$key]);
+        break;
+    }
+  }
+
+  // Add BEM classes
+  $vars['classes_array'][] = "{$bundle}--{$view_mode}";
+
+  // Setup proper article attributes
+  $vars['attributes_array']['class'] = $vars['classes_array'];
+
 
   // Check for a background image, though we should always have one.
   if (isset($vars['content']['field_background_image'][0]['#item'])) {
