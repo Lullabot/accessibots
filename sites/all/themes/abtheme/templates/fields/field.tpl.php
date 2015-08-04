@@ -47,7 +47,7 @@
 
 <div <?php print drupal_attributes($attributes_array); ?>>
   <?php if (!$label_hidden) : ?>
-    <label<?php print $title_attributes; ?>><?php print $label ?></label>
+    <label<?php print $title_attributes; ?>><?php print $label ?>:</label>
   <?php endif; ?>
 
   <?php if ($multival) : ?>

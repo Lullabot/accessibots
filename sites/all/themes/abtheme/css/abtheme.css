@@ -1048,27 +1048,31 @@ body:not(.page-home) .header-badge {
   #main-nav.active ul {
     display: block; }
 
-.tool--teaser__field--entityreference--field-platform,
-.tool--teaser__field--entityreference--field-category {
+.tool--full__field--image--field-primary-image {
+  float: left;
+  margin: 0 1em 0.5em 0; }
+
+.field--entityreference--field-platform,
+.field--entityreference--field-category {
   text-align: left;
   margin: 1em 0; }
-  .tool--teaser__field--entityreference--field-platform label,
-  .tool--teaser__field--entityreference--field-category label {
+  .field--entityreference--field-platform label,
+  .field--entityreference--field-category label {
     font-weight: bold;
     display: block; }
-  .tool--teaser__field--entityreference--field-platform .values > div,
-  .tool--teaser__field--entityreference--field-category .values > div {
+  .field--entityreference--field-platform .values > div,
+  .field--entityreference--field-category .values > div {
     display: inline-block;
     font-size: 0.85em; }
-    .tool--teaser__field--entityreference--field-platform .values > div:not(:last-child),
-    .tool--teaser__field--entityreference--field-category .values > div:not(:last-child) {
+    .field--entityreference--field-platform .values > div:not(:last-child),
+    .field--entityreference--field-category .values > div:not(:last-child) {
       margin-right: 1em; }
 
-.tool--teaser__field--entityreference--field-platform .field--image {
+.field--entityreference--field-platform .field--image {
   display: inline-block;
   vertical-align: middle; }
 
-.tool--teaser__field--entityreference--field-category .values > div:before {
+.field--entityreference--field-category .values > div:before {
   display: inline-block;
   vertical-align: middle;
   content: "";
@@ -1094,6 +1098,11 @@ body:not(.page-home) .header-badge {
     width: 80%;
     left: 10%;
     z-index: -1; }
+
+.tool--full__field--number-float--field-price {
+  margin: 1em 0; }
+  .tool--full__field--number-float--field-price label {
+    font-weight: bold; }
 
 .tool--teaser__field--link-field--field-resource-url {
   text-align: left; }
