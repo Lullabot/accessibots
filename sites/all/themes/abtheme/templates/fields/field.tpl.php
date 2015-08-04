@@ -50,8 +50,8 @@
     <label<?php print $title_attributes; ?>><?php print $label ?></label>
   <?php endif; ?>
 
-  <?php if (count($items) > 1 ) : ?>
-    <div class="field-items"<?php print $content_attributes; ?>>
+  <?php if ($multival) : ?>
+    <div class="values"<?php print $content_attributes; ?>>
       <?php foreach ($items as $delta => $item) : ?>
         <div><?php print render($item); ?></div>
       <?php endforeach; ?>

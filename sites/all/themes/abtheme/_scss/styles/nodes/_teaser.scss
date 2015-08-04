@@ -3,7 +3,7 @@ $teaser-height: 470px;
 article.teaser {
   h2 {
     @include scale-font-size($font-scale-start, 1.5em, $font-scale-stop, 2.5em);
-    margin-bottom: .1em;
+    margin: .5em 0;
 
     a {
       color: $pink3;

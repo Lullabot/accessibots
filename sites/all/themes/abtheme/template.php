@@ -124,6 +124,11 @@ function abtheme_preprocess_field(&$vars) {
     "{$bem_element}--{$bem_element_m1}--{$bem_element_m2}",
     "{$bem_block}--{$bem_block_modifier}__{$bem_element}--{$bem_element_m1}--{$bem_element_m2}",
   );
+
+  // Wrap the values in a '.field-items' class if the field has multiple
+  // cardinality, not if there are multiple values in this instance.
+  $info = field_info_field($vars['element']['#field_name']);
+  $vars['multival'] = ((int) $info['cardinality'] !== 1);
 }
 
 /**

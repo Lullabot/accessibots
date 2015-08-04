@@ -8,13 +8,39 @@
     display: block;
   }
 
-  .field-items {
+  .values {
     > div {
       display: inline-block;
+      font-size: 0.85em;
+
+      &:not(:last-child) {
+        margin-right: 1em;
+      }
     }
   }
 }
 
+.tool--teaser__field--entityreference--field-platform {
+  .field--image {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.tool--teaser__field--entityreference--field-category {
+  .values > div {
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: "";
+      background: transparent url("../images/checkbox.svg") 0 0 no-repeat;
+      background-size: 25px;
+      height: 25px;
+      width: 25px;
+      margin-right: .5em;
+    }
+  }
+}
 
 .tool--teaser__field--number-float--field-price {
   color: $grey3;
@@ -22,15 +48,20 @@
   background-color: white;
   padding: 0 1em;
   font-style: italic;
+  margin-bottom: 1em;
 
   &:after {
     display: block;
     content: '';
     border-top: 1px solid $grey2;
     position: absolute;
-    margin: -18px 0 1.5em 0;
+    margin-top: -18px;
     width: 80%;
     left: 10%;
     z-index: -1;
   }
+}
+
+.tool--teaser__field--link-field--field-resource-url {
+  text-align: left;
 }

@@ -1056,25 +1056,47 @@ body:not(.page-home) .header-badge {
   .tool--teaser__field--entityreference--field-category label {
     font-weight: bold;
     display: block; }
-  .tool--teaser__field--entityreference--field-platform .field-items > div,
-  .tool--teaser__field--entityreference--field-category .field-items > div {
-    display: inline-block; }
+  .tool--teaser__field--entityreference--field-platform .values > div,
+  .tool--teaser__field--entityreference--field-category .values > div {
+    display: inline-block;
+    font-size: 0.85em; }
+    .tool--teaser__field--entityreference--field-platform .values > div:not(:last-child),
+    .tool--teaser__field--entityreference--field-category .values > div:not(:last-child) {
+      margin-right: 1em; }
+
+.tool--teaser__field--entityreference--field-platform .field--image {
+  display: inline-block;
+  vertical-align: middle; }
+
+.tool--teaser__field--entityreference--field-category .values > div:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  background: transparent url("../images/checkbox.svg") 0 0 no-repeat;
+  background-size: 25px;
+  height: 25px;
+  width: 25px;
+  margin-right: .5em; }
 
 .tool--teaser__field--number-float--field-price {
   color: #666;
   display: inline-block;
   background-color: white;
   padding: 0 1em;
-  font-style: italic; }
+  font-style: italic;
+  margin-bottom: 1em; }
   .tool--teaser__field--number-float--field-price:after {
     display: block;
     content: '';
     border-top: 1px solid #ccc;
     position: absolute;
-    margin: -18px 0 1.5em 0;
+    margin-top: -18px;
     width: 80%;
     left: 10%;
     z-index: -1; }
+
+.tool--teaser__field--link-field--field-resource-url {
+  text-align: left; }
 
 /* generated with grunt-sass-globbing */
 #siteinfo {
@@ -1265,7 +1287,7 @@ article.node-news .field-attached-files {
       background-color: #febe4a; }
 
 article.teaser h2 {
-  margin-bottom: .1em; }
+  margin: .5em 0; }
   @media (min-width: 20rem) {
     article.teaser h2 {
       font-size: 1.5em; } }
