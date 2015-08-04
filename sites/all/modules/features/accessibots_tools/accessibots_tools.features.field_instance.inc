@@ -22,7 +22,7 @@ function accessibots_tools_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'home_page_announcement' => array(
         'label' => 'above',
@@ -77,13 +77,13 @@ function accessibots_tools_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'home_page_announcement' => array(
         'label' => 'above',
@@ -92,7 +92,7 @@ function accessibots_tools_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
@@ -141,13 +141,14 @@ function accessibots_tools_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => TRUE,
+          'view_mode' => 'default',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 4,
+        'type' => 'entityreference_entity_view',
+        'weight' => 3,
       ),
       'home_page_announcement' => array(
         'label' => 'above',
@@ -156,12 +157,13 @@ function accessibots_tools_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => TRUE,
+          'view_mode' => 'default',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 3,
       ),
       'tool' => array(
@@ -209,16 +211,16 @@ function accessibots_tools_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
+          'prefix_suffix' => 1,
           'scale' => 2,
-          'thousand_separator' => ' ',
+          'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 7,
+        'weight' => 2,
       ),
       'home_page_announcement' => array(
         'label' => 'above',
@@ -266,14 +268,14 @@ function accessibots_tools_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 5,
+        'weight' => 0,
       ),
       'home_page_announcement' => array(
         'label' => 'above',
@@ -320,69 +322,6 @@ function accessibots_tools_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-tool-field_reference_link'
-  $field_instances['node-tool-field_reference_link'] = array(
-    'bundle' => 'tool',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Create a link to an external site.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-      'home_page_announcement' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'no_wrapper',
-    'field_name' => 'field_reference_link',
-    'label' => 'Reference Link',
-    'required' => 0,
-    'settings' => array(
-      'absolute_url' => 1,
-      'attributes' => array(
-        'class' => '',
-        'configurable_class' => 0,
-        'configurable_title' => 0,
-        'rel' => 'nofollow',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 0,
-      'rel_remove' => 'default',
-      'title' => 'required',
-      'title_label_use_field_label' => 0,
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-tool-field_resource_url'
   $field_instances['node-tool-field_resource_url'] = array(
     'bundle' => 'tool',
@@ -391,11 +330,11 @@ function accessibots_tools_field_default_field_instances() {
     'description' => 'Provide a URL to download/install the tool.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 5,
       ),
       'home_page_announcement' => array(
         'label' => 'above',
@@ -522,13 +461,11 @@ function accessibots_tools_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Create a link to an external site.');
   t('Description');
   t('Logo / Symbol');
   t('Platform Image');
   t('Price');
   t('Provide a URL to download/install the tool.');
-  t('Reference Link');
   t('Resource URL');
   t('Supported Platforms');
   t('Used For');

@@ -46,6 +46,22 @@ nav ul li {
 table {
   table-layout: fixed; }
 
+.field--link-field--field-resource-url a {
+  display: inline-block;
+  background-color: #FEC763;
+  color: #0085a3;
+  padding: 0.25em 1em;
+  font-size: 0.85em;
+  border-radius: .25em;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  border: 2px solid transparent;
+  transition: 0.2s all ease-out; }
+  .field--link-field--field-resource-url a:hover, .field--link-field--field-resource-url a:focus, .field--link-field--field-resource-url a:active {
+    border-color: #0085a3;
+    box-shadow: 0 0 5px 1px rgba(0, 175, 214, 0.25); }
+
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -1050,7 +1066,11 @@ body:not(.page-home) .header-badge {
 
 .tool--full__field--image--field-primary-image {
   float: left;
-  margin: 0 1em 0.5em 0; }
+  margin: 0 1em 0.5em 0;
+  max-width: 38%; }
+  .tool--full__field--image--field-primary-image img {
+    max-width: 100%;
+    height: auto; }
 
 .field--entityreference--field-platform,
 .field--entityreference--field-category {
@@ -1104,7 +1124,7 @@ body:not(.page-home) .header-badge {
   .tool--full__field--number-float--field-price label {
     font-weight: bold; }
 
-.tool--teaser__field--link-field--field-resource-url {
+.field--link-field--field-resource-url {
   text-align: left; }
 
 /* generated with grunt-sass-globbing */

@@ -1,0 +1,21 @@
+$triangle-size: 1em;
+
+%link-button {
+  display: inline-block;
+  background-color: $gold;
+  color: $blue2;
+  padding: .25em 1em;
+  font-size: 0.85em;
+  border-radius: .25em;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  border: 2px solid transparent;
+
+  @include transition(.2s all ease-out);
+
+  &:hover, &:focus, &:active {
+    border-color: $blue2;
+    box-shadow: 0 0 5px 1px rgba($blue1, .25);
+  }
+}

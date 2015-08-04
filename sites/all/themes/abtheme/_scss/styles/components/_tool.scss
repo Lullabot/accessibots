@@ -1,6 +1,12 @@
 .tool--full__field--image--field-primary-image {
   float: left;
   margin: 0 1em .5em 0;
+  max-width: 38%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .field--entityreference--field-platform,
@@ -75,6 +81,12 @@
   }
 }
 
-.tool--teaser__field--link-field--field-resource-url {
+.field--link-field--field-resource-url {
   text-align: left;
+
+  a {
+    @extend %link-button;
+  }
 }
+
+
