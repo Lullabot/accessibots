@@ -672,8 +672,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-  color: #F37384;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38); }
+  color: #F37384; }
 
 @media (max-width: 71.7777777778rem) {
   h1 {
@@ -842,7 +841,7 @@ p {
 
 #page--content .panel--pane {
   margin: 2rem auto; }
-  #page--content .panel--pane .inner {
+  #page--content .panel--pane > .inner {
     max-width: 52em;
     padding: 0 1em;
     margin: 0 auto; }
@@ -1061,6 +1060,22 @@ body:not(.page-home) .header-badge {
   .tool--teaser__field--entityreference--field-category .field-items > div {
     display: inline-block; }
 
+.tool--teaser__field--number-float--field-price {
+  color: #666;
+  display: inline-block;
+  background-color: white;
+  padding: 0 1em;
+  font-style: italic; }
+  .tool--teaser__field--number-float--field-price:after {
+    display: block;
+    content: '';
+    border-top: 1px solid #ccc;
+    position: absolute;
+    margin: -18px 0 1.5em 0;
+    width: 80%;
+    left: 10%;
+    z-index: -1; }
+
 /* generated with grunt-sass-globbing */
 #siteinfo {
   background-repeat: no-repeat;
@@ -1249,59 +1264,71 @@ article.node-news .field-attached-files {
       text-decoration: underline;
       background-color: #febe4a; }
 
-@media (min-width: 20rem) {
-  article.teaser h2 {
-    font-size: 1.5em; } }
+article.teaser h2 {
+  margin-bottom: .1em; }
+  @media (min-width: 20rem) {
+    article.teaser h2 {
+      font-size: 1.5em; } }
+  @media (min-width: 32rem) {
+    article.teaser h2 {
+      font-size: 1.7em; } }
+  @media (min-width: 44rem) {
+    article.teaser h2 {
+      font-size: 1.9em; } }
+  @media (min-width: 56rem) {
+    article.teaser h2 {
+      font-size: 2.1em; } }
+  @media (min-width: 68rem) {
+    article.teaser h2 {
+      font-size: 2.3em; } }
+  @media (min-width: 80rem) {
+    article.teaser h2 {
+      font-size: 2.5em; } }
+  article.teaser h2 a {
+    color: #F37384;
+    text-decoration: none; }
+    article.teaser h2 a:hover, article.teaser h2 a:focus {
+      text-decoration: underline; }
 
-@media (min-width: 32rem) {
-  article.teaser h2 {
-    font-size: 1.7em; } }
+article.teaser .field--image--field-primary-image a {
+  display: block;
+  height: 150px; }
 
-@media (min-width: 44rem) {
-  article.teaser h2 {
-    font-size: 1.9em; } }
+article.teaser .field--image--field-primary-image img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-height: 100%;
+  width: auto; }
 
-@media (min-width: 56rem) {
-  article.teaser h2 {
-    font-size: 2.1em; } }
-
-@media (min-width: 68rem) {
-  article.teaser h2 {
-    font-size: 2.3em; } }
-
-@media (min-width: 80rem) {
-  article.teaser h2 {
-    font-size: 2.5em; } }
-
-article.teaser h2 a {
-  color: #F8A9AE;
-  text-decoration: none; }
-
-.panel--pane.staggered article.teaser {
-  text-align: center; }
-  .panel--pane.staggered article.teaser .author, .panel--pane.staggered article.teaser time {
+.panel--pane article.teaser {
+  text-align: center;
+  margin-bottom: 2em; }
+  .panel--pane article.teaser .author, .panel--pane article.teaser time {
     color: #999;
     display: block;
     color: #00afd6; }
 
 @media (max-width: 50rem) {
-  .panel--pane.staggered article.teaser {
+  .panel--pane article.teaser {
     padding: 1em 0; } }
 
 @media (min-width: 50rem) {
-  .panel--pane.staggered .pane-content::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .panel--pane.staggered article.teaser {
-    float: left;
-    width: 50%;
-    height: 470px; }
-    .panel--pane.staggered article.teaser:nth-child(odd) {
-      padding: 0 1em 1em 0; }
-    .panel--pane.staggered article.teaser:nth-child(2) {
-      margin-top: 235px; }
-    .panel--pane.staggered article.teaser:nth-child(even) {
-      padding: 0 0 1em 1em; }
-    .panel--pane.staggered article.teaser:nth-child(odd):not(:first-child) {
-      margin-top: -235px; } }
+  .panel--pane .inner {
+    padding: 0 1em; }
+  .panel--pane .pane-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .panel--pane article.teaser {
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 50%; }
+  .panel--pane.staggered .teaser:nth-child(even) .field--image--field-primary-image {
+    margin-top: 25%; } }

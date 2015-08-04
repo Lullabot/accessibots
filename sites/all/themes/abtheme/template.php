@@ -109,6 +109,9 @@ function abtheme_preprocess_node(&$vars) {
   }
 }
 
+/**
+ * Preprocess fields.
+ */
 function abtheme_preprocess_field(&$vars) {
   $bem_block          = drupal_html_class($vars['element']['#bundle']);
   $bem_block_modifier = drupal_html_class($vars['element']['#view_mode']);

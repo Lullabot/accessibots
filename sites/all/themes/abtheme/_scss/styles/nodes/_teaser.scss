@@ -3,17 +3,36 @@ $teaser-height: 470px;
 article.teaser {
   h2 {
     @include scale-font-size($font-scale-start, 1.5em, $font-scale-stop, 2.5em);
+    margin-bottom: .1em;
 
     a {
-      color: $pink2;
+      color: $pink3;
       text-decoration: none;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .field--image--field-primary-image {
+    a {
+      display: block;
+      height: 150px;
+    }
+
+    img {
+      @include center(y);
+      max-height: 100%;
+      width: auto;
     }
   }
 }
 
-.panel--pane.staggered {
+.panel--pane {
   article.teaser {
     text-align: center;
+    margin-bottom: 2em;
 
     .author, time {
       color: #999;
@@ -25,7 +44,7 @@ article.teaser {
 
 // Small screens
 @include layout(one-col) {
-  .panel--pane.staggered {
+  .panel--pane {
     article.teaser {
       padding: 1em 0;
     }
@@ -34,29 +53,26 @@ article.teaser {
 
 // Large screens
 @include layout(two-col) {
-  .panel--pane.staggered {
+  .panel--pane {
+    .inner {
+      padding: 0 1em;
+    }
+
     .pane-content {
-      @include clearfix;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     article.teaser {
-      float: left;
+      flex-grow: 1;
       width: 50%;
-      height: $teaser-height;
+    }
 
-      &:nth-child(odd) {
-        padding: 0 1em 1em 0;
-      }
-      &:nth-child(2) {
-        margin-top: $teaser-height / 2;
-      }
-
-      &:nth-child(even) {
-        padding: 0 0 1em 1em;
-      }
-
-      &:nth-child(odd):not(:first-child) {
-        margin-top: -($teaser-height / 2);
+    &.staggered {
+      .teaser:nth-child(even) {
+        .field--image--field-primary-image {
+          margin-top: 25%;
+        }
       }
     }
   }

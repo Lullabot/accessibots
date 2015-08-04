@@ -14,3 +14,23 @@
     }
   }
 }
+
+
+.tool--teaser__field--number-float--field-price {
+  color: $grey3;
+  display: inline-block;
+  background-color: white;
+  padding: 0 1em;
+  font-style: italic;
+
+  &:after {
+    display: block;
+    content: '';
+    border-top: 1px solid $grey2;
+    position: absolute;
+    margin: -18px 0 1.5em 0;
+    width: 80%;
+    left: 10%;
+    z-index: -1;
+  }
+}
