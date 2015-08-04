@@ -12,9 +12,15 @@ $triangle-size: 1em;
   z-index: 1;
   border: 2px solid transparent;
 
-  @include transition(.2s all ease-out);
+  transition: .2s border ease-out,
+    .2s box-shadow ease-out,
+    .75s .2s border-top-left-radius,
+    .75s .4s border-top-right-radius,
+    .75s .6s border-bottom-right-radius,
+    .75s .8s border-bottom-left-radius;
 
   &:hover, &:focus, &:active {
+    border-radius: 1em;
     border-color: $blue2;
     box-shadow: 0 0 5px 1px rgba($blue1, .25);
   }

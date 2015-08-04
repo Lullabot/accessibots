@@ -57,8 +57,9 @@ table {
   position: relative;
   z-index: 1;
   border: 2px solid transparent;
-  transition: 0.2s all ease-out; }
+  transition: 0.2s border ease-out, 0.2s box-shadow ease-out, 0.75s 0.2s border-top-left-radius, 0.75s 0.4s border-top-right-radius, 0.75s 0.6s border-bottom-right-radius, 0.75s 0.8s border-bottom-left-radius; }
   .field--link-field--field-resource-url a:hover, .field--link-field--field-resource-url a:focus, .field--link-field--field-resource-url a:active {
+    border-radius: 1em;
     border-color: #0085a3;
     box-shadow: 0 0 5px 1px rgba(0, 175, 214, 0.25); }
 
