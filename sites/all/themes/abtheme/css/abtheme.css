@@ -1357,7 +1357,7 @@ article.teaser .field--image--field-primary-image img {
 
 .panel--pane article.teaser {
   text-align: center;
-  margin-bottom: 2em; }
+  margin-bottom: 5em; }
   .panel--pane article.teaser .author, .panel--pane article.teaser time {
     color: #999;
     display: block;
@@ -1368,8 +1368,6 @@ article.teaser .field--image--field-primary-image img {
     padding: 1em 0; } }
 
 @media (min-width: 50rem) {
-  .panel--pane .inner {
-    padding: 0 1em; }
   .panel--pane .pane-content {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1382,5 +1380,9 @@ article.teaser .field--image--field-primary-image img {
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 50%; }
-  .panel--pane.staggered .teaser:nth-child(even) .field--image--field-primary-image {
-    margin-top: 25%; } }
+    .panel--pane article.teaser .inner {
+      padding: 0 1em; }
+  .panel--pane.staggered .teaser:nth-child(2) {
+    margin-top: 200px; }
+  .panel--pane.staggered .teaser:nth-child(odd):not(:first-child) {
+    margin-top: -200px; } }

@@ -32,7 +32,7 @@ article.teaser {
 .panel--pane {
   article.teaser {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
 
     .author, time {
       color: #999;
@@ -54,10 +54,6 @@ article.teaser {
 // Large screens
 @include layout(two-col) {
   .panel--pane {
-    .inner {
-      padding: 0 1em;
-    }
-
     .pane-content {
       display: flex;
       flex-wrap: wrap;
@@ -66,13 +62,19 @@ article.teaser {
     article.teaser {
       flex-grow: 1;
       width: 50%;
+
+      .inner {
+        padding: 0 1em;
+      }
     }
 
     &.staggered {
-      .teaser:nth-child(even) {
-        .field--image--field-primary-image {
-          margin-top: 25%;
-        }
+      .teaser:nth-child(2) {
+        margin-top: 200px;
+      }
+
+      .teaser:nth-child(odd):not(:first-child) {
+        margin-top: -200px;
       }
     }
   }
