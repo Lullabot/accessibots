@@ -305,7 +305,7 @@ function accessibots_global_strongarm() {
     'mothership_classes_body_path_first' => 0,
     'mothership_classes_body_status' => 0,
     'mothership_classes_body_freeform' => '',
-    'mothership_region_wrapper' => 0,
+    'mothership_region_wrapper' => 1,
     'mothership_classes_region' => 0,
     'mothership_classes_region_freeform' => '',
     'mothership_classes_block' => 0,
