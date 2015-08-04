@@ -1,7 +1,7 @@
 <?php
   hide($content['links']);
 ?>
-<article class="news teaser" role="article">
+<article <?php print drupal_attributes($attributes_array); ?>>
   <?php print render($content['field_primary_image']); ?>
 
   <?php print render($title_prefix); ?>

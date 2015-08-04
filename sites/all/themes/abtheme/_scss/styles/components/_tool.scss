@@ -1,0 +1,16 @@
+.tool--teaser__field--entityreference--field-platform,
+.tool--teaser__field--entityreference--field-category {
+  text-align: left;
+  margin: 1em 0;
+
+  label {
+    font-weight: bold;
+    display: block;
+  }
+
+  .field-items {
+    > div {
+      display: inline-block;
+    }
+  }
+}

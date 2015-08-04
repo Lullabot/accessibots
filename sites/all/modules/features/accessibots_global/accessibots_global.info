@@ -7,7 +7,6 @@ project = accessibots_global
 dependencies[] = ctools
 dependencies[] = entity_view_mode
 dependencies[] = features
-dependencies[] = fences
 dependencies[] = file
 dependencies[] = filter
 dependencies[] = image

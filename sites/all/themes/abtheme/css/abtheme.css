@@ -1049,6 +1049,18 @@ body:not(.page-home) .header-badge {
   #main-nav.active ul {
     display: block; }
 
+.tool--teaser__field--entityreference--field-platform,
+.tool--teaser__field--entityreference--field-category {
+  text-align: left;
+  margin: 1em 0; }
+  .tool--teaser__field--entityreference--field-platform label,
+  .tool--teaser__field--entityreference--field-category label {
+    font-weight: bold;
+    display: block; }
+  .tool--teaser__field--entityreference--field-platform .field-items > div,
+  .tool--teaser__field--entityreference--field-category .field-items > div {
+    display: inline-block; }
+
 /* generated with grunt-sass-globbing */
 #siteinfo {
   background-repeat: no-repeat;

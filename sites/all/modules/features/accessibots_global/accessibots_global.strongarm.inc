@@ -316,7 +316,7 @@ function accessibots_global_strongarm() {
     'mothership_classes_node' => 1,
     'mothership_classes_node_state' => 1,
     'mothership_classes_node_id' => 0,
-    'mothership_classes_node_freeform' => '',
+    'mothership_classes_node_freeform' => 'promote,sticky,clearfix',
     'mothership_classes_node_links_inline' => 0,
     'mothership_classes_node_links_links' => 0,
     'mothership_classes_field_field' => 1,

@@ -2,18 +2,15 @@
   hide($content['links']);
 ?>
 <article <?php print drupal_attributes($attributes_array); ?>>
-  <div class="tool__image">
-    <?php print render($content['field_image']); ?>
-  </div>
+  <?php print render($content['field_primary_image']); ?>
 
-  <header>
-    <h2 class="tool__title">
-      <?php print render($content['field_resource_url']); ?>
-    </h2>
-    <em class="tool__cost">
-      <?php print !empty($content['field_cost']) ? render($content['field_cost']) : t('Free'); ?>
-    </em>
-  </header>
+  <?php print render($title_prefix); ?>
+  <?php if (!$page): ?>
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
+  <?php print render($content['field_cost']); ?>
 
   <?php print render($content); ?>
 </article>

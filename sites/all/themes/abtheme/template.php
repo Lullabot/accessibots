@@ -86,6 +86,7 @@ function abtheme_preprocess_node(&$vars) {
   }
 
   // Add BEM classes
+  $vars['classes_array'][] = "{$view_mode}";
   $vars['classes_array'][] = "{$bundle}--{$view_mode}";
 
   // Setup proper article attributes
@@ -106,6 +107,20 @@ function abtheme_preprocess_node(&$vars) {
       $vars['background_image_path'] = image_style_url($style, $uri);
     }
   }
+}
+
+function abtheme_preprocess_field(&$vars) {
+  $bem_block          = drupal_html_class($vars['element']['#bundle']);
+  $bem_block_modifier = drupal_html_class($vars['element']['#view_mode']);
+  $bem_element        = 'field';
+  $bem_element_m1     = drupal_html_class($vars['element']['#field_type']);
+  $bem_element_m2     = drupal_html_class($vars['element']['#field_name']);
+
+  $vars['attributes_array']['class'] = array(
+    "{$bem_element}--{$bem_element_m1}",
+    "{$bem_element}--{$bem_element_m1}--{$bem_element_m2}",
+    "{$bem_block}--{$bem_block_modifier}__{$bem_element}--{$bem_element_m1}--{$bem_element_m2}",
+  );
 }
 
 /**
