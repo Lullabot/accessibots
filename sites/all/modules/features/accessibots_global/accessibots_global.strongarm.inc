@@ -27,6 +27,13 @@ function accessibots_global_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'ctools_content_all_views';
+  $strongarm->value = 0;
+  $export['ctools_content_all_views'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'date_format_full_date';
   $strongarm->value = 'l, F j, Y';
   $export['date_format_full_date'] = $strongarm;
@@ -51,6 +58,167 @@ function accessibots_global_strongarm() {
     ),
   );
   $export['entity_view_modes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_bean_type';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_bean_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_ctools';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_ctools'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_ctools_custom_content';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_ctools_custom_content'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_dependencies';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_dependencies'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_fe_nodequeue';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_fe_nodequeue'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_field_base';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_field_base'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_field_instance';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_field_instance'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_filter';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_filter'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_image';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_menu_custom';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_menu_custom'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_menu_links';
+  $strongarm->value = 0;
+  $export['features_admin_show_component_menu_links'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_node';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_node'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_page_manager_handlers';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_page_manager_handlers'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_page_manager_pages';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_page_manager_pages'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_panels_layout';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_panels_layout'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_panels_renderer_pipeline';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_panels_renderer_pipeline'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_taxonomy';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_taxonomy'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_user_permission';
+  $strongarm->value = 0;
+  $export['features_admin_show_component_user_permission'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_user_role';
+  $strongarm->value = 0;
+  $export['features_admin_show_component_user_role'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_variable';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_variable'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_views_view';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_views_view'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_wysiwyg';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_wysiwyg'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_default_export_path';
+  $strongarm->value = 'sites/all/modules/features';
+  $export['features_default_export_path'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -137,7 +305,7 @@ function accessibots_global_strongarm() {
     'mothership_classes_body_path_first' => 0,
     'mothership_classes_body_status' => 0,
     'mothership_classes_body_freeform' => '',
-    'mothership_region_wrapper' => 0,
+    'mothership_region_wrapper' => 1,
     'mothership_classes_region' => 0,
     'mothership_classes_region_freeform' => '',
     'mothership_classes_block' => 0,
@@ -145,10 +313,10 @@ function accessibots_global_strongarm() {
     'mothership_classes_block_id_as_class' => 0,
     'mothership_classes_block_contentdiv' => 1,
     'mothership_classes_block_freeform' => '',
-    'mothership_classes_node' => 0,
-    'mothership_classes_node_state' => 0,
+    'mothership_classes_node' => 1,
+    'mothership_classes_node_state' => 1,
     'mothership_classes_node_id' => 0,
-    'mothership_classes_node_freeform' => '',
+    'mothership_classes_node_freeform' => 'promote,sticky,clearfix',
     'mothership_classes_node_links_inline' => 0,
     'mothership_classes_node_links_links' => 0,
     'mothership_classes_field_field' => 1,

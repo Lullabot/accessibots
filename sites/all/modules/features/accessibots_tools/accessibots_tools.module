@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the Accessibots Tools feature.
+ */
+
+include_once 'accessibots_tools.features.inc';
+
+/**
+ * Implements hook_node_view_alter().
+ */
+function accessibots_tools_node_view_alter(&$build) {
+  if (isset($build['field_price'][0]['#markup']) && in_array($build['field_price'][0]['#markup'], array('$0.00', '$0'))) {
+    $build['field_price'][0]['#markup'] = t('FREE');
+  }
+}

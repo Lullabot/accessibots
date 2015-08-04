@@ -59,7 +59,39 @@ function abtheme_preprocess_page(&$vars) {
  * @param $vars
  */
 function abtheme_preprocess_node(&$vars) {
+  $bundle = $vars['type'];
+  $view_mode = $vars['view_mode'];
   $vars['background_image_path'] = '';
+
+  // Build the classes array.
+  foreach ($vars['classes_array'] as $key => &$class) {
+    // Remove node-* classes.
+    if (strpos($class, 'node-') === 0) {
+      unset($vars['classes_array'][$key]);
+    }
+
+    switch ($class) {
+      case 'sticky':
+        $class = "{$bundle}--{$view_mode}--sticky";
+        break;
+
+      case 'promote':
+        $class = "{$bundle}--{$view_mode}--promoted";
+        break;
+
+      case 'clearfix':
+        unset($vars['classes_array'][$key]);
+        break;
+    }
+  }
+
+  // Add BEM classes
+  $vars['classes_array'][] = "{$view_mode}";
+  $vars['classes_array'][] = "{$bundle}--{$view_mode}";
+
+  // Setup proper article attributes
+  $vars['attributes_array']['class'] = $vars['classes_array'];
+
 
   // Check for a background image, though we should always have one.
   if (isset($vars['content']['field_background_image'][0]['#item'])) {
@@ -75,6 +107,28 @@ function abtheme_preprocess_node(&$vars) {
       $vars['background_image_path'] = image_style_url($style, $uri);
     }
   }
+}
+
+/**
+ * Preprocess fields.
+ */
+function abtheme_preprocess_field(&$vars) {
+  $bem_block          = drupal_html_class($vars['element']['#bundle']);
+  $bem_block_modifier = drupal_html_class($vars['element']['#view_mode']);
+  $bem_element        = 'field';
+  $bem_element_m1     = drupal_html_class($vars['element']['#field_type']);
+  $bem_element_m2     = drupal_html_class($vars['element']['#field_name']);
+
+  $vars['attributes_array']['class'] = array(
+    "{$bem_element}--{$bem_element_m1}",
+    "{$bem_element}--{$bem_element_m1}--{$bem_element_m2}",
+    "{$bem_block}--{$bem_block_modifier}__{$bem_element}--{$bem_element_m1}--{$bem_element_m2}",
+  );
+
+  // Wrap the values in a '.field-items' class if the field has multiple
+  // cardinality, not if there are multiple values in this instance.
+  $info = field_info_field($vars['element']['#field_name']);
+  $vars['multival'] = ((int) $info['cardinality'] !== 1);
 }
 
 /**

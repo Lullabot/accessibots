@@ -5,13 +5,12 @@ Nukes the js
 function mothership_js_alter(&$js) {
 
   //unset the original contextual link file
-  if(module_exists('contextual')){
+  /*if(module_exists('contextual')){
     unset(
       $js['modules/contextual/contextual.js']
     );
     drupal_add_js( drupal_get_path('theme', 'mothership') . '/js/contextual.js' );
-
-  }
+  }*/
 
   //js from core modules
   if (theme_get_setting('mothership_js_nuke_module')){

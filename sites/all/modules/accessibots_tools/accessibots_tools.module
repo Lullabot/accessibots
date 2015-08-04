@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Accessibots Tools feature.
- */
-
-include_once 'accessibots_tools.features.inc';

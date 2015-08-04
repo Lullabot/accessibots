@@ -21,7 +21,6 @@ body {
 @include headers {
   font-family: $sans-serif;
   color: $pink3;
-  text-shadow: 1px 1px 1px rgba(black, .38);
 }
 
 @include header-scale($two-col-max, 30, 9, .5);
@@ -39,7 +38,7 @@ p {
   .panel--pane {
     margin: 2rem auto;
 
-    .inner {
+    > .inner {
       max-width: 52em;
       padding: 0 1em;
       margin: 0 auto;

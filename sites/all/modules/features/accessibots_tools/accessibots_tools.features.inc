@@ -31,13 +31,13 @@ function accessibots_tools_image_default_styles() {
 
   // Exported image style: icon.
   $styles['icon'] = array(
-    'label' => 'Icon (20x20)',
+    'label' => 'Icon (25x25)',
     'effects' => array(
-      4 => array(
+      2 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => 20,
-          'height' => 20,
+          'width' => 25,
+          'height' => 25,
           'upscale' => 0,
         ),
         'weight' => 1,
@@ -72,7 +72,7 @@ function accessibots_tools_node_info() {
     'tool' => array(
       'name' => t('Tool'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Create a new accessibility testing tool.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
