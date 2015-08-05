@@ -96,7 +96,7 @@ function accessibots_global_default_linkit_profiles() {
         'weight' => '-10',
       ),
       'class' => array(
-        'enabled' => 0,
+        'enabled' => 1,
         'weight' => '-10',
       ),
       'rel' => array(
