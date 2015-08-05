@@ -80,29 +80,6 @@ function accessibots_home_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-9bb675e9-3d7f-408c-ac75-7df9f9b1fca3';
-    $pane->panel = 'header';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'news_events-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '<none>',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '9bb675e9-3d7f-408c-ac75-7df9f9b1fca3';
-    $display->content['new-9bb675e9-3d7f-408c-ac75-7df9f9b1fca3'] = $pane;
-    $display->panels['header'][0] = 'new-9bb675e9-3d7f-408c-ac75-7df9f9b1fca3';
-    $pane = new stdClass();
     $pane->pid = 'new-5bb6221b-fc6b-4a37-93ae-da1973ac09d3';
     $pane->panel = 'main';
     $pane->type = 'page_messages';
@@ -150,6 +127,32 @@ function accessibots_home_default_page_manager_pages() {
     $pane->uuid = '8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa';
     $display->content['new-8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa'] = $pane;
     $display->panels['main'][1] = 'new-8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa';
+    $pane = new stdClass();
+    $pane->pid = 'new-fd593cd4-4d70-49dd-b4fe-906fefcc29ad';
+    $pane->panel = 'main';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'news_events-homepage_promo';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'bleed',
+    );
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = 'fd593cd4-4d70-49dd-b4fe-906fefcc29ad';
+    $display->content['new-fd593cd4-4d70-49dd-b4fe-906fefcc29ad'] = $pane;
+    $display->panels['main'][2] = 'new-fd593cd4-4d70-49dd-b4fe-906fefcc29ad';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-8fc62e8b-5ee6-439d-b9d1-3c79e6f686fa';
   $handler->conf['display'] = $display;
