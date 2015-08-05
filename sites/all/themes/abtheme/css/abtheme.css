@@ -1146,6 +1146,8 @@ body.cke_editable a:not(.button) {
       width: 20px;
       height: 20px;
       display: block;
+      height: 20px;
+      width: 20px;
       background: radial-gradient(circle at 100% 100%, rgba(255, 0, 0, 0) 20px, rgba(0, 0, 0, 0.2) 20px); }
     #main-nav .js-nav-toggle-wrapper:before {
       margin-right: -20px;
@@ -1223,6 +1225,8 @@ body.cke_editable a:not(.button) {
     #main-nav.active .js-nav-toggle-wrapper {
       background-color: rgba(0, 0, 0, 0.8); }
       #main-nav.active .js-nav-toggle-wrapper:before, #main-nav.active .js-nav-toggle-wrapper:after {
+        height: 20px;
+        width: 20px;
         background: radial-gradient(circle at 100% 100%, rgba(255, 0, 0, 0) 20px, rgba(0, 0, 0, 0.8) 20px); }
     #main-nav.active .js-nav-toggle span {
       background: none; }
@@ -1272,8 +1276,18 @@ nav.tabs {
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   padding: 2em 1em 1em 1em;
-  height: 100%;
-  text-align: left; }
+  text-align: left;
+  border-bottom-left-radius: 1em; }
+  nav.tabs:after {
+    content: '';
+    display: block;
+    margin-bottom: -1em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1em;
+    width: 1em;
+    background: radial-gradient(circle at 0 100%, rgba(255, 0, 0, 0) 1em, rgba(0, 0, 0, 0.5) 1em); }
   nav.tabs .tabs {
     margin: 0;
     padding: 0;
