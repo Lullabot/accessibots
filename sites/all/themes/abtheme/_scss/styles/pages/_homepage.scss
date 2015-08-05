@@ -1,28 +1,4 @@
-#site-header {
-  background-image: url('../images/keyboard.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  position: relative;
-  border-bottom: 2px solid #ccc;
-  z-index: 7;
-}
-
-
 #siteinfo {
-
-  .col2 {
-    background: rgba(28, 41, 79, 0.97);
-    color: #eeeeee;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  p {
-    &:last-child {
-      padding-bottom: 10px;
-    }
-  }
-
   // Slight opaqueness over image to pop text
   &:after {
     //background-color: rgba(0, 0, 0, .3);

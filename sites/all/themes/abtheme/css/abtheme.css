@@ -856,33 +856,15 @@ p {
   p + p {
     margin-top: 1em; }
 
+#page {
+  margin-top: 3em; }
+
 #page--content .panel--pane {
   margin: 2rem auto; }
   #page--content .panel--pane > .inner {
     max-width: 52em;
     padding: 0 1em;
     margin: 0 auto; }
-
-.header-badge {
-  display: block;
-  min-width: 100px;
-  width: 15vw;
-  line-height: 0; }
-  .header-badge img {
-    width: 100%;
-    height: auto; }
-
-body.page-home .header-badge {
-  margin: 0 auto;
-  position: relative;
-  z-index: 8; }
-  body.page-home .header-badge img {
-    margin-top: -50%; }
-
-body:not(.page-home) .header-badge {
-  margin: 0 auto -4rem auto; }
-  body:not(.page-home) .header-badge img {
-    margin-bottom: -50%; }
 
 /* generated with grunt-sass-globbing */
 #site-footer {
@@ -922,6 +904,32 @@ body:not(.page-home) .header-badge {
   #site-footer > * {
     text-align: center;
     margin: 1rem; } }
+
+#site-header {
+  background-image: url("../images/keyboard.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  padding: 2rem 1rem 4rem 1rem;
+  position: relative;
+  border-bottom: 3px solid #ccc;
+  margin-bottom: 10vw;
+  z-index: 7; }
+  #site-header h1 {
+    color: #FEC763;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+
+.header-badge {
+  display: block;
+  min-width: 100px;
+  width: 15vw;
+  line-height: 0;
+  margin: 0 auto -4rem auto; }
+  .header-badge img {
+    margin-bottom: -50%;
+    width: 100%;
+    height: auto; }
 
 #main-nav {
   -webkit-transform: translateX(-100%);
@@ -1129,23 +1137,6 @@ body:not(.page-home) .header-badge {
   text-align: left; }
 
 /* generated with grunt-sass-globbing */
-#site-header {
-  background-image: url("../images/keyboard.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  position: relative;
-  border-bottom: 2px solid #ccc;
-  z-index: 7; }
-
-#siteinfo .col2 {
-  background: rgba(28, 41, 79, 0.97);
-  color: #eeeeee;
-  -webkit-font-smoothing: antialiased; }
-
-#siteinfo p:last-child {
-  padding-bottom: 10px; }
-
 #siteinfo:after {
   content: '';
   display: block;
@@ -1236,20 +1227,6 @@ body:not(.page-home) .header-badge {
 
 body.page-home #page--content .panel--pane .inner {
   text-align: center; }
-
-body:not(.page-home) #site-header {
-  background-color: #00afd6;
-  text-align: center;
-  padding: 2rem 1rem 4rem 1rem;
-  position: relative;
-  border-bottom: 3px solid #ddd;
-  margin-bottom: 10vw; }
-  body:not(.page-home) #site-header h1 {
-    color: white;
-    text-shadow: none; }
-
-body:not(.page-home) #page {
-  margin-top: 3em; }
 
 #site-name {
   color: #FEC763;

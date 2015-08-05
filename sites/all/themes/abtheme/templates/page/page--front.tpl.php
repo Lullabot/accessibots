@@ -19,7 +19,9 @@
 
   <?php print render($page['home_page_intro']); ?>
 
-  <img src="<?php print $base_path . $directory; ?>/images/badge.png" alt="The Accessibots" />
+  <a href="<?php print $base_path; ?>" title="Home" class="header-badge">
+    <img src="<?php print $base_path . $directory; ?>/images/badge.png" alt="The Accessibots" />
+  </a>
 </header>
 
 <?php print render($page['content']); ?>
