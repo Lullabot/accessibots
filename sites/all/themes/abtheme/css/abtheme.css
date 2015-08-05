@@ -1129,38 +1129,43 @@ body:not(.page-home) .header-badge {
   text-align: left; }
 
 /* generated with grunt-sass-globbing */
-#siteinfo {
+#site-header {
+  background-image: url("../images/keyboard.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   position: relative;
   border-bottom: 2px solid #ccc;
   z-index: 7; }
-  #siteinfo .col2 {
-    background: rgba(28, 41, 79, 0.97);
-    color: #eeeeee;
-    -webkit-font-smoothing: antialiased; }
-  #siteinfo p:last-child {
-    padding-bottom: 10px; }
-  #siteinfo:after {
-    background-color: rgba(0, 0, 0, 0.3);
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5; }
-  @media (min-width: 50rem) {
-    #siteinfo {
-      padding: 2em; }
-      #siteinfo p:last-child {
-        text-align: right;
-        margin-right: 35px; } }
-  @media (max-width: 50rem) {
-    #siteinfo {
-      padding: 2em 1em; } }
+
+#siteinfo .col2 {
+  background: rgba(28, 41, 79, 0.97);
+  color: #eeeeee;
+  -webkit-font-smoothing: antialiased; }
+
+#siteinfo p:last-child {
+  padding-bottom: 10px; }
+
+#siteinfo:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5; }
+
+@media (min-width: 50rem) {
+  #siteinfo {
+    padding: 2em; }
+    #siteinfo p:last-child {
+      text-align: right;
+      margin-right: 35px; } }
+
+@media (max-width: 50rem) {
+  #siteinfo {
+    padding: 2em 1em; } }
 
 #lead-story {
   color: white;

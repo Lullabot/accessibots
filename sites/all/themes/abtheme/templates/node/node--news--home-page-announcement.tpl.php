@@ -1,7 +1,7 @@
 <?php
 //kpr($variables);
 ?>
-<div id="siteinfo" style="background-image: url('<?php print $background_image_path; ?>');">
+<div id="siteinfo">
   <article id="lead-story" role="article">
     <figure>
       <?php print render($content['field_primary_image']); ?>
