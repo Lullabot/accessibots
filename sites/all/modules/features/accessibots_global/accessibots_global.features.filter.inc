@@ -35,46 +35,6 @@ http://accessibots.com/
 http://accessibots.io/
 /',
           'protocol_style' => 'path',
-          'local_paths_exploded' => array(
-            0 => array(
-              'scheme' => 'https',
-              'host' => 'live-accessibots.pantheon.io',
-              'path' => '/',
-            ),
-            1 => array(
-              'scheme' => 'http',
-              'host' => 'live-accessibots.pantheon.io',
-              'path' => '/',
-            ),
-            2 => array(
-              'scheme' => 'http',
-              'host' => 'www.accessibots.com',
-              'path' => '/',
-            ),
-            3 => array(
-              'scheme' => 'http',
-              'host' => 'www.accessibots.io',
-              'path' => '/',
-            ),
-            4 => array(
-              'scheme' => 'http',
-              'host' => 'accessibots.com',
-              'path' => '/',
-            ),
-            5 => array(
-              'scheme' => 'http',
-              'host' => 'accessibots.io',
-              'path' => '/',
-            ),
-            6 => array(
-              'path' => '/',
-            ),
-            7 => array(
-              'path' => '/',
-              'host' => 'default',
-            ),
-          ),
-          'base_url_host' => 'default',
         ),
       ),
     ),
