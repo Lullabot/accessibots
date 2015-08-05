@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|Raleway:400,700);
 @-webkit-keyframes _slide-left {
   0% {
     -webkit-transform: translateX(-100%); }
@@ -1134,3 +1135,7 @@ body.cke_editable a:not(.button) {
       opacity: 1;
       transform: scaleX(1) scaleY(0.618);
       background-color: transparent; }
+
+.cke_editable {
+  margin: 1em 1em 2em 10em;
+  max-width: 52rem; }

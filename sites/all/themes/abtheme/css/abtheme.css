@@ -1265,6 +1265,28 @@ body.cke_editable a:not(.button) {
   #main-nav.active ul {
     display: block; }
 
+nav.tabs {
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2em 1em 1em 1em;
+  height: 100%;
+  text-align: left; }
+  nav.tabs .tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    nav.tabs .tabs a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      font-family: "Raleway", sans-serif;
+      padding: .5em; }
+      nav.tabs .tabs a:hover, nav.tabs .tabs a.active {
+        color: #F8A9AE; }
+
 .tool--full__field--image--field-primary-image {
   float: left;
   margin: 0 1em 0.5em 0;
@@ -1353,7 +1375,8 @@ body:not(.page-home) #site-name {
   background: rgba(0, 0, 0, 0.2);
   display: inline-block;
   padding: 0.25em 2em;
-  border-radius: .5em; }
+  border-radius: .5em;
+  font-family: "Raleway", sans-serif; }
   @media (min-width: 10rem) {
     body:not(.page-home) #site-name {
       font-size: 0.9em; } }
