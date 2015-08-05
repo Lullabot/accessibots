@@ -1,7 +1,7 @@
 #site-header {
   background-image: url('../images/keyboard.jpg');
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center right;
   background-size: cover;
   text-align: center;
   padding: 2rem 1rem 4rem 1rem;
@@ -11,8 +11,28 @@
   z-index: 7;
 
   h1 {
+    @include scale-font-size(10rem, 1.5em, 80rem, 4em);
     color: $gold;
-    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    text-shadow: 2px 2px 2px rgba(black, .5);
+    font-family: $sans-serif;
+    font-weight: normal;
+  }
+
+  .field--text-long--field-content-body {
+    color: white;
+    margin: 1.5em 0;
+    text-shadow: 2px 2px 2px rgba(black, .5);
+    background: rgba(black, .2);
+    display: inline-block;
+    padding: .25em 2em;
+    border-radius: .5em;
+  }
+
+  @include layout(two-col) {
+    background-attachment: scroll;
+  }
+  @include layout(one-col) {
+    background-attachment: scroll;
   }
 }
 

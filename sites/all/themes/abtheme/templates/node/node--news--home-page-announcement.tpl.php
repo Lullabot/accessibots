@@ -1,8 +1,8 @@
 <?php
 //kpr($variables);
 ?>
-<div id="siteinfo">
-  <article id="lead-story" role="article">
+<article id="lead-story" role="article" style="background-image: url('<?php print $background_image_path; ?>');">
+  <div class="inner">
     <figure>
       <?php print render($content['field_primary_image']); ?>
     </figure>
@@ -14,8 +14,5 @@
 
       <?php print render($content['body']); ?>
     </div>
-  </article>
-</div>
-<div class="header-badge">
-  <img src="<?php print base_path() . $directory; ?>/images/badge.png" alt="Accessibots Logo: Only You Can Prevent Inaccessible Websites" />
-</div>
+  </div>
+</article>

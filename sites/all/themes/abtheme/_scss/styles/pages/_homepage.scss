@@ -1,114 +1,32 @@
-#siteinfo {
-  // Slight opaqueness over image to pop text
-  &:after {
-    //background-color: rgba(0, 0, 0, .3);
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-  }
-
-  @include layout(two-col) {
-    padding: 2em;
-
-    p {
-      &:last-child {
-        text-align: right;
-        margin-right: 35px;
-      }
-    }
-  }
-
-  @include layout(one-col) {
-    padding: 2em 1em;
-  }
-}
-
-#lead-story {
-  @include clearfix;
-  color: white;
-  padding: 0;
-  z-index: 10;
-  position: relative;
-
-  h2 {
-    color: $pink2;
-  }
-
-  p {
-    @include scale-font-size();
-    line-height: 1.3em;
-  }
-
-  // Large screen
-  @include layout(two-col) {
-    figure {
-      width: 38%;
-      display: inline-block;
-      margin-right: -5px;
-      vertical-align: middle;
-      padding-right: 1em;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    div.col2 {
-      display: inline-block;
-      width: 62%;
-      vertical-align: middle;
-      padding-left: 1em;
-    }
-
-    .field-body {
-      margin-bottom: 3em;
-    }
-  }
-
-  // Small Screen
-  @include layout(one-col) {
-    text-align: center;
-
-    figure, h2 {
-      display: block;
-      margin: 0 auto;
-    }
-
-    figure {
-      max-width: 68vw;
-      max-height: 200px;
-      height: auto;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    h2 {
-      width: 75%;
-      padding-left: 5vw;
-    }
-
-    .field-body {
-      margin: 1em 0 3em 0;
-    }
-  }
-}
-
-
-// Homepage only
 body.page-home {
+  h1 {
+    margin-bottom: 0;
+  }
+
+  #site-name {
+    margin: 1em 0;
+  }
+
   #page--content {
     .panel--pane {
       .inner {
         text-align: center;
+      }
+    }
+  }
+
+  #page--content .panel--pane {
+    article.teaser {
+      margin-bottom: 0;
+    }
+
+    &.bleed {
+      margin: 0;
+
+
+      > .inner {
+        max-width: 100%;
+        padding: 0;
       }
     }
   }
