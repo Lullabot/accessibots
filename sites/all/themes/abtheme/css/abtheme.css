@@ -46,19 +46,24 @@ nav ul li {
 table {
   table-layout: fixed; }
 
-#lead-story a, .field--link-field--field-resource-url a {
+article.full .field--text-with-summary--body a.button,
+body.cke_editable a.button, #lead-story a, .field--link-field--field-resource-url a {
   display: inline-block;
   background-color: #FEC763;
   color: #0085a3;
   padding: 0.25em 1em;
   font-size: 0.85em;
+  font-weight: normal;
   border-radius: .25em;
   text-decoration: none;
   position: relative;
   z-index: 1;
   border: 2px solid transparent;
-  transition: 0.5s border ease-out, 0.5s box-shadow ease-out, 0.5s 0.1s border-top-left-radius, 0.5s 0.1s border-top-right-radius, 0.5s 0.2s border-bottom-right-radius, 0.5s 0.2s border-bottom-left-radius; }
-  #lead-story a:hover, .field--link-field--field-resource-url a:hover, #lead-story a:focus, .field--link-field--field-resource-url a:focus, #lead-story a:active, .field--link-field--field-resource-url a:active {
+  transition: .5s all ease-in-out; }
+  article.full .field--text-with-summary--body a.button:hover,
+  body.cke_editable a.button:hover, #lead-story a:hover, .field--link-field--field-resource-url a:hover, article.full .field--text-with-summary--body a.button:focus,
+  body.cke_editable a.button:focus, #lead-story a:focus, .field--link-field--field-resource-url a:focus, article.full .field--text-with-summary--body a.button:active,
+  body.cke_editable a.button:active, #lead-story a:active, .field--link-field--field-resource-url a:active {
     border-radius: 10em;
     border-color: #0085a3;
     box-shadow: 0 0 5px 1px rgba(0, 175, 214, 0.25); }
@@ -689,7 +694,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-  color: #F37384; }
+  color: #F37384;
+  font-weight: normal; }
 
 @media (max-width: 71.7777777778rem) {
   h1 {
@@ -853,8 +859,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-bottom: 0; }
-  p + p {
-    margin-top: 1em; }
+  p:not(:last-child) {
+    margin-bottom: 1em; }
 
 #page {
   margin-top: 3em; }
@@ -867,6 +873,58 @@ p {
     margin: 0 auto; }
 
 /* generated with grunt-sass-globbing */
+article.full .field--text-with-summary--body h4,
+article.full .field--text-with-summary--body h5,
+article.full .field--text-with-summary--body h6,
+body.cke_editable h4, body.cke_editable h5, body.cke_editable h6 {
+  color: #00afd6; }
+
+article.full .field--text-with-summary--body a:not(.button),
+body.cke_editable a:not(.button) {
+  transition: 0.2s color, 0.2s text-decoration;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  vertical-align: bottom;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #00afd6; }
+  article.full .field--text-with-summary--body a:not(.button):before,
+  body.cke_editable a:not(.button):before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #F8A9AE;
+    content: '';
+    opacity: 0;
+    transition: -webkit-transform 0.2s, opacity 0.2s, background-color 0.2s;
+    transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; }
+  article.full .field--text-with-summary--body a:not(.button):hover,
+  article.full .field--text-with-summary--body a:not(.button):focus,
+  body.cke_editable a:not(.button):hover, body.cke_editable a:not(.button):focus {
+    outline: 0;
+    color: #F37384;
+    border-bottom: 1px solid #F8A9AE;
+    margin-bottom: -1px; }
+    article.full .field--text-with-summary--body a:not(.button):hover:before,
+    article.full .field--text-with-summary--body a:not(.button):focus:before,
+    body.cke_editable a:not(.button):hover:before, body.cke_editable a:not(.button):focus:before {
+      opacity: 1;
+      -webkit-transform: scaleX(1) scaleY(0.618);
+          -ms-transform: scaleX(1) scaleY(0.618);
+              transform: scaleX(1) scaleY(0.618);
+      background-color: transparent; }
+
 #site-footer {
   background-color: #00afd6;
   color: white;

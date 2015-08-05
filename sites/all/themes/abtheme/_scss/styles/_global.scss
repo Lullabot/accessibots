@@ -21,16 +21,16 @@ body {
 @include headers {
   font-family: $sans-serif;
   color: $pink3;
+  font-weight: normal;
 }
 
 @include header-scale($two-col-max, 30, 9, .5);
 
 p {
   margin-bottom: 0;
-  //text-indent: $indent-val;
 
-  + p {
-    margin-top: 1em;
+  &:not(:last-child) {
+    margin-bottom: 1em;
   }
 }
 
