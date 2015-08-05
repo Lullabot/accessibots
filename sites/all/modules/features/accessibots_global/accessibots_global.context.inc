@@ -26,9 +26,9 @@ function accessibots_global_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'bean-homepage-intro' => array(
+        'bean-the-accessibots' => array(
           'module' => 'bean',
-          'delta' => 'homepage-intro',
+          'delta' => 'the-accessibots',
           'region' => 'home_page_intro',
           'weight' => '-10',
         ),

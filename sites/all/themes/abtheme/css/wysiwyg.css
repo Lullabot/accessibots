@@ -1,0 +1,1141 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|Raleway:400,700);
+@-webkit-keyframes _slide-left {
+  0% {
+    -webkit-transform: translateX(-100%); }
+  100% {
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes _slide-left {
+  0% {
+    -moz-transform: translateX(-100%); }
+  100% {
+    -moz-transform: translateX(0); } }
+
+@keyframes _slide-left {
+  0% {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); } }
+
+@-webkit-keyframes _slide-right {
+  0% {
+    -webkit-transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes _slide-right {
+  0% {
+    -moz-transform: translateX(100%); }
+  100% {
+    -moz-transform: translateX(0); } }
+
+@keyframes _slide-right {
+  0% {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto; }
+
+a {
+  outline: 0; }
+
+nav ul li {
+  list-style: none; }
+
+table {
+  table-layout: fixed; }
+
+article.full .field--text-with-summary--body a.button,
+body.cke_editable a.button {
+  display: inline-block;
+  background-color: #FEC763;
+  color: #0085a3;
+  padding: 0.25em 1em;
+  font-size: 0.85em;
+  font-weight: normal;
+  border-radius: .25em;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  border: 2px solid transparent;
+  transition: .5s all ease-in-out; }
+  article.full .field--text-with-summary--body a.button:hover,
+  body.cke_editable a.button:hover, article.full .field--text-with-summary--body a.button:focus,
+  body.cke_editable a.button:focus, article.full .field--text-with-summary--body a.button:active,
+  body.cke_editable a.button:active {
+    border-radius: 10em;
+    border-color: #0085a3;
+    box-shadow: 0 0 5px 1px rgba(0, 175, 214, 0.25); }
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*!
+Typeplate : Starter Kit
+URL ........... http://typeplate.com
+Version ....... 2.1.0
+Github ........ https://github.com/typeplate/starter-kit
+Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+License ....... Creative Commmons Attribution 3.0
+License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+*/
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U26; }
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U270C; }
+
+.typl8-tera, .typl8-giga, .typl8-mega, h1, .typl8-alpha, h2, .typl8-beta, h3, .typl8-gamma, h4, .typl8-delta, h5, .typl8-epsilon, .typl8-zeta, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  color: #222; }
+
+blockquote + figcaption cite {
+  display: block;
+  font-size: inherit;
+  text-align: right; }
+
+body {
+  word-wrap: break-word; }
+
+pre code {
+  word-wrap: normal; }
+
+html {
+  font: normal 130%/1.65 serif; }
+
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  color: #444; }
+
+.typl8-tera {
+  font-size: 6.5rem;
+  margin-bottom: 3.9393939394rem; }
+
+.typl8-giga {
+  font-size: 5rem;
+  margin-bottom: 3.0303030303rem; }
+
+.typl8-mega, h1 {
+  font-size: 4rem;
+  margin-bottom: 2.4242424242rem; }
+
+.typl8-alpha, h2 {
+  font-size: 3.3333333333rem;
+  margin-bottom: 2.0202020202rem; }
+
+.typl8-beta, h3 {
+  font-size: 2.6666666667rem;
+  margin-bottom: 1.6161616162rem; }
+
+.typl8-gamma, h4 {
+  font-size: 2rem;
+  margin-bottom: 1.2121212121rem; }
+
+.typl8-delta, h5 {
+  font-size: 1.3333333333rem;
+  margin-bottom: 0.8080808081rem; }
+
+.typl8-epsilon {
+  font-size: 1.1666666667rem;
+  margin-bottom: 0.7070707071rem; }
+
+.typl8-zeta, h6 {
+  font-size: 1rem;
+  margin-bottom: 0.6060606061rem; }
+
+p {
+  margin: auto auto 0; }
+  p + p {
+    text-indent: 0;
+    margin-top: 0; }
+
+small {
+  font-size: 65%; }
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+pre {
+  white-space: pre; }
+  pre code {
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap; }
+
+code {
+  white-space: pre;
+  font-family: monospace; }
+
+abbr {
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  -ms-font-variant: small-caps;
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray; }
+  abbr[title]:hover {
+    cursor: help; }
+
+.typl8-drop-cap:first-letter {
+  float: left;
+  margin: 10px 10px 0 0;
+  padding: 0 20px;
+  font-size: 4em;
+  font-family: inherit;
+  line-height: 1;
+  text-indent: 0;
+  background: transparent;
+  color: inherit; }
+
+p + .typl8-drop-cap {
+  text-indent: 0;
+  margin-top: 0; }
+
+/**
+ * Lining Definition Style Markup
+ *
+  <dl class="typl8-lining">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.typl8-lining dt,
+.typl8-lining dd {
+  display: inline;
+  margin: 0; }
+
+.typl8-lining dt + dt:before,
+.typl8-lining dd + dt:before {
+  content: "\A";
+  white-space: pre; }
+
+.typl8-lining dd + dd:before {
+  content: ", "; }
+
+.typl8-lining dd:before {
+  content: ": ";
+  margin-left: -0.2rem; }
+
+/**
+ * Dictionary Definition Style Markup
+ *
+  <dl class="typl8-dictionary-style">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.typl8-dictionary-style dt {
+  display: inline;
+  counter-reset: definitions; }
+  .typl8-dictionary-style dt + dt:before {
+    content: ", ";
+    margin-left: -0.2rem; }
+
+.typl8-dictionary-style dd {
+  display: block;
+  counter-increment: definitions; }
+  .typl8-dictionary-style dd:before {
+    content: counter(definitions, decimal) ". "; }
+
+/**
+ * Blockquote Markup
+ *
+    <figure>
+      <blockquote cite="">
+        <p></p>
+      </blockquote>
+      <figcaption>
+        <cite>
+          <small><a href=""></a></small>
+        </cite>
+      </figcaption>
+    </figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Pull Quotes Markup
+ *
+  <aside class="typl8-pull-quote">
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+.typl8-pull-quote {
+  position: relative;
+  padding: 1em; }
+  .typl8-pull-quote:before,
+  .typl8-pull-quote:after {
+    height: 1em;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 4em;
+    color: #dc976e; }
+  .typl8-pull-quote:before {
+    content: '“';
+    top: 0;
+    left: 0; }
+  .typl8-pull-quote:after {
+    content: '”';
+    bottom: 0;
+    right: 0; }
+
+/**
+ * Figures Markup
+ *
+  <figure>
+    <figcaption>
+      <strong>Fig. X.X | </strong><cite title=""></cite>
+    </figcaption>
+  </figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Footnote Markup : Replace 'X' with your unique number for each footnote
+ *
+  <article>
+    <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+    <footer>
+      <ol class="foot-notes">
+        <li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+      </ol>
+    </footer>
+  </article>
+ *
+ * Extend this object into your markup.
+ *
+ */
+* {
+  hyphens: none; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: "Arvo", serif;
+  height: 100%; }
+
+.hidden-link {
+  display: block;
+  position: absolute;
+  height: 1px;
+  font-size: 1px;
+  opacity: 0.00000001; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  color: #F37384;
+  font-weight: normal; }
+
+@media (max-width: 71.7777777778rem) {
+  h1 {
+    font-size: 6.4251806904rem;
+    margin-bottom: 3.8940489033rem; }
+  h2 {
+    font-size: 3.9710634675rem;
+    margin-bottom: 2.4067051318rem; }
+  h3 {
+    font-size: 2.45430375rem;
+    margin-bottom: 1.4874568182rem; }
+  h4 {
+    font-size: 1.516875rem;
+    margin-bottom: 0.9193181818rem; }
+  h5 {
+    font-size: 0.9375rem;
+    margin-bottom: 0.5681818182rem; }
+  h6 {
+    font-size: 0.5794190358rem;
+    margin-bottom: 0.351163052rem; } }
+
+@media (max-width: 66.5555555556rem) {
+  h1 {
+    font-size: 5.9968353111rem;
+    margin-bottom: 3.6344456431rem; }
+  h2 {
+    font-size: 3.706325903rem;
+    margin-bottom: 2.246258123rem; }
+  h3 {
+    font-size: 2.2906835rem;
+    margin-bottom: 1.3882930303rem; }
+  h4 {
+    font-size: 1.41575rem;
+    margin-bottom: 0.858030303rem; }
+  h5 {
+    font-size: 0.875rem;
+    margin-bottom: 0.5303030303rem; }
+  h6 {
+    font-size: 0.5407911001rem;
+    margin-bottom: 0.3277521819rem; } }
+
+@media (max-width: 61.3333333333rem) {
+  h1 {
+    font-size: 5.5684899317rem;
+    margin-bottom: 3.3748423828rem; }
+  h2 {
+    font-size: 3.4415883385rem;
+    margin-bottom: 2.0858111142rem; }
+  h3 {
+    font-size: 2.12706325rem;
+    margin-bottom: 1.2891292424rem; }
+  h4 {
+    font-size: 1.314625rem;
+    margin-bottom: 0.7967424242rem; }
+  h5 {
+    font-size: 0.8125rem;
+    margin-bottom: 0.4924242424rem; }
+  h6 {
+    font-size: 0.5021631644rem;
+    margin-bottom: 0.3043413118rem; } }
+
+@media (max-width: 56.1111111111rem) {
+  h1 {
+    font-size: 5.1401445523rem;
+    margin-bottom: 3.1152391226rem; }
+  h2 {
+    font-size: 3.176850774rem;
+    margin-bottom: 1.9253641055rem; }
+  h3 {
+    font-size: 1.963443rem;
+    margin-bottom: 1.1899654545rem; }
+  h4 {
+    font-size: 1.2135rem;
+    margin-bottom: 0.7354545455rem; }
+  h5 {
+    font-size: 0.75rem;
+    margin-bottom: 0.4545454545rem; }
+  h6 {
+    font-size: 0.4635352287rem;
+    margin-bottom: 0.2809304416rem; } }
+
+@media (max-width: 50.8888888889rem) {
+  h1 {
+    font-size: 4.711799173rem;
+    margin-bottom: 2.8556358624rem; }
+  h2 {
+    font-size: 2.9121132095rem;
+    margin-bottom: 1.7649170967rem; }
+  h3 {
+    font-size: 1.79982275rem;
+    margin-bottom: 1.0908016667rem; }
+  h4 {
+    font-size: 1.112375rem;
+    margin-bottom: 0.6741666667rem; }
+  h5 {
+    font-size: 0.6875rem;
+    margin-bottom: 0.4166666667rem; }
+  h6 {
+    font-size: 0.424907293rem;
+    margin-bottom: 0.2575195715rem; } }
+
+@media (max-width: 45.6666666667rem) {
+  h1 {
+    font-size: 4.2834537936rem;
+    margin-bottom: 2.5960326022rem; }
+  h2 {
+    font-size: 2.647375645rem;
+    margin-bottom: 1.6044700879rem; }
+  h3 {
+    font-size: 1.6362025rem;
+    margin-bottom: 0.9916378788rem; }
+  h4 {
+    font-size: 1.01125rem;
+    margin-bottom: 0.6128787879rem; }
+  h5 {
+    font-size: 0.625rem;
+    margin-bottom: 0.3787878788rem; }
+  h6 {
+    font-size: 0.3862793572rem;
+    margin-bottom: 0.2341087014rem; } }
+
+@media (max-width: 40.4444444444rem) {
+  h1 {
+    font-size: 3.8551084142rem;
+    margin-bottom: 2.336429342rem; }
+  h2 {
+    font-size: 2.3826380805rem;
+    margin-bottom: 1.4440230791rem; }
+  h3 {
+    font-size: 1.47258225rem;
+    margin-bottom: 0.8924740909rem; }
+  h4 {
+    font-size: 0.910125rem;
+    margin-bottom: 0.5515909091rem; }
+  h5 {
+    font-size: 0.5625rem;
+    margin-bottom: 0.3409090909rem; }
+  h6 {
+    font-size: 0.3476514215rem;
+    margin-bottom: 0.2106978312rem; } }
+
+@media (max-width: 35.2222222222rem) {
+  h1 {
+    font-size: 3.4267630349rem;
+    margin-bottom: 2.0768260818rem; }
+  h2 {
+    font-size: 2.117900516rem;
+    margin-bottom: 1.2835760703rem; }
+  h3 {
+    font-size: 1.308962rem;
+    margin-bottom: 0.793310303rem; }
+  h4 {
+    font-size: 0.809rem;
+    margin-bottom: 0.4903030303rem; }
+  h5 {
+    font-size: 0.5rem;
+    margin-bottom: 0.303030303rem; }
+  h6 {
+    font-size: 0.3090234858rem;
+    margin-bottom: 0.1872869611rem; } }
+
+p {
+  margin-bottom: 0; }
+  p:not(:last-child) {
+    margin-bottom: 1em; }
+
+#page {
+  margin-top: 3em; }
+
+#page--content .panel--pane {
+  margin: 2rem auto; }
+  #page--content .panel--pane > .inner {
+    max-width: 52em;
+    padding: 0 1em;
+    margin: 0 auto; }
+
+* {
+  hyphens: none; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: "Arvo", serif;
+  height: 100%; }
+
+.hidden-link {
+  display: block;
+  position: absolute;
+  height: 1px;
+  font-size: 1px;
+  opacity: 0.00000001; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  color: #F37384;
+  font-weight: normal; }
+
+@media (max-width: 71.7777777778rem) {
+  h1 {
+    font-size: 6.4251806904rem;
+    margin-bottom: 3.8940489033rem; }
+  h2 {
+    font-size: 3.9710634675rem;
+    margin-bottom: 2.4067051318rem; }
+  h3 {
+    font-size: 2.45430375rem;
+    margin-bottom: 1.4874568182rem; }
+  h4 {
+    font-size: 1.516875rem;
+    margin-bottom: 0.9193181818rem; }
+  h5 {
+    font-size: 0.9375rem;
+    margin-bottom: 0.5681818182rem; }
+  h6 {
+    font-size: 0.5794190358rem;
+    margin-bottom: 0.351163052rem; } }
+
+@media (max-width: 66.5555555556rem) {
+  h1 {
+    font-size: 5.9968353111rem;
+    margin-bottom: 3.6344456431rem; }
+  h2 {
+    font-size: 3.706325903rem;
+    margin-bottom: 2.246258123rem; }
+  h3 {
+    font-size: 2.2906835rem;
+    margin-bottom: 1.3882930303rem; }
+  h4 {
+    font-size: 1.41575rem;
+    margin-bottom: 0.858030303rem; }
+  h5 {
+    font-size: 0.875rem;
+    margin-bottom: 0.5303030303rem; }
+  h6 {
+    font-size: 0.5407911001rem;
+    margin-bottom: 0.3277521819rem; } }
+
+@media (max-width: 61.3333333333rem) {
+  h1 {
+    font-size: 5.5684899317rem;
+    margin-bottom: 3.3748423828rem; }
+  h2 {
+    font-size: 3.4415883385rem;
+    margin-bottom: 2.0858111142rem; }
+  h3 {
+    font-size: 2.12706325rem;
+    margin-bottom: 1.2891292424rem; }
+  h4 {
+    font-size: 1.314625rem;
+    margin-bottom: 0.7967424242rem; }
+  h5 {
+    font-size: 0.8125rem;
+    margin-bottom: 0.4924242424rem; }
+  h6 {
+    font-size: 0.5021631644rem;
+    margin-bottom: 0.3043413118rem; } }
+
+@media (max-width: 56.1111111111rem) {
+  h1 {
+    font-size: 5.1401445523rem;
+    margin-bottom: 3.1152391226rem; }
+  h2 {
+    font-size: 3.176850774rem;
+    margin-bottom: 1.9253641055rem; }
+  h3 {
+    font-size: 1.963443rem;
+    margin-bottom: 1.1899654545rem; }
+  h4 {
+    font-size: 1.2135rem;
+    margin-bottom: 0.7354545455rem; }
+  h5 {
+    font-size: 0.75rem;
+    margin-bottom: 0.4545454545rem; }
+  h6 {
+    font-size: 0.4635352287rem;
+    margin-bottom: 0.2809304416rem; } }
+
+@media (max-width: 50.8888888889rem) {
+  h1 {
+    font-size: 4.711799173rem;
+    margin-bottom: 2.8556358624rem; }
+  h2 {
+    font-size: 2.9121132095rem;
+    margin-bottom: 1.7649170967rem; }
+  h3 {
+    font-size: 1.79982275rem;
+    margin-bottom: 1.0908016667rem; }
+  h4 {
+    font-size: 1.112375rem;
+    margin-bottom: 0.6741666667rem; }
+  h5 {
+    font-size: 0.6875rem;
+    margin-bottom: 0.4166666667rem; }
+  h6 {
+    font-size: 0.424907293rem;
+    margin-bottom: 0.2575195715rem; } }
+
+@media (max-width: 45.6666666667rem) {
+  h1 {
+    font-size: 4.2834537936rem;
+    margin-bottom: 2.5960326022rem; }
+  h2 {
+    font-size: 2.647375645rem;
+    margin-bottom: 1.6044700879rem; }
+  h3 {
+    font-size: 1.6362025rem;
+    margin-bottom: 0.9916378788rem; }
+  h4 {
+    font-size: 1.01125rem;
+    margin-bottom: 0.6128787879rem; }
+  h5 {
+    font-size: 0.625rem;
+    margin-bottom: 0.3787878788rem; }
+  h6 {
+    font-size: 0.3862793572rem;
+    margin-bottom: 0.2341087014rem; } }
+
+@media (max-width: 40.4444444444rem) {
+  h1 {
+    font-size: 3.8551084142rem;
+    margin-bottom: 2.336429342rem; }
+  h2 {
+    font-size: 2.3826380805rem;
+    margin-bottom: 1.4440230791rem; }
+  h3 {
+    font-size: 1.47258225rem;
+    margin-bottom: 0.8924740909rem; }
+  h4 {
+    font-size: 0.910125rem;
+    margin-bottom: 0.5515909091rem; }
+  h5 {
+    font-size: 0.5625rem;
+    margin-bottom: 0.3409090909rem; }
+  h6 {
+    font-size: 0.3476514215rem;
+    margin-bottom: 0.2106978312rem; } }
+
+@media (max-width: 35.2222222222rem) {
+  h1 {
+    font-size: 3.4267630349rem;
+    margin-bottom: 2.0768260818rem; }
+  h2 {
+    font-size: 2.117900516rem;
+    margin-bottom: 1.2835760703rem; }
+  h3 {
+    font-size: 1.308962rem;
+    margin-bottom: 0.793310303rem; }
+  h4 {
+    font-size: 0.809rem;
+    margin-bottom: 0.4903030303rem; }
+  h5 {
+    font-size: 0.5rem;
+    margin-bottom: 0.303030303rem; }
+  h6 {
+    font-size: 0.3090234858rem;
+    margin-bottom: 0.1872869611rem; } }
+
+p {
+  margin-bottom: 0; }
+  p:not(:last-child) {
+    margin-bottom: 1em; }
+
+#page {
+  margin-top: 3em; }
+
+#page--content .panel--pane {
+  margin: 2rem auto; }
+  #page--content .panel--pane > .inner {
+    max-width: 52em;
+    padding: 0 1em;
+    margin: 0 auto; }
+
+article.full .field--text-with-summary--body h4,
+article.full .field--text-with-summary--body h5,
+article.full .field--text-with-summary--body h6,
+body.cke_editable h4, body.cke_editable h5, body.cke_editable h6 {
+  color: #00afd6; }
+
+article.full .field--text-with-summary--body a:not(.button),
+body.cke_editable a:not(.button) {
+  transition: 0.2s color, 0.2s text-decoration;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  vertical-align: bottom;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #00afd6; }
+  article.full .field--text-with-summary--body a:not(.button):before,
+  body.cke_editable a:not(.button):before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #F8A9AE;
+    content: '';
+    opacity: 0;
+    transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
+    transform: scale(1.1);
+    pointer-events: none;
+    backface-visibility: hidden; }
+  article.full .field--text-with-summary--body a:not(.button):hover,
+  article.full .field--text-with-summary--body a:not(.button):focus,
+  body.cke_editable a:not(.button):hover, body.cke_editable a:not(.button):focus {
+    outline: 0;
+    color: #F37384;
+    border-bottom: 1px solid #F8A9AE;
+    margin-bottom: -1px; }
+    article.full .field--text-with-summary--body a:not(.button):hover:before,
+    article.full .field--text-with-summary--body a:not(.button):focus:before,
+    body.cke_editable a:not(.button):hover:before, body.cke_editable a:not(.button):focus:before {
+      opacity: 1;
+      transform: scaleX(1) scaleY(0.618);
+      background-color: transparent; }
+
+.cke_editable {
+  margin: 1em 1em 2em 10em;
+  max-width: 52rem; }

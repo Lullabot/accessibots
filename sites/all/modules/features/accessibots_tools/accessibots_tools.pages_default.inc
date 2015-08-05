@@ -150,7 +150,10 @@ function accessibots_tools_default_page_manager_pages() {
   $page->admin_title = 'Tools';
   $page->admin_description = '';
   $page->path = 'tools';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Tools',

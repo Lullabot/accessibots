@@ -10,6 +10,9 @@
     </div>
     <?php print render($main_menu); ?>
   </nav>
+  <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
+    <nav class="tabs"><?php print render($tabs); ?></nav>
+  <?php endif; ?>
 
   <div id="site-name"><?php print $site_name; ?></div>
 

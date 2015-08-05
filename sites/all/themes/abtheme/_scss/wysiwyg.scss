@@ -1,0 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|Raleway:400,700);
+@import "base";
+@import "styles/global";
+@import "styles/components/body-content";
+
+.cke_editable {
+  margin: 1em 1em 2em 10em;
+  max-width: $body-max-width;
+}
