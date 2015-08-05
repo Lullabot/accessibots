@@ -15,6 +15,7 @@ dependencies[] = filter
 dependencies[] = image
 dependencies[] = jquery_update
 dependencies[] = page_manager
+dependencies[] = pathologic
 dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = wysiwyg
