@@ -34,6 +34,10 @@ p {
   }
 }
 
+#page {
+  margin-top: 3em;
+}
+
 #page--content {
   .panel--pane {
     margin: 2rem auto;
@@ -42,41 +46,6 @@ p {
       max-width: 52em;
       padding: 0 1em;
       margin: 0 auto;
-    }
-  }
-}
-
-.header-badge {
-  display: block;
-  min-width: 100px;
-  width: 15vw;
-  line-height: 0;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-body.page-home {
-  .header-badge {
-    margin: 0 auto;
-
-    position: relative;
-    z-index: 8;
-
-    img {
-      margin-top: -50%;
-    }
-  }
-}
-
-body:not(.page-home) {
-  .header-badge {
-    margin: 0 auto -4rem auto;
-
-    img {
-      margin-bottom: -50%;
     }
   }
 }

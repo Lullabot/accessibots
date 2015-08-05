@@ -8,6 +8,7 @@ version = 7.x-1.0-dev
 base theme = mothership
 
 regions[page_top] = Page Top
+regions[home_page_intro] = Home Page Intro
 regions[content] = Content
 regions[page_bottom] = Page Bottom
 
