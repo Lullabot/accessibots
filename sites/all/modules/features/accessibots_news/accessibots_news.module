@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Accessibots News feature.
- */
-
-include_once 'accessibots_news.features.inc';
