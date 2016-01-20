@@ -1,0 +1,9 @@
+# Use this file for local configuration.
+# Run the following commands to serve or build a local jekyll site.
+
+# jekyll serve --config _config.yml,_config-local.yml
+# jekyll build --config _config.yml,_config-local.yml
+
+# URLs
+baseurl: ""
+url: ""
