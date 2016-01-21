@@ -5,10 +5,15 @@
     </button>
   </div>
   <ul>
-    <li class="first leaf"><a href="/home" aria-label="Home" class="active">Home</a></li>
-    <li class="leaf"><a href="/who-we-are" aria-label="Who We Are">Who We Are</a></li>
-    <li class="leaf"><a href="/news" aria-label="News &amp; Events">News &amp; Events</a></li>
-    <li class="leaf"><a href="/tools" aria-label="Tools">Tools</a></li>
-    <li class="last leaf"><a href="/resources" aria-label="Resources">Resources</a></li>
+    {% assign page_url = page.url | remove: '/' %}
+
+    {% for item in site.data.menu %}
+    {% assign item_url = item.url | remove: '/' %}
+    <li class="main-menu__item {% if item_url == page_url %}active-trail{% endif %}">
+      <a href="{{ item.url | prepend: site.host }}" aria-label="{{ item.title }}" {% if item_url == page_url %}class="active"{% endif %}>
+        {{ item.title }}
+      </a>
+    </li>
+    {% endfor %}
   </ul>
 </nav>
