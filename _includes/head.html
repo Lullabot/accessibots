@@ -19,7 +19,12 @@
   <link rel="stylesheet" href="{{ '/css/main.min.css' | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M%S" }}">
 
   <script src="{{ '/js/jquery-1.12.0.min.js' | prepend: site.baseurl }}"></script>
+  {% if site.env == 'prod' %}
   <script src="{{ '/js/accessibots.min.js' | prepend: site.baseurl }}?{{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
+  {% else %}
+  <script src="{{ '/js/raw/jquery.sticky.js' | prepend: site.baseurl }}?{{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
+  <script src="{{ '/js/raw/global.js' | prepend: site.baseurl }}?{{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
+  {% endif %}
 
   <!--[if lt IE 9]>
   <script src="{{ site.baseurl }}/js/respond.min.js"></script>

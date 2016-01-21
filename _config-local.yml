@@ -4,6 +4,8 @@
 # jekyll serve --config _config.yml,_config-local.yml
 # jekyll build --config _config.yml,_config-local.yml
 
+env: local
+
 # URLs
 baseurl: ""
 host: ""

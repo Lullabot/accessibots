@@ -16,7 +16,7 @@
     menuSetup: function() {
       var $nav = $('.js-nav-toggle');
 
-      $nav.once().click(function() {
+      $nav.one('click', function() {
         $('#main-nav').toggleClass('active');
         if ($('.js-nav-toggle span').text().trim() === 'Open menu') {
           $('.js-nav-toggle span').text('Close menu');

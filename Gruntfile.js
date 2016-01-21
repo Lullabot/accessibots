@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         }
       },
       js: {
-        files: ['_js/**/*.js'],
+        files: ['js/raw/*.js'],
         tasks: ['uglify'],
         options: {
           mangle: false
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'js/accessibots.min.js': ['_js/jquery.sticky.js', '_js/global.js']
+          'js/accessibots.min.js': ['js/raw/jquery.sticky.js', 'js/raw/global.js']
         }
       }
     }
