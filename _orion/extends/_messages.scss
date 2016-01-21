@@ -1,0 +1,27 @@
+// -- Message Helper
+@mixin message($color, $icon: '') {
+  color: $color;
+  border-color: $color;
+  background-color: lighten($color, 90 - lightness($color));
+
+  @if $icon != '' {
+    background-image: url($icon);
+  }
+}
+
+// -- Messages
+//  - Apply to the messages container (i.e. '.messages')
+//    To override colors, define $status, $warning and $error.
+%messages-flat {
+  border: 2px solid;
+  padding: 1em 1em 1em 3em;
+  border-radius: .25em;
+  box-shadow: 2px 2px 1px 0 rgba(0,0,0,.25);
+  margin: 1em 0;
+  background-position: 1em 1.15em;
+  background-repeat: no-repeat;
+
+  &.status  {@include message($status, '../images/message-24-ok.png');}
+  &.warning {@include message($warning, '../images/message-24-warning.png');}
+  &.error   {@include message($error, '../images/message-24-error.png');}
+}

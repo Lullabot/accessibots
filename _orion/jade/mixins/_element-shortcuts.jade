@@ -1,0 +1,16 @@
+//- Create a CSS element
+mixin css(file, media, jekyll)
+  - media = media || 'all'
+  - href = jekyll ? "{{ '" + file + "' | prepend: site.baseurl }}" : file
+  link(type="text/css", rel="stylesheet", media="#{media}", href="#{href}.css")
+
+//- Create a Script element
+mixin js(file, jekyll)
+  - src = jekyll ? "{{ '" + file + "' | prepend: site.baseurl }}" : file
+  script(type="text/javascript", src="#{src}")
+
+//- Navigation element
+mixin nav(id)
+  nav(id="nav-#{id}", role="navigation")
+    ul
+      block

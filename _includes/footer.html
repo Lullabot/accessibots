@@ -1,38 +1,10 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
+<footer id="site-footer" role="contentinfo">
+  <div id="footer--social">
+    <img src="{{ site.baseurl }}/images/icons/icomoon/SVG/twitter.svg" alt="Twitter icon" class="twitter" />
+    <a href="http://twitter.com/accessibots" target="_blank"><img src="{{ site.baseurl }}/images/icons/badge/badge_128.png" alt="Logo for The Accessibots." /><span class="hidden-link">Follow the Accessibots on Twitter</span></a>
+    <a href="http://twitter.com/accessibotlilly" target="_blank"><img src="{{ site.baseurl }}/images/icons/lilly/lilly_128.png" alt="Logo for Lilly the Accessibot" /><span class="hidden-link">Follow Lillybot on Twitter</span></a>
   </div>
-
+  <div id="footer--legal">
+    Copyright {{ site.date | date: "%Y" }} &copy; <a href="http://www.lullabot.com" target="_blank">Lullabot</a>, all rights reserved.
+  </div>
 </footer>

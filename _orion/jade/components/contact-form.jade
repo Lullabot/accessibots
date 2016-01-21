@@ -1,0 +1,26 @@
+form(action="http://service.162unlimited.net/contact.php", method="POST", enctype="multipart/form-data")
+  div.field.inline.text
+    label(for="name")
+      | Your Name:
+    input(type="text",size="60",maxlength="128",name="name",placeholder="Your Name")
+
+  div.field.inline.text
+    label(for="email")
+      | Your E-Mail:
+    input(type="text",size="60",maxlength="128",name="email",placeholder="Your E-Mail")
+
+  div.field.inline.text
+    label(for="subject")
+      | Subject:
+    input(type="text",size="60",maxlength="128",name="subject",placeholder="Subject")
+
+  div.field.inline.textarea
+    label(for="message")
+      | Message:
+    textarea(name="message", placeholder="Your Message", rows="3")
+
+  div.field.submit
+    input(type="submit", value="Send Message")
+
+  input(type="hidden", name="success", value="{{ site.url }}/thanks")
+  input(type="hidden", name="failure", value="{{ site.url }}/oops")

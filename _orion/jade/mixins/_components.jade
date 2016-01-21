@@ -1,0 +1,10 @@
+//- Social Link
+mixin social_link(icon, text, href)
+  a(href="#{href}", target='_blank')
+    i(class="#{icon}")
+    span #{text}
+
+//- Create a single link for a list of links
+mixin menu_link(title, href)
+  - href = href || '#'
+  li: a(href="#{href}") #{title}

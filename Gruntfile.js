@@ -11,8 +11,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'css/abtheme.css': '_scss/abtheme.scss',
-          'css/wysiwyg.css': '_scss/wysiwyg.scss'
+          'css/main.css': '_scss/main.scss'
         }
       }
     },
@@ -31,10 +30,17 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: ['_scss/**/*.scss'],
-        tasks: ['sass_globbing', 'sass', 'autoprefixer', 'px_to_rem'],
+        tasks: ['sass_globbing', 'sass', 'autoprefixer', 'px_to_rem', 'csslint', 'cssmin'],
         options: {
           livereload: true,
           spawn: false
+        }
+      },
+      js: {
+        files: ['_js/**/*.js'],
+        tasks: ['uglify'],
+        options: {
+          mangle: false
         }
       }
     },
@@ -43,19 +49,19 @@ module.exports = function(grunt) {
         browsers: ['last 3 versions', 'ie 9', 'iOS > 6', 'Safari > 6']
       },
       single_file: {
-        src: 'css/abtheme.css',
-        dest: 'css/abtheme.css'
+        src: 'css/main.css',
+        dest: 'css/main.css'
       }
     },
     px_to_rem: {
       files: {
-        'css/style.css': ['css/abtheme.css']
+        'css/main.css': ['css/main.css']
       }
     },
     csslint: {
       options: {
         csslintrc: '.csslintrc',
-        src: ['css/abtheme.css']
+        src: ['css/main.css']
       }
     },
     cssmin: {
@@ -67,6 +73,16 @@ module.exports = function(grunt) {
           dest: 'css',
           ext: '.min.css'
         }]
+      }
+    },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      my_target: {
+        files: {
+          'js/accessibots.min.js': ['_js/jquery.sticky.js', '_js/global.js']
+        }
       }
     }
   });
@@ -81,6 +97,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default', [
     'sass_globbing',
@@ -88,6 +105,7 @@ module.exports = function(grunt) {
     'autoprefixer',
     'px_to_rem',
     'csslint',
-    'cssmin'
+    'cssmin',
+    'uglify'
   ]);
 };

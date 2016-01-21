@@ -1,0 +1,24 @@
+// Pre-defined menu structures
+
+// -- Inline Menu List
+//  - Apply to UL
+%inline-menu {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -5px;
+
+    a {
+      display: inline-block;
+      line-height: normal;
+    }
+
+    &.last a {border-right: none;}
+  }
+}
+

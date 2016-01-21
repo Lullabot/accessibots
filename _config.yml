@@ -18,7 +18,10 @@ github_username: lullabot
 
 # URLs
 baseurl: "/accessibots"
-url: "http://lullabot.github.io"
+host: "http://lullabot.github.io"
 
 # Build settings
 markdown: kramdown
+
+# Files
+exclude: [Gemfile,Gemfile.lock,Gruntfile.js,package.json,node_modules]

@@ -1,0 +1,131 @@
+// Structural Components
+// Various components to aid in CSS framework and structure.
+
+// -- Inline Columns
+//  - Apply to a common selector (ie. .cols)
+//    Arrange block elements into equal columns.
+@mixin cols($num) {
+  display: inline-block;
+  width: floor(100%/$num);
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  margin-right: -5px;
+}
+
+// -- Divided vertical lists
+//  - Apply to a repeating selector (ie. div.views-row)
+//    Separate a vertical list of elements with a border
+@mixin list-divider($dist, $color, $bottom: false) {
+  margin-bottom: $dist;
+  padding-bottom: $dist;
+  border-bottom: 1px solid $color;
+
+  @if $bottom == false {
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// -- Sticky Header Element
+//  - Do not apply inside an element.
+//    Keep the header fixed at the top of the page.
+@mixin sticky-header($header, $height) {
+  @if unitless($height) {
+    body {
+      padding-top: #{$height}rem;
+    }
+    #{$header} {
+      height: #{$height}rem;
+    }
+  } @else {
+    body {padding-top: $height;}
+    #{$header} {height: $height;}
+  }
+
+  #{$header} {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+// -- Sticky Footer Element
+//  - Do not apply inside an element.
+//    Keep the footer element stuck to the bottom of the page if the content is
+//    too short to push it down.
+@mixin sticky-footer($wrapper, $footer, $height) {
+  html, body {height: 100%;}
+
+  @if unitless($height) {
+    #{$wrapper} {
+      min-height: 100%;
+      @include x-rem(margin-bottom, -$height);
+
+      &:after {
+        content: "";
+        @include x-rem(height, $height);
+        display: block;
+      }
+    }
+
+    #{$footer} {
+      @include x-rem(height, $height);
+    }
+  } @else {
+    #{$wrapper} {
+      min-height: 100%;
+      margin-bottom: -#{$height};
+
+      &:after {
+        content: "";
+        height: $height;
+        display: block;
+      }
+    }
+
+    #{$footer} {
+      height: $height;
+    }
+  }
+}
+
+// -- Center an element vertically, horizontally or both.
+@mixin center($dir) {
+  @if $dir == 'x' {
+    position: relative;
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+  @elseif $dir == 'y' {
+    position: relative;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  @elseif $dir == 'xy' {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+}
+
+// -- Setup a simple flexbox menu
+//  - Apply to the UL
+@mixin flexmenu {
+  @include display(flex);
+  @include align-items(stretch);
+  @include flex-direction(row);
+  @include justify-content(flex-start);
+
+  li {
+    @include flex(1);
+    display: block;
+
+    a {
+      display: block;
+    }
+  }
+}

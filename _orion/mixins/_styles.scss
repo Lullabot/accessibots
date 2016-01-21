@@ -1,0 +1,18 @@
+// Styles and CSS3 Support
+// Additional style mixins and CSS3 cross-vendor support.
+
+// -- Multi-Vendor Opacity
+@mixin opacity($a) {
+  filter:Alpha(opacity=($a * 100));
+  opacity: $a;
+}
+
+// -- Replacing the deprecated Bourbon mixin
+@mixin o-box-shadow ($values) {
+  -webkit-box-shadow: $values; // iOS Safari 3.2 - 4.3, Android 2.1+
+  box-shadow: $values;
+}
+//- DEPRECATED, use o-box-shadow().
+@mixin x-box-shadow($values) {
+  @include o-box-shadow($values);
+}

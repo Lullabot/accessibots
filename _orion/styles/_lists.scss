@@ -1,0 +1,87 @@
+// Standard list definitions
+
+// Base list styles, as used in content entry.
+ol, ul {
+  margin: 0 0 1em 2em;
+
+  li {
+    padding: .25em 0;
+  }
+}
+
+ol li {
+  list-style: decimal outside none;
+}
+
+ul li {
+  list-style: disc outside none;
+}
+
+// Easy customizing of list styles
+ul {
+  &.no-bullet li {list-style-type: none;}
+  &.disc      li {list-style-type: disc;}
+  &.circle    li {list-style-type: circle;}
+  &.square    li {list-style-type: square;}
+}
+
+// Lists used as menus.
+ul.menu, ol.menu {
+  margin-left: 0;
+
+  li {
+    list-style: none;
+    list-style-image: none;
+  }
+}
+
+// Navigation Menus
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      list-style-image: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &.inline {
+    ul {
+      li {
+        display: inline-block;
+
+        a {
+          display: inline-block;
+          margin-right: -5px;
+          line-height: 1.0em;
+          padding: {
+            left: .5em;
+            right: .5em;
+          }
+        }
+      }
+    }
+
+    &.divided {
+      li {
+        a {border-left: 1px solid;}
+
+        &:first-child a {
+          border-left: none;
+        }
+      }
+    }
+  }
+}
+
+nav.inline {
+}
+
+// Drupal generated lists of content.
+ul.item-list, ol.item-list {
+
+}

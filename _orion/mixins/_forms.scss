@@ -1,0 +1,59 @@
+// Form element mixins
+
+// Custom Placeholder Animations
+@mixin placeholder-focus($op: fade, $time: .5s, $delay: .5s) {
+  // Turn off all vendor prefixes to start, then turn on only the ones we need
+  // for each $op.
+  $prefix-for-webkit:    false;
+  $prefix-for-mozilla:   false;
+  $prefix-for-microsoft: false;
+  $prefix-for-opera:     false;
+
+  // Webkit
+  $prefix-for-webkit: true;
+  &:focus::-webkit-input-placeholder {
+    @if $op == fade {
+      @include transition(opacity $time $delay ease);
+      opacity: 0;
+    }
+    @elseif $op == left {
+      @include transition(all $time $delay ease);
+      @include transform(translateX(-100%));
+    }
+  }
+  $prefix-for-webkit: false;
+
+
+  // Mozilla
+  $prefix-for-mozilla: true;
+  &:focus:-moz-placeholder,
+  &:focus::-moz-placeholder {
+    @if $op == fade {
+      @include transition(opacity $time $delay ease);
+      opacity: 0;
+    }
+    @elseif $op == left {
+      @include transition(all $time $delay ease);
+      @include transform(translateX(-100%));
+    }
+  }
+  $prefix-for-mozilla: false;
+
+  // IE
+  $prefix-for-microsoft: true;
+  &:focus:-ms-input-placeholder {
+    @if $op == fade {
+      @include transition(opacity $time $delay ease);
+      opacity: 0;
+    }
+    @elseif $op == left {
+      @include transition(all $time $delay ease);
+      @include transform(translateX(-100%));
+    }
+  }
+
+  // Turn all vendor prefixes back on
+  $prefix-for-webkit:    true;
+  $prefix-for-mozilla:   true;
+  $prefix-for-opera:     true;
+}

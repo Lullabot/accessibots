@@ -4,17 +4,34 @@
   {% include head.html %}
 
   <body>
+    <header id="site-header" role="banner">
+      <nav id="main-nav" role="navigation">
+        <div class="js-nav-toggle-wrapper">
+          <button class="js-nav-toggle">
+            <span>Open menu</span>
+          </button>
+        </div>
 
-    {% include header.html %}
+        {% include menu.html %}
+      </nav>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      {% if page.title %}
+      <h1>{{ page.title }}</h1>
+      {% endif %}
+
+      {% if page.subtitle %}
+      <div class="page-header__subtitle">
+        {{ page.subtitle }}
       </div>
-    </div>
+      {% endif %}
+
+      <a href="{{ site.baseurl | prepend: site.host }}" title="Home" class="page-header__badge">
+        <img src="{{ site.baseurl }}/images/badge.png" alt="The Accessibots" />
+      </a>
+    </header>
+
+    {{ content }}
 
     {% include footer.html %}
-
   </body>
-
 </html>

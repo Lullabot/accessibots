@@ -1,0 +1,33 @@
+body.page-home {
+  h1 {
+    margin-bottom: 0;
+  }
+
+  #site-name {
+    margin: 1em 0;
+  }
+
+  #page--content {
+    .panel--pane {
+      .inner {
+        text-align: center;
+      }
+    }
+  }
+
+  #page--content .panel--pane {
+    article.teaser {
+      margin-bottom: 0;
+    }
+
+    &.bleed {
+      margin: 0;
+
+
+      > .inner {
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}

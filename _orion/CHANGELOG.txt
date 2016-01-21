@@ -1,0 +1,59 @@
+ORION v3.0-alpha3
+--------------------------------------------------------------------------------
+[13-Nov-2014:KeyboardCowboy]
+- Removing deprecated tests.
+- Moving functions to own folder.
+- Renaming 'presets' to 'extends'
+- Adding vertical and horizontal centering extendables.
+
+[7-Nov-2014:KeyboardCowboy]
+- Added transitioning text mixin.
+- Added spin mixin.
+- Moving spin and color-fade mixins to _animations partial.
+
+[17-Sep-2014:KeyboardCowboy]
+- Added hanging-indent mixin.
+
+[26-Jul-2014:KeyboardCowboy]
+- Added _forms.scss with placeholder mixin.
+
+[03-Jul-2014:KeyboardCowboy]
+- Added table-layout: fixed to base styles.
+
+ORION v2.1.0,
+--------------------------------------------------------------------------------
+[21-Jan-2014:KeyboardCowboy]
+- Updated Normalize and Typeplate
+
+[17-Dec-2013:KeyboardCowboy]
+- Added lined-paper mixin
+
+[07-Nov-2013:KeyboardCowboy]
+- Added Invisible mixin
+- Added linkedin and rss colors
+
+ORION v2.0.1
+--------------------------------------------------------------------------------
+[25-Oct-2013:KeyboardCowboy]
+- Added .hide class to remove text.
+
+ORION v2.0.0
+--------------------------------------------------------------------------------
+[24-Oct-2013:KeyboardCowboy]
+- Added header mixin to bulk set header styles.
+- Added mixin to autoscale headers by screen width.
+
+[18-Sep-2013:KeyboardCowboy]
+- Removed dotted anchor indicator.
+
+[29-Aug-2013:KeyboardCowboy]
+- Added quick/switch list styles as classes.
+
+[28-Aug-2013:KeyboardCowboy]
+- Added header font size scalar mixin
+
+[20-Aug-2013:KeyboardCowboy]
+- Updated message mixin for more accurate color generation and optional
+  background images.
+- Fixed px bug in x-rem generation.
+- Moved default font inside x-rem mixin.

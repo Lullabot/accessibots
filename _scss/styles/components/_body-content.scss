@@ -1,0 +1,53 @@
+article.full .field--text-with-summary--body,
+body.cke_editable {
+  h4, h5, h6 {
+    color: $blue1;
+  }
+
+  a {
+    &:not(.button) {
+      transition: .2s color, .2s text-decoration;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      vertical-align: bottom;
+      white-space: nowrap;
+      text-decoration: none;
+      color: $blue1;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        background-color: $pink2;
+        content: '';
+        opacity: 0;
+        transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
+        transform: scale(1.1);
+        pointer-events: none;
+        backface-visibility: hidden;
+      }
+
+      &:hover, &:focus {
+        outline: 0;
+        color: $pink3;
+        border-bottom: 1px solid $pink2;
+        margin-bottom: -1px;
+
+        &:before {
+          opacity: 1;
+          transform: scaleX(1) scaleY(0.618);
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.button {
+      @extend %link-button;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+nav.tabs {
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  top: 0;
+  background: rgba(0,0,0, .5);
+  padding: 2em 1em 1em 1em;
+  text-align: left;
+  border-bottom-left-radius: 1em;
+
+  &:after {
+    content: '';
+    display: block;
+    margin-bottom: -1em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include beveled-corner(tr, 1em, rgba(black, .5));
+  }
+
+  .tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      font-family: $sans-serif;
+      padding: .5em;
+
+      &:hover, &.active {
+        color: $pink2;
+      }
+    }
+  }
+}

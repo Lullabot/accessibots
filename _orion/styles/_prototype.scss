@@ -1,0 +1,58 @@
+nav#prototype {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  text-align: center;
+
+  &:hover {
+    ul {
+      height: auto;
+    }
+
+    div {
+      background-color: rgba(black, .8);
+    }
+  }
+
+  > * {
+    color: white;
+    box-shadow: 0 5px 10px 0 rgba(black, .5);
+    font-size: .85em;
+  }
+
+  div {
+    @include transition(background-color .2s ease-in);
+    background-color: rgba(black, .38);
+    border-radius: 0 0 .5em .5em;
+    display: inline-block;
+    padding: 0 1em;
+    line-height: 2em;
+  }
+
+  ul {
+    background-color: black;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 1em;
+
+    li {
+      margin: 0;
+      padding: .25em 0;
+
+      a {
+        padding: .25em .5em;
+        color: white;
+        font-size: 12pt;
+        margin: 0 1em;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
