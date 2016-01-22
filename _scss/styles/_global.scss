@@ -39,13 +39,11 @@ p {
 }
 
 #page--content {
-  .panel--pane {
-    margin: 2rem auto;
+  margin-bottom: 5rem;
+}
 
-    > .inner {
-      max-width: 52em;
-      padding: 0 1em;
-      margin: 0 auto;
-    }
-  }
+.page-content--container {
+  margin: 2rem auto;
+  max-width: 52em;
+  padding: 0 1em;
 }

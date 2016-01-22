@@ -1,0 +1,9 @@
+---
+layout: default
+title: News & Events
+---
+
+{% assign news_posts = site.posts | where:'category','news' %}
+{% for post in news_posts %}
+  {% include components/news-post.html post=post %}
+{% endfor %}

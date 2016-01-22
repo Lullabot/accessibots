@@ -2,4 +2,7 @@
   title: Home
 
 - url: /about
-  title: About Us
+  title: Who We Are
+
+- url: /news
+  title: News & Events

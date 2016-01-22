@@ -1,35 +1,5 @@
-article.node-news {
-  footer {
-    text-align: center;
-
-    .author, time {
-      display: block;
-    }
-
-    time {
-      font-size: 1.4em;
-    }
-  }
-
-  > .content {
-    margin-top: 3rem;
-
-    .field-primary-image {
-      float: right;
-      max-width: 38%;
-      margin-left: 1em;
-      line-height: 0;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-
-  .field-body {
-    @include clearfix;
-  }
+.post__news {
+  text-align: center;
 
   .field-attached-files {
     clear: both;

@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html>
+{% include head.html %}
 
-  {% include head.html %}
+  {% include header.html %}
 
-  <body>
-    <header id="site-header" role="banner">
-      {% include menu.html %}
+  <main id="page--content">
+    <div class="page-content--container">
+      {{ content }}
+    </div>
+  </main>
 
-      {% if page.title %}
-      <h1>{{ page.title }}</h1>
-      {% endif %}
-
-      {% if page.subtitle %}
-      <div class="page-header__subtitle">
-        {{ page.subtitle }}
-      </div>
-      {% endif %}
-
-      <a href="{{ site.baseurl | prepend: site.host }}" title="Home" class="page-header__badge">
-        <img src="{{ site.baseurl }}/images/badge.png" alt="The Accessibots" />
-      </a>
-    </header>
-
-    {{ content }}
-
-    {% include footer.html %}
-  </body>
-</html>
+{% include closure.html %}

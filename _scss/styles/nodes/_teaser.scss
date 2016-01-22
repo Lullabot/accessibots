@@ -1,82 +1,88 @@
 $teaser-height: 470px;
 
-article.teaser {
-  h2 {
-    @include scale-font-size($font-scale-start, 1.5em, $font-scale-stop, 2.5em);
-    margin: .5em 0;
+.teaser {
+  text-align: center;
+  margin-bottom: 5em;
+}
 
-    a {
-      color: $pink3;
-      text-decoration: none;
+.teaser--title {
+  @include scale-font-size($font-scale-start, 1.5em, $font-scale-stop, 2.5em);
+  margin: .5em 0;
 
-      &:hover, &:focus {
-        text-decoration: underline;
-      }
-    }
-  }
+  a {
+    color: $pink3;
+    text-decoration: none;
 
-  .field--image--field-primary-image {
-    a {
-      display: block;
-      height: 150px;
-    }
-
-    img {
-      @include center(y);
-      max-height: 100%;
-      width: auto;
+    &:hover, &:focus {
+      text-decoration: underline;
     }
   }
 }
 
-.panel--pane {
-  article.teaser {
-    text-align: center;
-    margin-bottom: 5em;
-
-    .author, time {
-      color: #999;
-      display: block;
-      color: $blue1;
-    }
-  }
+.teaser--primary-image-link {
+  display: block;
+  height: 150px;
 }
+
+.teaser--primary-image {
+  @include center(y);
+  max-height: 100%;
+  width: auto;
+}
+
+.teaser--author,
+.teaser--date {
+  display: inline-block;
+  color: $blue1;
+  font-size: 0.8em;
+  padding: 0 2em;
+}
+
+.teaser--author {
+  margin-right: -13px;
+  border-right: 1px solid $gold;
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 0;
+}
+
+.teaser--date {
+  border-left: 1px solid $gold;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 0;
+}
+
 
 // Small screens
 @include layout(one-col) {
-  .panel--pane {
-    article.teaser {
-      padding: 1em 0;
-    }
+  .teaser {
+    padding: 1em 0;
   }
 }
 
 // Large screens
 @include layout(two-col) {
-  .panel--pane {
-    .pane-content {
-      display: flex;
-      flex-wrap: wrap;
+  .page-content--container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .teaser {
+    flex-grow: 1;
+    width: 50%;
+
+    .inner {
+      padding: 0 1em;
+      position: relative;
+    }
+  }
+
+  .teaser__news {
+    &:nth-child(2) {
+      margin-top: 200px;
     }
 
-    article.teaser {
-      flex-grow: 1;
-      width: 50%;
-
-      .inner {
-        padding: 0 1em;
-        position: relative;
-      }
-    }
-
-    &.staggered {
-      .teaser:nth-child(2) {
-        margin-top: 200px;
-      }
-
-      .teaser:nth-child(odd):not(:first-child) {
-        margin-top: -200px;
-      }
+    &:nth-child(odd):not(:first-child) {
+      margin-top: -200px;
     }
   }
 }

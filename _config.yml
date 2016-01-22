@@ -19,7 +19,7 @@ permalink: pretty
 
 # URLs
 baseurl: "/accessibots"
-host: "http://lullabot.github.io"
+urlhost: "http://lullabot.github.io"
 
 # Build settings
 markdown: kramdown

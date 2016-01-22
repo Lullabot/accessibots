@@ -1,0 +1,12 @@
+{% assign post_url = include.post.url | prepend: site.baseurl | prepend: site.urlhost %}
+<article about="{{ post_url }}" typeof="sioc:Item foaf:Document" class="teaser teaser__news">
+  <a href="{{ post_url }}" class="teaser--primary-image-link teaser--primary-image-link__news">
+    {% include elements/img.html img=include.post.images.teaser %}
+  </a>
+  <h2 class="teaser--title teaser--title__news">
+    <a href="{{ post_url }}" rel="bookmark">{{ include.post.title }}</a>
+  </h2>
+  <span property="dc:title" content="{{ post.title }}" class="rdf-meta element-hidden"></span>
+  <span class="teaser--author teaser--author__news">Posted by {{ include.post.author }}</span>
+  <time class="teaser--date teaser--date__news" property="dc:date" datatype="xsd:dateTime" content="{{ include.post.date | date_to_xmlschema }}" datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %d, %Y" }}</time>
+</article>
