@@ -10,7 +10,7 @@
     {% for item in site.data.menu %}
     {% assign item_url = item.url | remove: '/' %}
     <li class="main-menu__item {% if page_parts[1] == item_url or page.url == item.url %}active-trail{% endif %}">
-      <a href="{{ item.url | prepend: site.urlhost }}" aria-label="{{ item.title }}"  class="main-menu__item-link {% if page_parts[1] == item_url or page.url == item.url %}active{% endif %}">
+      <a href="{{ item.url | prepend: site.baseurl | prepend: site.urlhost }}" aria-label="{{ item.title }}"  class="main-menu__item-link {% if page_parts[1] == item_url or page.url == item.url %}active{% endif %}">
         {{ item.title }}
       </a>
     </li>
